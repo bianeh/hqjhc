@@ -1,0 +1,490 @@
+[ 2018-01-08T10:20:29+08:00 ] 116.235.227.27 /api.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_grade` [ RunTime:0.0005s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` LEFT JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid LEFT JOIN hqjhc_goods ON hqjhc_brands.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.enddate > '2018-01-08 10:20:29'  [ RunTime:0.0003s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` INNER JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid INNER JOIN hqjhc_goods ON hqjhc_grade.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.enddate > '2018-01-08 10:20:29' AND hqjhc_grade.startdate < '2018-01-08 10:20:29'  [ RunTime:0.0002s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` INNER JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid INNER JOIN hqjhc_goods ON hqjhc_grade.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.startdate > '2018-01-08 10:20:29'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 47 AND `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_favorites` [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_favorites` WHERE `userid` = 47  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_ads` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_ads` WHERE `adpositionid` = 1 AND `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 47 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000259s ]
+
+[ 2018-01-08T10:20:29+08:00 ] 116.235.227.27 /api.php/Home/Userinfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 47 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 0 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 1 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 2 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 3 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 4 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 5 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 6 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 1 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 2 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 3 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-01-08T16:12:17+08:00 ] 101.81.0.88 /api.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = 'o4NwH06mrG38zuy9dFHV7sw36FXs' AND `userstatus` = 0 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = 'o4NwH06mrG38zuy9dFHV7sw36FXs' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_logs_user_logins` [ RunTime:0.0003s ]
+SQL: INSERT INTO `hqjhc_logs_user_logins` (`userid`,`loginTime`,`loginip`) VALUES ('27','2018-01-08 16:12:17','101.81.0.88') [ RunTime:0.0045s ]
+
+[ 2018-01-08T16:12:18+08:00 ] 101.81.0.88 /api.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_grade` [ RunTime:0.0005s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` LEFT JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid LEFT JOIN hqjhc_goods ON hqjhc_brands.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.enddate > '2018-01-08 16:12:18'  [ RunTime:0.0004s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` INNER JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid INNER JOIN hqjhc_goods ON hqjhc_grade.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.enddate > '2018-01-08 16:12:18' AND hqjhc_grade.startdate < '2018-01-08 16:12:18'  [ RunTime:0.0002s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` INNER JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid INNER JOIN hqjhc_goods ON hqjhc_grade.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.startdate > '2018-01-08 16:12:18'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = 'o4NwH06mrG38zuy9dFHV7sw36FXs' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 27 AND `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_favorites` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_favorites` WHERE `userid` = 27  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_ads` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_ads` WHERE `adpositionid` = 1 AND `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 27 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2018-01-08T16:12:18+08:00 ] 101.81.0.88 /api.php/Home/Userinfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = 'o4NwH06mrG38zuy9dFHV7sw36FXs' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = 'o4NwH06mrG38zuy9dFHV7sw36FXs' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 27 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 0 AND `userid` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 1 AND `userid` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 2 AND `userid` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 3 AND `userid` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 4 AND `userid` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 5 AND `userid` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 6 AND `userid` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 1 AND `userid` = 27 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 2 AND `userid` = 27 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 3 AND `userid` = 27 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-01-08T17:19:33+08:00 ] 183.57.53.197 /api.php/Home/Messages/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0  [ RunTime:0.0002s ]
+
+[ 2018-01-08T17:19:33+08:00 ] 101.226.64.174 /api.php/Home/Orderinfo/getorderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = '' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-01-08T17:20:32+08:00 ] 101.226.33.216 /api.php/Home/Shopcart/do_shopcart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+ERR: 非法操作:do_shopcart
+
+[ 2018-01-08T20:15:49+08:00 ] 116.235.227.27 /api.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_grade` [ RunTime:0.0005s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` LEFT JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid LEFT JOIN hqjhc_goods ON hqjhc_brands.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.enddate > '2018-01-08 20:15:49'  [ RunTime:0.0003s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` INNER JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid INNER JOIN hqjhc_goods ON hqjhc_grade.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.enddate > '2018-01-08 20:15:49' AND hqjhc_grade.startdate < '2018-01-08 20:15:49'  [ RunTime:0.0002s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` INNER JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid INNER JOIN hqjhc_goods ON hqjhc_grade.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.startdate > '2018-01-08 20:15:49'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 47 AND `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_favorites` [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_favorites` WHERE `userid` = 47  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_ads` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_ads` WHERE `adpositionid` = 1 AND `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 47 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000254s ]
+
+[ 2018-01-08T20:15:49+08:00 ] 116.235.227.27 /api.php/Home/Userinfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 47 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 0 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 1 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 2 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 3 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 4 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 5 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 6 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 1 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 2 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 3 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-01-08T20:15:56+08:00 ] 116.235.227.27 /api.php/Home/Userinfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 47 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 0 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 1 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 2 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 3 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 4 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 5 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 6 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 1 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 2 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 3 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-01-08T20:15:56+08:00 ] 116.235.227.27 /api.php/Home/Userinfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 47 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 0 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 1 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 2 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 3 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 4 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 5 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 6 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 1 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 2 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 3 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-01-08T20:16:02+08:00 ] 116.235.227.27 /api.php/Home/Orderinfo/getorderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: SELECT hqjhc_brands.brandLogo as brandLogo,hqjhc_brands.brandName as brandName,hqjhc_goods.goods_display_img as goods_display_img,hqjhc_goods.name as name,hqjhc_goods.marketPrice as marketprice,hqjhc_orders.expressName as expressname,hqjhc_orders.expressNo as expressno,hqjhc_orders.orderNo as orderno,hqjhc_orders.createTime as createtime,hqjhc_orders.orderid as orderid,hqjhc_orders.num as num,hqjhc_orders.payMoney as goods_price,hqjhc_orders.spec1 as spec1,hqjhc_orders.spec2 as spec2,hqjhc_orders.remarks as remarks,hqjhc_user_address.userAdress as useraddress,hqjhc_orders.orderStatus as orderstatus FROM `hqjhc_orders` LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_orders.goodsid LEFT JOIN hqjhc_brands ON hqjhc_orders.brandsid = hqjhc_brands.brandid LEFT JOIN hqjhc_user_address ON hqjhc_user_address.addressid = hqjhc_orders.addressid  WHERE hqjhc_orders.dataFlag = 0 AND hqjhc_orders.userid = '47' ORDER BY hqjhc_orders.orderid desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122551491014' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_order_remind` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122551491014' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122550975451' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122550975451' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122510210198' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122510210198' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122510053545' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122510053545' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122597571005' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122597571005' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122597545556' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122597545556' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122597515757' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122597515757' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122597489748' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122597489748' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122557995398' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122557995398' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122557575310' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122557575310' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122557545049' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122557545049' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122557515157' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122557515157' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122556102509' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122556102509' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122556989853' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122556989853' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122556565398' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122556565398' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122556529853' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122556529853' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122556504810' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122556504810' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122555100101' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122555100101' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122555975648' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122555975648' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122555554910' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122555554910' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122555505152' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122555505152' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122554535551' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122554535551' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122553569749' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122553569749' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122552551015' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122552551015' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122550975049' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122550975049' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122552100575' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122552100575' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122552985499' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122552985499' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017122555101481' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017122555101481' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `orderNo` = '2017121898529910' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_remind` WHERE `orderNo` = '2017121898529910' AND `createTime` > '2018-01-08' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-01-08T20:16:27+08:00 ] 116.235.227.27 /api.php/Home/Userinfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 47 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 0 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 1 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 2 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 3 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 4 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 5 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 6 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 1 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 2 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 3 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-01-08T20:16:27+08:00 ] 116.235.227.27 /api.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_grade` [ RunTime:0.0004s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` LEFT JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid LEFT JOIN hqjhc_goods ON hqjhc_brands.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.enddate > '2018-01-08 20:16:27'  [ RunTime:0.0003s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` INNER JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid INNER JOIN hqjhc_goods ON hqjhc_grade.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.enddate > '2018-01-08 20:16:27' AND hqjhc_grade.startdate < '2018-01-08 20:16:27'  [ RunTime:0.0002s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` INNER JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid INNER JOIN hqjhc_goods ON hqjhc_grade.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.startdate > '2018-01-08 20:16:27'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 47 AND `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_favorites` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_favorites` WHERE `userid` = 47  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_ads` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_ads` WHERE `adpositionid` = 1 AND `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 47 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000261s ]
+
+[ 2018-01-08T20:16:48+08:00 ] 116.235.227.27 /api.php/Home/Userinfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 47 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 0 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 1 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 2 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 3 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 4 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 5 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 6 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 1 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 2 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 3 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-01-08T20:16:48+08:00 ] 116.235.227.27 /api.php/Home/Userinfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 47 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 0 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 1 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 2 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 3 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 4 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 5 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 6 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 1 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 2 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 3 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-01-08T20:16:53+08:00 ] 116.235.227.27 /api.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_grade` [ RunTime:0.0005s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` LEFT JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid LEFT JOIN hqjhc_goods ON hqjhc_brands.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.enddate > '2018-01-08 20:16:53'  [ RunTime:0.0003s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` INNER JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid INNER JOIN hqjhc_goods ON hqjhc_grade.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.enddate > '2018-01-08 20:16:53' AND hqjhc_grade.startdate < '2018-01-08 20:16:53'  [ RunTime:0.0002s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` INNER JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid INNER JOIN hqjhc_goods ON hqjhc_grade.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.startdate > '2018-01-08 20:16:53'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 47 AND `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_favorites` [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_favorites` WHERE `userid` = 47  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_ads` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_ads` WHERE `adpositionid` = 1 AND `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 47 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000257s ]
+
+[ 2018-01-08T20:16:53+08:00 ] 116.235.227.27 /api.php/Home/Userinfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = 'o4NwH0x85qmllboBs2PaMTALG1zY' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = 47 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 0 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 1 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 2 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 3 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 4 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 5 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE `orderStatus` = 6 AND `userid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 1 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 2 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE `type` = 3 AND `userid` = 47 LIMIT 1   [ RunTime:0.0001s ]
+

@@ -1,0 +1,156 @@
+  <include file="Layout@Index:header" />
+  <include file="Layout@Index:nav" />
+  <style type="text/css">
+
+  </style>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        广告编辑
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台</a></li>
+        <li><a href="{:U('Grade/Index/index')}">系统广告管理</a></li>
+        <li class="active">编辑广告</li>
+      </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">广告编辑</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="box box-warning">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <form role="form" id="editAdv" method="post" action="{:U('Advs/Index/doEditadv')}">
+                <!-- text input -->
+                <div class="form-group">
+                  <label>广告名称</label>
+                  <input type="text"  name="adName" value="{$info.adname}" class="form-control" placeholder="广告名称">
+                </div>
+                <div class="form-group">
+                  <label>广告URL</label>
+                  <input type="text"  name="adUrl" value="{$info.adurl}" class="form-control" placeholder="广告URL">
+                </div>
+                 <div class="form-group">
+                  <label>广告图片</label>
+                  <input name="uploadfile" onchange="readyup()" id="file" multiple="" type="file" class="form-control">
+                  <div style="width:100px;height:80px;background: #dddddd;margin-top:3px"> 
+                      <img id="img1" height="80px" width="100px" <if condition="$info['adfile'] eq ''"> src="{$Think.const.ROOT_URL}/Public/backend/dist/img/boxed-bg.jpg" <else/>src ="{$Think.const.DATA_URL}/{$info.adfile}" </if> />
+                  </div>
+                  <input type="hidden" name="adFile" value="{$info.adfile}"/>
+                </div>
+                <div class="form-group">
+                  <label>排序</label>
+                  <input type="text"  name="adsort" value="{$info.adsort}" class="form-control" placeholder="排序">
+                </div>
+                <div class="form-group">
+                  <label>广告位置</label>
+                  <select multiple="" name="adpositionid" class="form-control">
+                    <option value=''>请选择</option>
+                    <option <if condition="$info['adpositionid'] eq 1"> selected <else/></if> value='1'>微商端首页轮播广告</option>
+                    
+                  </select>
+                </div>
+                <div class="form-group">
+                <label>开始时间:</label>
+                <div class="input-group date">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input type="text" name="adstartDate" value="{$info.adstartdate}" class="form-control pull-right" id="datepickerstart">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>结束时间:</label>
+                <div class="input-group date">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input type="text" name="adendDate" value="{$info.adenddate}" class="form-control pull-right" id="datepickerend">
+                </div>
+              </div>
+              <input type="hidden" name="updatestaffid" value='{$data.stffid}'/>
+              <input type="hidden" name="adid" value="{$info.adid}"/>
+              </form>
+                <div class="form-group">
+                    <button id="editadvOperate" class="btn bg-olive btn-flat margin"><i class="fa fa-fw fa-plus"></i>编辑</button>
+                </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <include file="Layout@Index:footer"/>
+  <!-- 全局js -->
+  <!-- <script src="{$Think.const.PUBLIC_URL}/common/js/jquery.min.js?v=2.1.4"></script> -->
+  <script src="{$Think.const.ROOT_URL}/Public/common/js/bootstrap.min.js?v=3.3.6"></script>
+  <script src="{$Think.const.ROOT_URL}/Public/common/js/ajaxfileupload.js"></script>
+ <script>
+    var editadvOperate = document.getElementById("editadvOperate");
+    editadvOperate.onclick=function()
+    {     
+          document.getElementById("editAdv").submit();
+    }
+  </script>
+<script>
+  $(function () {
+    $('#datepickerstart').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+    $('#datepickerend').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+  })
+</script>
+<script>
+    function readyup()
+    {
+            ajaxFileUpload();
+    }
+    function ajaxFileUpload() 
+    {
+            $.ajaxFileUpload
+            (
+                    {
+                        url: "{:U('Upload/Index/upload')}",
+                        secureuri: false,
+                        fileElementId: 'file',
+                        dataType: 'json',
+                        success: function (data, status)
+                        {
+                           var code = data['code'];
+                           if(code == '000002')
+                           {
+                               $("#img1").attr("src", data.showimgurl);
+                               $(":input[name=adFile]").val(data.imgurl);
+                           }
+                        },
+                        error: function (data, status, e)
+                        {
+                          alert(data.msg);
+                        }
+                    }
+            )
+            return false;
+        }
+ </script>

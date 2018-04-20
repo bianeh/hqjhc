@@ -1,0 +1,76 @@
+[ 2017-11-15T13:14:12+08:00 ] 101.81.120.60 /admin.php/Message/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_messages` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0 ORDER BY `messageid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000256s ]
+
+[ 2017-11-15T13:14:14+08:00 ] 101.81.120.60 /admin.php/Message/Index/addMessagePage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000257s ]
+
+[ 2017-11-15T13:14:16+08:00 ] 101.81.120.60 /admin.php/Message/Webnotify/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000209s ]
+ERR: 无法加载控制器:Webnotify
+
+[ 2017-11-15T13:14:22+08:00 ] 101.226.33.201 /admin.php/Message/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-11-15T13:14:27+08:00 ] 101.226.33.224 /admin.php/Message/Index/addMessagePage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+

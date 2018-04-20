@@ -1,0 +1,332 @@
+[ 2017-11-22T09:58:11+08:00 ] 101.81.120.60 /admin.php/Users/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `dataFlag` = 0 ORDER BY `userid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000251s ]
+
+[ 2017-11-22T09:58:12+08:00 ] 101.81.120.60 /admin.php/Users/Address/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_user_address` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_user_address` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_user_address` WHERE `dataFlag` = 0 ORDER BY `addressid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 597 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 598 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 602 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 617 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 620 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 597 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 598 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 602 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 617 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 620 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 597 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 598 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 602 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 617 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 620 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 597 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 598 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 602 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 617 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 620 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 597 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 598 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 602 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 617 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 620 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000261s ]
+
+[ 2017-11-22T10:09:36+08:00 ] 101.226.33.223 /admin.php/Users/Address/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-11-22T20:02:24+08:00 ] 101.81.120.60 /admin.php/Users/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `dataFlag` = 0 ORDER BY `userid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000248s ]
+
+[ 2017-11-22T20:02:34+08:00 ] 101.226.102.97 /admin.php/Users/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-11-22T20:47:26+08:00 ] 101.81.120.60 /admin.php/Users/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `dataFlag` = 0 ORDER BY `userid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000254s ]
+
+[ 2017-11-22T21:07:28+08:00 ] 101.81.120.60 /admin.php/Users/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `dataFlag` = 0 ORDER BY `userid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000260s ]
+
+[ 2017-11-22T21:12:35+08:00 ] 101.81.120.60 /admin.php/Users/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `dataFlag` = 0 ORDER BY `userid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000252s ]
+
+[ 2017-11-22T23:04:20+08:00 ] 114.83.117.78 /admin.php/Users/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `dataFlag` = 0 ORDER BY `userid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000248s ]
+
+[ 2017-11-22T23:04:28+08:00 ] 114.83.117.78 /admin.php/Users/Address/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_user_address` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_user_address` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_user_address` WHERE `dataFlag` = 0 ORDER BY `addressid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 596 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 597 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 601 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 616 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 619 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 596 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 597 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 601 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 616 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 619 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 596 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 597 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 601 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 616 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 619 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 596 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 597 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 601 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 616 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 619 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 596 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 597 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 601 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 616 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 619 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 596 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 597 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 601 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 616 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 619 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 596 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 597 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 601 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 616 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 619 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000240s ]
+
+[ 2017-11-22T23:04:41+08:00 ] 101.226.33.239 /admin.php/users/address/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>js实现一款简洁的js时间选择特效代码</title>
+		<meta name="keywords" content="jquery特效,时间选择器,日历选择器,日期时间" />
+		<meta name="description" content="一款简洁的js时间选择代码。" />
+		<script type="text/javascript" src="js/calendar.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/calendar.css" media="all" />
+	</head>
+	<body>
+		<style>
+			/* css样式 */
+			input{font: 12px "courier new";}
+			input.button{
+				width: 80px;
+				height: 25px;
+				padding-top: 2px;
+				font-size: 14px;
+				padding: 0;
+				background-color:#3FA61F;
+				background-position: 0 -240px;
+				border: 0;
+				cursor: pointer;
+				color:white;
+			}
+		</style>
+
+		<div style="width:620px;margin:40px auto 0 auto;">
+			<input readonly="readonly" name="date" id="test" value="" class="txt" style="width:400px;" type="text">
+			<br />
+			<input class="button" type="button" id="selbtn" name="selbtn" value="时间" onclick="showCalendar('test', '%Y-%m-%d %H:%M', '24', false, 'selbtn');" />
+		</div>	
+	</body>
+</html>

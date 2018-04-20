@@ -1,0 +1,191 @@
+<include file="Layout@Index:header" />
+<include file="Layout@Index:nav" />
+<link rel="stylesheet" href="{$Think.const.ROOT_URL}/Public/backend/css/index.css">
+<!-- Left side column. contains the logo and sidebar -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+          微商信息列表
+        <small>微商信息列表</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台</a></li>
+        <li><a href="#">微商管理</a></li>
+        <li class="active">微商管理列表</li>
+      </ol>
+    </section>
+    <div class="col-xs-12">
+        <div class="search1">
+           <a href="{:U('Users/Index/addUserPage')}"><button type="button" class="btn bg-olive btn-flat margin"><i class="fa fa-fw fa-plus"></i>添加微商用户</button></a>
+<!--           <a href="{:U('Recharge/Index/doRecharge')}"><button type="button" class="btn btn-info btn-flat margin"><i class="fa fa-fw fa-plus"></i>手动充值</button></a>-->
+           <a href=""><button type="button" class="btn bg-purple btn-flat margin"><i class="fa fa-fw fa-refresh"></i>刷新页面</button></a>
+        </div>
+    </div>
+    <!-- Search content end -->
+    <div class="col-xs-12">
+        <div class="search">
+            <form action="" method="get">
+            <label>账户号:</label><input name="loginName" type="text" />
+            <label>别称:</label><input name="nickname" type="text" />
+            <label>创建时间:</label><input id="datepickerstart" name="createTime" type="text" />
+           <button class="searchbutton"><i class="fa fa-fw fa-search"></i>搜索</button>
+            </form>
+        </div>
+    </div>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>编号</th>
+                  <th>微商账户</th>
+                  <th>创立时间</th>
+                  <th>最新登录时间</th>
+                  <th>最新登录IP</th>
+                  <th>账户可用金额(元)</th>
+                  <th>账户冻结金额(元)</th>
+                  <th>状态</th>
+                  <th>是否VIP会员</th>
+                  <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist name="list" id="vo" empty="暂时没有数据" >
+                    <tr>
+                  <td><input type="checkbox"/>{$vo.userid}</td>
+                  <td>{$vo.loginname}</td>
+                  <td>{$vo.createtime}</td>
+                  <td>{$vo.lasttime}</td>
+                  <td>{$vo.lastip}</td>
+                  <td>{$vo.usermoney}</td>
+                  <td>{$vo.lockmoney}</td>
+                  <td>
+                    <if condition="$vo.userstatus eq 0">
+                       正常
+                    <else/>
+                       冻结
+                    </if>
+                  </td>
+                  <td>
+                        <if condition="$vo.vip eq 1">
+                            是
+                        </if>
+                        <if condition="$vo.vip eq 0">
+                            否
+                        </if>
+                  </td>
+                  <td>
+                      <a href="{:U('Users/Index/edituserspage')}?userid={$vo.userid}">
+                      <button class="btn bg-olive btn-flat margin">
+                          <i class="fa fa-fw fa-edit"></i>编辑
+                      </button>
+                      </a>
+                      <!--<a href="{:U('Users/Index/resetpwdpage')}?userid={$vo.userid}">
+                      <button class="btn bg-purple margin">
+                          <i class="fa fa-fw fa-refresh"></i>重置密码
+                      </button>
+                      </a>-->
+                      <button value="{$vo.userid}" class="btn bg-maroon btn-flat margin delete">
+                          <i class="fa fa-fw fa-trash-o"></i>删除
+                      </button>
+                      <if condition="$vo.userstatus eq 0">
+                      <button value="{$vo.userid}" type="button" class="btn btn-info btn-flat menu dozen">
+                           <i class="fa fa-fw fa-check-circle"></i>冻结
+                      </button>
+                      </if>
+                      <if condition="$vo.userstatus eq 1">
+                      <button value="{$vo.userid}" type="button" class="btn btn-info btn-flat menu undozen">
+                           <i class="fa fa-fw fa-gavel"></i>启用
+                      </button>
+                       </if>
+                      <a href="{:U('Users/Index/setvippage')}?userid={$vo.userid}">
+                      <button  class="btn btn-danger btn-flat margin">
+                          <i class="fa fa-fw fa-check-circle"></i>设置vip
+                      </button>
+                      </a>
+                  </td>
+                </tr>
+                </volist>
+                </tfoot>
+              </table>
+                <div style="text_align:right" class="result page">{$page}</div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+ <include file="Layout@Index:footer" />
+<!-- page script -->
+<script>
+  $(function (){
+    $('#example2').DataTable({
+      'paging'      : false,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : false,
+      'autoWidth'   : false
+    })
+  })
+</script>
+<script>
+  $(function () {
+    $('#datepickerstart').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+    $('#datepickerend').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+    $(".searchbutton").click(function(){
+      $("#search").submit();
+    });
+    $(".delete").click(function(){
+      var r = confirm("确定要删除该条数据吗！");
+      if(r)
+      {
+         var userid = $(this).val();
+         window.location.href="{:U('Users/Index/delete/userid/"+userid+"')}";
+      }
+    });
+     $(".setvip").click(function(){
+      var r = confirm("该用户是否已经购买过VIP,确定要设置VIP吗！");
+      if(r)
+      {
+         var userid = $(this).val();
+         window.location.href="{:U('Users/Index/setvip/userid/"+userid+"')}";
+      }
+    });
+    $(".dozen").click(function(){
+      var r = confirm("确定要冻结该用户吗！");
+      if(r)
+      {
+         var userid = $(this).val();
+         window.location.href="{:U('Users/Index/dozen/userid/"+userid+"')}";
+      }
+    });
+     $(".undozen").click(function(){
+      var r = confirm("确定要启用该用户吗！");
+      if(r)
+      {
+         var userid = $(this).val();
+         window.location.href="{:U('Users/Index/undozen/userid/"+userid+"')}";
+      }
+    });
+  })
+</script>

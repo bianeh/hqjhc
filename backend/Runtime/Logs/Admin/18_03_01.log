@@ -1,0 +1,44 @@
+[ 2018-03-01T09:07:25+08:00 ] 101.44.12.72 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_staffs` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `dataFlag` = 0 ORDER BY `stffid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Admin/a4757d518f99ac5a2cf27270b287e37a.php 第 244 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008206s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000273s ]
+
+[ 2018-03-01T09:08:25+08:00 ] 101.226.33.240 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+

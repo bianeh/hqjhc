@@ -1,0 +1,180 @@
+[ 2017-11-27T18:28:23+08:00 ] 101.81.120.60 /admin.php/Article/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_articles` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_articles` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_articles` WHERE `dataFlag` = 0 ORDER BY `articleid` desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2017-11-27T18:28:25+08:00 ] 101.81.120.60 /admin.php/Article/Articlecat/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_article_cats` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_article_cats` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_article_cats` WHERE `isShow` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2017-11-27T18:28:26+08:00 ] 101.81.120.60 /admin.php/Article/Recycle/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_articles` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_articles` WHERE `dataFlag` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_articles` WHERE `dataFlag` = 2 ORDER BY `articleid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2017-11-27T18:28:36+08:00 ] 101.226.225.85 /admin.php/Article/Recycle/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-11-27T18:38:08+08:00 ] 101.81.120.60 /admin.php/Article/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_articles` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_articles` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_articles` WHERE `dataFlag` = 0 ORDER BY `articleid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000248s ]
+
+[ 2017-11-27T18:38:10+08:00 ] 101.81.120.60 /admin.php/Article/Articlecat/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_article_cats` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_article_cats` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_article_cats` WHERE `isShow` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000237s ]
+
+[ 2017-11-27T18:38:13+08:00 ] 101.81.120.60 /admin.php/Article/Recycle/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_articles` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_articles` WHERE `dataFlag` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_articles` WHERE `dataFlag` = 2 ORDER BY `articleid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000238s ]
+

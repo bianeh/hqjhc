@@ -1,0 +1,137 @@
+<link rel="stylesheet" href="{$Think.const.ROOT_URL}/Public/backend/css/index.css">
+<include file="Layout@Index:header" />
+<include file="Layout@Index:nav" />
+<!-- Left side column. contains the logo and sidebar -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+          管理员登录日志列表
+        <small>管理员登录日志信息列表</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台</a></li>
+        <li><a href="#">管理员登录日志管理</a></li>
+        <li class="active">管理员登录日志管理列表</li>
+      </ol>
+    </section>
+    <div class="col-xs-12">
+        <div class="search1">
+           <a href="{:U('Ticket/Index/addTicketPage')}"><button type="button" class="btn bg-olive btn-flat margin"><i class="fa fa-fw fa-plus"></i>添加优惠券</button></a>
+           <a href=""><button type="button" class="btn bg-purple margin"><i class="fa fa-fw fa-refresh"></i>刷新页面</button></a>
+        </div>
+    </div>
+    <!-- Search content end -->
+    <div class="col-xs-12">
+        <div class="search">
+            <form action="" method="get" >
+            <label>优惠券名称:</label><input name="ticketName" type="text" />
+            <label>创建时间:</label><input id="datepickerstart" name="createTime" type="text" />
+            <button class="searchbutton"><i class="fa fa-fw fa-search"></i>搜索</button>
+            </form>
+        </div>
+    </div>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>编号</th>
+                  <th>优惠券名称</th>
+                  <th>优惠券类型</th>
+                  <th>优惠券图片</th>
+                  <th>创立时间</th>
+                  <th>创建者</th>
+                  <th>开始时间</th>
+                  <th>结束时间</th>
+                  <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist name="list" id="vo" empty="暂时没有数据" >
+                    <tr>
+                  <td><input type="checkbox"/>{$vo.ticketid}</td>
+                  <td>{$vo.ticketname}</td>
+                  <td>
+                      <if condition="$vo['tickettype'] eq 1">
+                         邮费折扣券
+                      </if>
+                      <if condition="$vo['tickettype'] eq 2">
+                         其他
+                      </if>
+                  </td>
+                  <td><img class="normalImg" src="{$Think.const.DATA_URL}/{$vo.brandlogo}" /></td>
+                  <td>{$vo.createtime}</td>
+                  <td>{$vo.createstaffname}</td>
+                  <td>{$vo.starttime}</td>
+                  <td>{$vo.endtime}</td>
+                  <td>
+                      <a href="{:U('Ticket/Index/editTicketPage')}?ticketid={$vo.ticketid}">
+                      <button class="btn bg-olive btn-flat margin">
+                          <i class="fa fa-fw fa-edit"></i>编辑
+                      </button>
+                      </a>
+                      <button value="{$vo.ticketid}" class="btn bg-maroon btn-flat margin delete">
+                          <i class="fa fa-fw fa-trash-o"></i>删除
+                      </button>  
+                  </td>
+                </tr>
+                </volist>
+                </tfoot>
+              </table>
+                <div style="text_align:right" class="result page">{$page}</div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+ <include file="Layout@Index:footer" />
+<!-- page script -->
+<script>
+  $(function (){
+    $('#example2').DataTable({
+      'paging'      : false,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : false,
+      'autoWidth'   : false
+    })
+  })
+</script>
+<script>
+  $(function () {
+    $('#datepickerstart').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+    $('#datepickerend').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+    $(".searchbutton").click(function(){
+      $("#search").submit();
+    });
+    $(".delete").click(function(){
+      var r = confirm("确定要删除该条数据吗！");
+      if(r)
+      {
+         var ticketid = $(this).val();
+         window.location.href="{:U('Ticket/Index/delete/ticketid/"+ticketid+"')}";
+      }
+    });
+  })
+</script>

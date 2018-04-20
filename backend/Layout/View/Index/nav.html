@@ -1,0 +1,321 @@
+<style type="text/css">
+a{
+  color:#b8c7ce;
+}
+</style>
+<!-- <link rel="stylesheet" href="{$Think.const.ROOT_URL}/Public/backend/dist/css/skins/_all-skins.min.css"> -->
+<aside class="main-sidebar" style="background:#1e282c;color:#1e282c">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="{$Think.const.ROOT_URL}/Public/backend/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+          
+          <?php print_r($this->_data); ?>
+        <div class="pull-left info">
+          <p>平台管理员{$data.loginname}</p>
+          <a href="#"><i class="fa fa-circle text-success"></i>Online</a>
+        </div>
+      </div>
+      <!-- search form -->
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree" style="color:#fff">
+        <li class="header">MAIN NAVIGATION</li>
+        <li id="Article" class="treeview">
+          <a href="#">
+            <i class="fa fa-newspaper-o"></i> <span>资讯新闻管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{:U('Article/Index/index')}"><i class="fa fa-circle-o"></i>资讯新闻列表</a></li>
+            <li><a href="{:U('Article/Articlecat/index')}"><i class="fa fa-circle-o"></i>资讯新闻分类</a></li>
+            <li><a href="{:U('Article/Recycle/index')}"><i class="fa fa-circle-o"></i>回收站</a></li>
+          </ul>
+        </li>
+        <li id="ProductGrade" class="treeview">
+          <a href="#">
+            <i class="fa fa-sitemap"></i>
+            <span>品牌活动档期管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{:U('Grade/Index/index')}"><i class="fa fa-circle-o"></i>品牌活动档期列表</a></li>
+          </ul>
+        </li>
+        <li id="Advs" class="treeview">
+          <a href="#">
+            <i class="fa fa-folder"></i>
+            <span>系统广告管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{:U('Advs/Index/index')}"><i class="fa fa-circle-o"></i>系统广告管理</a></li>
+          </ul>
+        </li>
+        <li id="Product" class="treeview">
+          <a href="#">
+            <i class="fa fa-folder"></i>
+            <span>品牌产品管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{:U('Product/Brands/index')}"><i class="fa fa-circle-o"></i>品牌列表</a></li>
+            <li><a href="{:U('Product/Goodscats/index')}"><i class="fa fa-circle-o"></i>货仓产品分类</a></li>
+            <li><a href="{:U('Product/Index/index')}"><i class="fa fa-circle-o"></i>产品列表</a></li>
+<!--            <li><a href="{:U('Product/Spectemplate/index')}"><i class="fa fa-circle-o"></i>产品规格模板</a></li>
+            <li><a href="{:U('Product/Specattr/index')}"><i class="fa fa-circle-o"></i>产品规格标签</a></li>
+            <li><a href="{:U('Product/Specattrval/index')}"><i class="fa fa-circle-o"></i>产品规格值</a></li>-->
+          </ul>
+        </li>
+        <li id ="Admin" class="treeview">
+          <a href="#">
+            <i class="fa fa-users"></i>
+            <span>公司职员管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{:U('Admin/Index/index')}"><i class="fa fa-circle-o"></i>公司职员信息</a></li>
+            <li><a href="{:U('Admin/Roles/index')}"><i class="fa fa-circle-o"></i>公司部门管理</a></li>
+            <li><a href="{:U('Admin/Privileges/index')}"><i class="fa fa-circle-o"></i>权限资源管理</a></li>
+          </ul>
+        </li>
+        <li id="Offers" class="treeview">
+          <a href="#">
+            <i class="fa fa-industry"></i>
+            <span>供货商会员管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{:U('Offers/Index/index')}"><i class="fa fa-circle-o"></i>供货商会员信息</a></li>
+            <li><a href="{:U('Offers/Feedback/index')}"><i class="fa fa-circle-o"></i>反馈信息</a></li>
+          </ul>
+        </li>
+        <li id ="WechatBus" class="treeview">
+          <a href="#">
+            <i class="fa fa-folder"></i>
+            <span>微商信息管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{:U('Users/Index/index')}"><i class="fa fa-circle-o"></i>微商信息列表</a></li>
+            <li><a href="{:U('Users/Address/index')}"><i class="fa fa-circle-o"></i>地址信息管理</a></li>
+            <li><a href="javascript:void(0)" onclick="javascript:alert('此模块在开发当中')"><i class="fa fa-circle-o"></i>优惠券信息</a></li>
+            <li><a href="javascript:void(0)" onclick="javascript:alert('此模块在开发当中')"><i class="fa fa-circle-o"></i>积分记录</a></li>
+            <li><a href="{:U('Users/Vip/index')}"><i class="fa fa-circle-o"></i>会员记录</a></li>
+            <li><a href="{:U('Users/Vipset/index')}"><i class="fa fa-circle-o"></i>会员购买设置</a></li>
+            <li><a href="javascript:void(0)" onclick="javascript:alert('此模块在开发当中')"><i class="fa fa-circle-o"></i>反馈信息</a></li>
+          </ul>
+        </li>
+        <li id="Orders" class="treeview">
+          <a href="#">
+            <i class="fa fa-cart-arrow-down"></i>
+            <span>订单管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{:U('Order/Index/index')}"><i class="fa fa-circle-o"></i>订单管理列表</a></li>
+            <li><a href="{:U('Orderaf/Index/index')}"><i class="fa fa-circle-o"></i>退款/退货</a></li>
+          </ul>
+        </li>
+        <li id="Voucher" class="treeview">
+          <a href="#">
+            <i class="fa fa-folder"></i>
+            <span>优惠券管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{:U('Ticket/Index/index')}"><i class="fa fa-circle-o"></i>优惠券列表</a></li>
+          </ul>
+        </li>
+        <li id="Express" class="treeview">
+          <a href="#">
+            <i class="fa fa-truck"></i>
+            <span>快递管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{:U('Ship/Shipping/index')}"><i class="fa fa-circle-o"></i>运费模板管理</a></li>
+          </ul>
+        </li>
+        <li id="Fund" class="treeview">
+          <a href="#">
+            <i class="fa fa-money"></i>
+            <span>财务管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{:U('Funds/Recharge/index')}"><i class="fa fa-circle-o"></i>微商用户充值记录</a></li>
+            <li><a href="{:U('Funds/Ordersettlement/index')}"><i class="fa fa-circle-o"></i>微商用户交易记录</a></li>
+            <li><a href="{:U('Funds/Viprecharge/index')}"><i class="fa fa-circle-o"></i>微商购买VIP记录</a></li>
+            <li><a href="{:U('Funds/Userslogsmoneys/getentrance')}"><i class="fa fa-circle-o"></i>微商会员支入记录</a></li>
+            <li><a href="{:U('Funds/Userslogsmoneys/getpay')}"><i class="fa fa-circle-o"></i>微商会员支出记录</a></li>
+          </ul>
+        </li>
+         <li id="Message" class="treeview">
+          <a href="#">
+            <i class="fa fa-envelope"></i>
+            <span>站内信短信管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{:U('Message/Index/index')}"><i class="fa fa-circle-o"></i>通告预告管理</a></li>
+            <li><a href="{:U('Message/Webnotify/index')}"><i class="fa fa-circle-o"></i>站内信息管理</a></li>
+            <li><a href="{:U('Message/Messageinfo/index')}"><i class="fa fa-circle-o"></i>短信管理</a></li>
+          </ul>
+        </li>
+         <li id="System" class="treeview">
+          <a href="#">
+            <i class="fa fa-wrench"></i>
+            <span>系统设置</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="javascript:void(0)" onclick="javascript:alert('此模块在开发当中')"><i class="fa fa-circle-o"></i>缓存清理</a></li>
+            <li><a href="javascript:void(0)" onclick="javascript:alert('此模块在开发当中')"><i class="fa fa-circle-o"></i>系统参数</a></li>
+          </ul>
+        </li>
+         <li id="Logs" class="treeview">
+          <a href="#">
+            <i class="fa fa-pencil-square"></i>
+            <span>系统日志管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+              <li><a href="javascript:void(0)" onclick="javascript:alert('此模块在开发当中')"><i class="fa fa-circle-o"></i>管理员登录日志</a></li>
+              <li><a href="javascript:void(0)" onclick="javascript:alert('此模块在开发当中')"><i class="fa fa-circle-o"></i>供货商登录日志</a></li>
+              <li><a href="javascript:void(0)" onclick="javascript:alert('此模块在开发当中')"><i class="fa fa-circle-o"></i>微商登录日志</a></li>
+              <li><a href="javascript:void(0)" onclick="javascript:alert('此模块在开发当中')"><i class="fa fa-circle-o"></i>资金流入流出日志</a></li>
+              <li><a href="javascript:void(0)" onclick="javascript:alert('此模块在开发当中')"><i class="fa fa-circle-o"></i>模块操作日志</a></li>
+          </ul>
+        </li>
+         <li id="Logs" class="treeview">
+          <a href="#">
+            <i class="fa fa-bar-chart"></i>
+            <span>数据统计</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+              <li><a href="javascript:void(0)" onclick="javascript:alert('此模块在开发当中')"><i class="fa fa-circle-o"></i>数据统计</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+  <script src="{$Think.const.ROOT_URL}/Public/backend/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="{$Think.const.ROOT_URL}/Public/backend/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/bower_components/raphael/raphael.min.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/bower_components/morris.js/morris.min.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/bower_components/moment/min/moment.min.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/dist/js/demo.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/bower_components/fastclick/lib/fastclick.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/dist/js/adminlte.min.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/common/js/echarts.common.min.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="{$Think.const.ROOT_URL}/Public/backend/plugins/timepicker/bootstrap-timepicker.min.js"></script>
+   <script type="text/javascript">
+      $(document).ready(function(){
+        $("#Article").click(function(){
+            localStorage.setItem("Id", '#Article');
+        });
+        $("#Product").click(function(){
+            localStorage.setItem("Id", '#Product');
+        });
+        $("#Admin").click(function(){
+            localStorage.setItem("Id", '#Admin');
+        });
+        $("#Offers").click(function(){
+            localStorage.setItem("Id", '#Offers');
+        });
+        $("#WechatBus").click(function(){
+            localStorage.setItem("Id", '#WechatBus');
+        });
+        $("#Orders").click(function(){
+            localStorage.setItem("Id", '#Orders');
+        });
+        $("#Voucher").click(function(){
+            localStorage.setItem("Id", '#Voucher');
+        });
+        $("#Express").click(function(){
+            localStorage.setItem("Id", '#Express');
+        });
+        $("#Fund").click(function(){
+            localStorage.setItem("Id", '#Fund');
+        });
+        $("#Logs").click(function(){
+            localStorage.setItem("Id", '#Logs');
+        });
+        $("#ProductGrade").click(function(){
+            localStorage.setItem("Id",'#ProductGrade');
+        });
+        $("#Advs").click(function(){
+            localStorage.setItem("Id",'#Advs');
+        });
+        $("#Message").click(function(){
+            localStorage.setItem("Id",'#Message');
+        });
+        $("#System").click(function(){
+            localStorage.setItem("Id",'#System');
+        })
+      });
+      var id = localStorage.getItem("Id");
+      if(id)
+      {
+        $(id).addClass('active');
+      } 
+  </script>

@@ -1,0 +1,280 @@
+[ 2017-11-25T11:33:04+08:00 ] 114.83.117.78 /admin.php/Funds/Recharge/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_recharge` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_recharge` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_recharge` WHERE `dataFlag` = 0 ORDER BY `rechargeid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 10 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000256s ]
+
+[ 2017-11-25T11:33:55+08:00 ] 114.83.117.78 /admin.php/Funds/Recharge/rechargeUserPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined variable: data /home/www/hqjhc/backend/Runtime/Cache/Funds/26b89ed1a8a9078d6533e47a55955e39.php 第 580 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000236s ]
+
+[ 2017-11-25T11:34:05+08:00 ] 114.83.117.78 /admin.php/Funds/Recharge/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_recharge` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_recharge` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_recharge` WHERE `dataFlag` = 0 ORDER BY `rechargeid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 10 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000250s ]
+
+[ 2017-11-25T11:34:10+08:00 ] 114.83.117.78 /admin.php/Funds/Userslogsmoneys/getentrance.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_logs_recharge` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_logs_recharge` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_logs_recharge` ORDER BY `log_rechargeid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000239s ]
+
+[ 2017-11-25T11:34:25+08:00 ] 114.83.117.78 /admin.php/Funds/Recharge/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_recharge` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_recharge` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_recharge` WHERE `dataFlag` = 0 ORDER BY `rechargeid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 10 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Funds/Controller/RechargeController.class.php 第 45 行.
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000241s ]
+
+[ 2017-11-25T11:38:00+08:00 ] 114.83.117.78 /admin.php/Funds/Userslogsmoneys/getentrance.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_logs_recharge` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_logs_recharge` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_logs_recharge` ORDER BY `log_rechargeid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000237s ]
+
+[ 2017-11-25T11:38:14+08:00 ] 114.83.117.78 /admin.php/Funds/Userslogsmoneys/getentrance.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_logs_recharge` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_logs_recharge` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_logs_recharge` ORDER BY `log_rechargeid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000255s ]
+

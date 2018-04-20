@@ -1,0 +1,139 @@
+<style type="text/css">
+a{
+  color:#b8c7ce;
+}
+.active{
+    display:block;
+}
+</style>
+<aside class="main-sidebar" style="background:#1e282c;color:#1e282c">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="{$Think.const.ROOT_URL}/Public/backend/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>供货商{$data.loginname}</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+      <!-- search form -->
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">MAIN NAVIGATION</li>
+        <li id="Product" class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>产品管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul id="aticles" class="treeview-menu">
+            <li><a href="{:U('Product/Index/index')}"><i class="fa fa-circle-o"></i>产品列表</a></li>
+          </ul>
+        </li>
+        <li id="Orders" class="treeview">
+          <a href="#">
+            <i class="fa fa-files-o"></i>
+            <span>订单管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul id="products" class="treeview-menu">
+            <li><a href="{:U('Order/Index/index')}" class="pre"><i class="fa fa-circle-o"></i>订单列表</a></li>
+          </ul>
+        </li>
+         <li id="Orders" class="treeview">
+          <a href="#">
+            <i class="fa fa-files-o"></i>
+            <span>退货/退款</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul id="products" class="treeview-menu">
+            <li><a href="{:U('Orderaf/Index/index')}"><i class="fa fa-circle-o"></i>退货退款列表</a></li>
+          </ul>
+        </li>
+        <li id="Offers" class="treeview">
+          <a href="#">
+            <i class="fa fa-industry"></i>
+            <span>资料信息</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{:U('Offers/Index/index')}"><i class="fa fa-circle-o"></i>资料信息</a></li>
+            <li><a href="{:U('Offers/Index/resetpwdpage')}"><i class="fa fa-circle-o"></i>修改密码</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+<script src="{$Think.const.ROOT_URL}/Public/backend/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+      $(document).ready(function(){
+        $("#Article").click(function(){
+            localStorage.setItem("Id", '#Article');
+        });
+        $("#Product").click(function(){
+            localStorage.setItem("Id", '#Product');
+        });
+        $("#Admin").click(function(){
+            localStorage.setItem("Id", '#Admin');
+        });
+        $("#Offers").click(function(){
+            localStorage.setItem("Id", '#Offers');
+        });
+        $("#WechatBus").click(function(){
+            localStorage.setItem("Id", '#WechatBus');
+        });
+        $("#Orders").click(function(){
+            localStorage.setItem("Id", '#Orders');
+        });
+        $("#Voucher").click(function(){
+            localStorage.setItem("Id", '#Voucher');
+        });
+        $("#Express").click(function(){
+            localStorage.setItem("Id", '#Express');
+        });
+        $("#Fund").click(function(){
+            localStorage.setItem("Id", '#Fund');
+        });
+        $("#Logs").click(function(){
+            localStorage.setItem("Id", '#Logs');
+        });
+        $("#ProductGrade").click(function(){
+            localStorage.setItem("Id",'#ProductGrade');
+        });
+        $("#Advs").click(function(){
+            localStorage.setItem("Id",'#Advs');
+        });
+        $("#Message").click(function(){
+            localStorage.setItem("Id",'#Message');
+        });
+        $("#System").click(function(){
+            localStorage.setItem("Id",'#System');
+        })
+      });
+      var id = localStorage.getItem("Id");
+      if(id)
+      {
+        $(id).addClass('active');
+      } 
+  </script>

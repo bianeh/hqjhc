@@ -1,0 +1,143 @@
+  <include file="Layout@Index:header" />
+  <include file="Layout@Index:nav" />
+  <script type="text/javascript" charset="utf-8" src="{$Think.const.ROOT_URL}/Public/common/plugins/editor/ueditor.config.js"></script>
+  <script type="text/javascript" charset="utf-8" src="{$Think.const.ROOT_URL}/Public/common/plugins/editor/ueditor.all.min.js"> </script>
+  <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+  <script type="text/javascript" charset="utf-8" src="{$Think.const.ROOT_URL}/Public/common/plugins/editor/lang/zh-cn/zh-cn.js"></script>
+  <!-- Left side column. contains the logo and sidebar -->
+  <!-- Left side column. contains the logo and sidebar -->
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        文章编辑
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台</a></li>
+        <li><a href="{:U('Article/Index/index')}">文章管理</a></li>
+        <li class="active">编辑文章</li>
+      </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">文章编辑</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="box box-warning">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <form role="form" id="updateArticle" method="post" action="{:U('Article/Index/doUpdateArticle')}">
+                <!-- text input -->
+                <div class="form-group">
+                  <label>标题</label>
+                  <input type="text"  value="{$info.articletitle}" name="articleTitle" class="form-control" placeholder="标题">
+                </div>
+                <div class="form-group">
+                  <label>关键字</label>
+                  <input type="text"  value="{$info.articlekey}" name="articleKey" class="form-control" placeholder="关键字">
+                </div>
+                 <div class="form-group">
+                  <label>来源</label>
+                  <input type="text"  value="{$info.articlesource}" name="articleSource" class="form-control" placeholder="来源">
+                </div>
+                <div class="form-group">
+                  <label>缩略图</label>
+                  <input name="uploadfile" onchange="readyup()" id="file" multiple="" type="file" class="form-control">
+                  <div style="width:100px;height:80px;background: #dddddd;margin-top:3px">
+                      <img id="img1" height="80px" width="100px" <if condition="$info['articleimg'] eq ''"> src="{$Think.const.ROOT_URL}/Public/backend/dist/img/boxed-bg.jpg" <else/>src="{$Think.const.DATA_URL}/{$info.articleimg}" </if>   />
+                  </div>
+                  <input type="hidden" name="articleImg" value="{$info.articleimg}"/>
+                </div>
+                <div class="form-group">
+                  <label>文章分类</label>
+                  <select multiple="" name="catid" class="form-control">
+                    <?php foreach ($articlecatslist as $val){ 
+                    ?>
+                    <option <?php $catid = $val['catid'];$acatid = $info['catid'];if($acatid ==  $catid) echo "selected" ?> value="<?php echo $val['catid'] ?>">
+                       <?php echo $val['html'];echo $val['catname'] ?>
+                    </option>
+                    <?php }?>
+                  </select>
+                </div>
+                 <div class="form-group">
+                  <label>文章内容</label>
+                  <script id="editor" name="articleContent" type="text/plain" style="width:100%;height:500px;"> <div>{$info.articlecontent|htmlspecialchars_decode} </div></script>
+                </div>
+                
+              <div class="form-group">
+                  <label>
+                  是否显示
+                  </label>
+                  <input type="radio" <?php $isShow = $val['isshow'];if($isShow ==  0) echo "checked" ?> value='0'  name="isShow"  />是
+                  <input type="radio" <?php $isShow = $val['isshow'];if($isShow ==  1) echo "checked" ?> value='1'  name="isShow" />否
+              </div>
+                <input type="hidden" name="updatestaffid" value='{$data.stffid}'/>
+                <input type="hidden" name="articleid" value="{$info.articleid}" />
+              </form>
+                <div class="form-group">
+                    <button id="updateArticleOperate" class="btn bg-olive btn-flat margin"><i class="fa fa-fw fa-edit"></i>编辑</button>
+                </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <include file="Layout@Index:footer"/>
+  <!-- 全局js -->
+  <script src="{$Think.const.ROOT_URL}/Public/common/js/bootstrap.min.js?v=3.3.6"></script>
+  <script src="{$Think.const.ROOT_URL}/Public/common/js/ajaxfileupload.js"></script>
+ <script>
+    var ue = UE.getEditor('editor');
+    var updateArticleOperate = document.getElementById("updateArticleOperate");
+    updateArticleOperate.onclick=function()
+    {     
+          document.getElementById("updateArticle").submit();
+    }
+  </script>
+  <script>
+      function readyup()
+    {
+            ajaxFileUpload();
+    }
+    function ajaxFileUpload() {
+            $.ajaxFileUpload
+            (
+                    {
+                        url: "{:U('Upload/Index/upload')}", //用于文件上传的服务器端请求地址
+                        secureuri: false, //是否需要安全协议，一般设置为false
+                        fileElementId: 'file', //文件上传域的ID
+                        dataType: 'json', //返回值类型 一般设置为json
+                        success: function (data, status)  //服务器成功响应处理函数
+                        {
+                           var code = data['code'];
+                           if(code == '000002')
+                           {
+                               $("#img1").attr("src", data.showimgurl);
+                               $(":input[name=articleImg]").val(data.imgurl);
+                           }
+                        },
+                        error: function (data, status, e)//服务器响应失败处理函数
+                        {
+                          alert(data.msg);
+                        }
+                    }
+            )
+            return false;
+        }
+  </script>

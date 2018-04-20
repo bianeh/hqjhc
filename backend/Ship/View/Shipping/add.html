@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport"
+	content="width=device-width,initial-scale=1,user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>添加运费</title>
+<link href="../../../Public/backend/ship/css/WdatePicker.css" rel="stylesheet">
+
+<link href="../../../Public/backend/ship/css/bootstrap.css" rel="stylesheet">
+<link href="../../../Public/backend/ship/css/animate.css" rel="stylesheet">
+
+<link href="../../../Public/backend/ship/css/wbox.css" rel="stylesheet">
+<link href="../../../Public/backend/ship/css/style.css" rel="stylesheet">
+<script type="text/javascript" src="../../../Public/backend/ship/js/jquery.js"></script>
+<script src="../../../Public/backend/ship/js/bootstrap.min.js"></script>
+<script src="../../../Public/backend/ship/js/script.js"></script>
+
+<style type="text/css">
+.mapbtn {
+	padding: 8px 15px;
+	background: #00A0E9;
+	color: #fff;
+	border-radius: 3px;
+}
+#areaAdd{
+	text-align: center;
+	margin-top: 20px;
+}
+.hide_body{
+	width: 100%; 
+	height: aoto; 
+	float: left; 
+	font-size: 14px; 
+	text-align: left;
+}
+.diqu{
+	outline: none; 
+	border: 0; 
+	width:500px;
+	overflow:hidden
+}
+.default{
+	display: inline-block;
+	width:110px;
+	
+
+}
+.default1{
+	display: inline-block;
+	width:80px;
+	
+}
+.btn:hover{
+	background-color: #0893E6;
+}
+
+
+</style>
+</head>
+<body>
+	<div class="place">
+		<span>位置：</span>
+		<ul class="placeul">
+			<li><a href="#">运费模板管理</a></li>
+			<li><a href="#">添加运费</a></li>
+		</ul>
+	</div>
+	<div class="formbody">
+		<div class="formtitle">
+			<span>添加运费：</span>
+		</div>
+		<form action="{:U('Ibgadmin/Shipping/add')}" class="manageform" method="post">
+			
+			<!-- 商品id -->
+			<input type="hidden" name="goods_id" value="{$goods_id}" class="dfinput" />
+			<!-- 店铺id -->
+			<input type="hidden" name="shop_id" value="{$shop_id}" class="dfinput" />
+			<!-- 模板ID -->
+			<input type="hidden" name="template_id" value="{$template_list.template_id}" class="dfinput" />
+			
+			<p style="margin: 10px 0px;font-weight: 600;">默认（除指定地区外）</p>
+			<span class="default1">首费：</span>
+			<input type="text" name="item[default_num]"  value="{$template_list.default.default_num}" class="dfinput" />&ensp;
+			<span class="default">件商品内,运费:</span>
+			<input type="text"  name="item[default_fee]"  value="{$template_list.default.default_fee}" class="dfinput" />
+			<span class="default">元</span><br /><br />
+			<span class="default1">续费：每增加</span>
+			<input type="text" name="item[other_num]"  value="{$template_list.default.other_num}" class="dfinput" />&ensp;
+			<span class="default">件商品,运费增加:</span>
+			<input type="text"  name="item[other_fee]"  value="{$template_list.default.other_fee}" class="dfinput" />
+			<span class="default">元</span>
+			
+			<volist name="template_list.other" id="oth">
+					<div>
+						<div style="margin: 10px 0px;font-weight: 600;">指定地区运费：</div>
+						<p style="margin-bottom: 10px;"><textarea id="area{$i}" name="area[names][]" rows="1" class="diqu">{$oth.area_name}</textarea>
+							<input type="hidden" id="area{$i}id" name="area[areas][]" value="{$oth.area_id}" >  
+							<a href="#myModal2" role="button" class="btn btn-default" data-toggle="modal" onclick="fn(this)">编辑区域</a>  
+							<input class="btn" type="reset" value="删除" onclick="removeDiv(this)"/>
+						</p>
+						<span class="default1">首费：</span>
+						<input type="text" name="area[default_num][]"  value="{$oth.default_num}" class="dfinput" />&ensp;
+						<span class="default">件商品内,运费:</span>
+						<input type="text"  name="area[default_fee][]"  value="{$oth.default_fee}" class="dfinput" />
+						<span class="default">元</span><br /><br />
+						<span class="default1">续费：每增加</span>
+						<input type="text" name="area[other_num][]"  value="{$oth.other_num}" class="dfinput" />&ensp;
+						<span class="default">件商品,运费增加:</span>
+						<input type="text"  name="area[other_fee][]"  value="{$oth.other_fee}" class="dfinput" />
+						<span class="default">元</span>
+					</div>
+				</volist>
+			
+			<p  id="areaAdd">
+				<input class="btn" id="add" type="button" value="添加指定区域" onclick="addArea()"/>
+				<input class="btn" type="submit" value="确认修改" />
+            </p>
+		</form>
+	</div>
+<div id="myModal2" class="modal" data-easein="fadeInRight" data-easeout="fadeOutRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top:20%";>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">选择运送地区</h4>
+            </div>
+            <div class="modal-body">
+			   <div class="hide_body" >
+
+		      </div>
+            </div>
+            <div class="modal-footer" style="border:0px;">
+              <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
+              <button class="btn btn-primary" onclick="closeDiv()" data-dismiss="modal" aria-hidden="true">确认</button>
+          </div>
+        </div>
+        </div>
+      </div>
+     <script type="text/javascript">
+     var astr ="{$template_list.other_size}";
+     var a    = parseInt(astr);
+     
+     var m =0;
+$(function(){
+		//ajax获取区域列表
+		$.ajax({
+		type : "GET",
+		url : "<?php echo U('Ibgadmin/Shipping/getArea') ?>",
+		dataType : "json",
+		success : function(data)
+		{
+			var html = '';
+			$(data).each(function(k,v){
+				html += '<p style="line-height:30px;"><input type="checkbox" onclick="checkAll(this)" value="0"><span style="font-weight:bold;display:inline;">'+v.large_area_name+"</span>&ensp;&ensp;&ensp;&ensp;";
+				  for(var i =0;i<v.arr_child.length;i++){
+					  html += '<input type="checkbox" name=chk value="'+v.arr_child[i]+"-"+v.arr_child_name[i]+'">'+v.arr_child_name[i]+"&ensp;&ensp;&ensp;"
+				  }
+				html +='</p>'
+			})
+			$('.hide_body').html(html);
+
+		}
+	});
+  })
+function addArea(){
+	a++;
+	var str = '<div><div style="margin: 10px 0px;font-weight: 600;">指定地区运费：</div><p style="margin-bottom: 10px;"><textarea id="area'+a+'" name="area[names][]" value=""   rows="1" class="diqu"></textarea><input type="hidden" id="area'+a+'id" name="area[areas][]" value="" >  <a href="#myModal2" role="button" class="btn btn-default" data-toggle="modal" onclick="fn(this)">编辑区域</a>  <input class="btn" type="reset" value="删除" onclick="removeDiv(this)"/></p><span class="default1">首费：</span><input type="text" name="area[default_num][]"  value="" class="dfinput" />&ensp;<span class="default">件商品内,运费:</span><input type="text"  name="area[default_fee][]"  value="" class="dfinput" /><span class="default">元</span><br /><br /><span class="default1">续费：每增加</span><input type="text" name="area[other_num][]"  value="" class="dfinput" />&ensp;<span class="default">件商品,运费增加:</span><input type="text"  name="area[other_fee][]"  value="" class="dfinput" /><span class="default">元</span></div>';
+	$("#areaAdd").before(str);
+}
+function removeDiv(e){
+        $(e).parent().parent().remove();
+    }
+ function checkAll(obj){
+	$(obj).parent().find('input').prop('checked', $(obj).prop('checked'));
+					}
+function fn(e){
+	 m = $(e).parent().find('textarea').attr('id');
+	 /* 判断选中和禁用 */
+	 var xuanzhong_id = $(e).parent().find('input').eq(0).val();
+	 var quanbuyixuan_id = $("input[name='area[areas][]']").map(function(index,elem) {
+		 if(($(elem).val())!=''){
+			 return $(elem).val()
+		 }
+		}).get().join(',');
+	/* 选中的地区*/
+	var arr=new Array();
+	arr=xuanzhong_id.split(',');
+   $("input:checkbox").each(function(){
+		 this.checked=false;
+		 var $e=$(this);
+		 var id=$e.val().split('-')[0];
+		 for(i=0;i<arr.length;i++){
+			  if(arr[i]==id){
+				  this.checked=true;
+				  $e.removeAttr("disabled");
+			  }
+			 }
+	 })
+	 
+	/* 禁用的地区*/ 	 
+	var arr2=new Array();
+	 arr2=quanbuyixuan_id.split(',');
+   $("input:checkbox[name='chk']").each(function(){
+		 var $e=$(this);
+		 var id=$e.val().split('-')[0];
+		 for(i=0;i<arr2.length;i++){
+			  if(arr2[i]==id){
+				  if(this.checked!=true){
+						$e.attr("disabled","disabled");
+						$e.parent().find('input').eq(0).prop("disabled","disabled");
+					 };
+			  }
+			 }
+	 })
+}
+
+
+
+
+function closeDiv(){
+		text = $("input:checkbox[name='chk']:checked").map(function(index,elem) {
+            return $(elem).val().split('-')[1]
+			}).get().join(',');
+		textId = $("input:checkbox[name='chk']:checked").map(function(index,elem) {
+               return $(elem).val().split('-')[0]
+			}).get().join(',');
+			$('#'+m).val(text);
+		    $('#'+m+'id').val(textId);
+		}
+</script>
+</body>
+</html>

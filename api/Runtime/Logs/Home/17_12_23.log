@@ -1,0 +1,135 @@
+[ 2017-12-23T13:33:20+08:00 ] 101.81.0.88 /api.php/Home/Deal/wechat_do_single_deal?loginName=18701791750&orderno=2017122399535249&num=1&price=0.01&addressid=6&method=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = '18701791750' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = '18701791750' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_order_settlement` [ RunTime:0.0005s ]
+SQL: INSERT INTO `hqjhc_order_settlement` (`orderno`,`otherorderno`,`actualpayMoney`,`userid`,`payType`,`createTime`,`datasrc`,`remarks`,`status`) VALUES ('2017122348555553','2017122399535249','0.01','29','1','2017-12-23 13:33:20','2','微信线上订单交易！','0') [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: UPDATE `hqjhc_orders` SET `addressid`='6' WHERE `orderNo` = '2017122399535249' [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2017-12-23T13:34:00+08:00 ] 101.81.0.88 /api.php/Home/Deal/wechat_do_single_deal?loginName=18701791750&orderno=2017122399535249&num=1&price=0.01&addressid=6&method=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = '18701791750' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = '18701791750' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_order_settlement` [ RunTime:0.0003s ]
+SQL: INSERT INTO `hqjhc_order_settlement` (`orderno`,`otherorderno`,`actualpayMoney`,`userid`,`payType`,`createTime`,`datasrc`,`remarks`,`status`) VALUES ('2017122356551005','2017122399535249','0.01','29','1','2017-12-23 13:34:00','2','微信线上订单交易！','0') [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: UPDATE `hqjhc_orders` SET `addressid`='6' WHERE `orderNo` = '2017122399535249' [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2017-12-23T13:45:56+08:00 ] 101.81.0.88 /api.php/Home/Deal/zfb_do_single_deal?loginName=18701791750&orderno=2017122399535249&num=1&price=0.01&addressid=6&method=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = '18701791750' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = '18701791750' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_order_settlement` [ RunTime:0.0003s ]
+SQL: INSERT INTO `hqjhc_order_settlement` (`orderno`,`otherorderno`,`actualpayMoney`,`userid`,`payType`,`createTime`,`datasrc`,`remarks`,`status`) VALUES ('2017122352545610','2017122399535249','0.01','29','1','2017-12-23 13:45:56','1','支付宝线上订单交易！','0') [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: UPDATE `hqjhc_orders` SET `addressid`='6' WHERE `orderNo` = '2017122399535249' [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000260s ]
+
+[ 2017-12-23T13:46:21+08:00 ] 101.81.0.88 /api.php/Home/Deal/zfb_do_single_deal?loginName=18701791750&orderno=2017122399535249&num=1&price=0.01&addressid=6&method=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = '18701791750' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = '18701791750' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_order_settlement` [ RunTime:0.0003s ]
+SQL: INSERT INTO `hqjhc_order_settlement` (`orderno`,`otherorderno`,`actualpayMoney`,`userid`,`payType`,`createTime`,`datasrc`,`remarks`,`status`) VALUES ('2017122310054489','2017122399535249','0.01','29','1','2017-12-23 13:46:21','1','支付宝线上订单交易！','0') [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0062s ]
+SQL: UPDATE `hqjhc_orders` SET `addressid`='6' WHERE `orderNo` = '2017122399535249' [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000284s ]
+
+[ 2017-12-23T13:46:35+08:00 ] 203.209.234.134 /api.php/Home/Deal/zfbnotify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_order_settlement` [ RunTime:0.0005s ]
+SQL: UPDATE `hqjhc_order_settlement` SET `status`='1' WHERE `orderno` = '2017122310054489' [ RunTime:0.0033s ]
+SQL: SELECT * FROM `hqjhc_order_settlement` WHERE `orderno` = '2017122310054489' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: UPDATE `hqjhc_orders` SET `orderStatus`='1',`applystatus`='1',`payTime`='2017-12-23 13:46:35' WHERE `orderNo` = '2017122399535249' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hqjhc_orders` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_logs_moneys` [ RunTime:0.0003s ]
+SQL: INSERT INTO `hqjhc_logs_moneys` (`amount`,`moneyType`,`accessType`,`orderNo`,`createTime`,`datasource`,`userid`,`otherOrderno`) VALUES ('0.01','1','2','2017122398495510','2017-12-23 13:46:35','4','29','2017122399535249') [ RunTime:0.0028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000286s ]
+
+[ 2017-12-23T13:47:38+08:00 ] 101.81.0.88 /api.php/Home/Deal/zfb_do_single_deal?loginName=18701791750&orderno=2017122399535249&num=1&price=0.01&addressid=6&method=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `loginName` = '18701791750' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `loginName` = '18701791750' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_order_settlement` [ RunTime:0.0004s ]
+SQL: INSERT INTO `hqjhc_order_settlement` (`orderno`,`otherorderno`,`actualpayMoney`,`userid`,`payType`,`createTime`,`datasrc`,`remarks`,`status`) VALUES ('2017122397561025','2017122399535249','0.01','29','1','2017-12-23 13:47:38','1','支付宝线上订单交易！','0') [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: UPDATE `hqjhc_orders` SET `addressid`='6' WHERE `orderNo` = '2017122399535249' [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-12-23T13:47:50+08:00 ] 203.209.234.44 /api.php/Home/Deal/zfbnotify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_order_settlement` [ RunTime:0.0011s ]
+SQL: UPDATE `hqjhc_order_settlement` SET `status`='1' WHERE `orderno` = '2017122397561025' [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hqjhc_order_settlement` WHERE `orderno` = '2017122397561025' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: UPDATE `hqjhc_orders` SET `orderStatus`='1',`applystatus`='1',`payTime`='2017-12-23 13:47:50' WHERE `orderNo` = '2017122399535249' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hqjhc_orders` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_logs_moneys` [ RunTime:0.0009s ]
+SQL: INSERT INTO `hqjhc_logs_moneys` (`amount`,`moneyType`,`accessType`,`orderNo`,`createTime`,`datasource`,`userid`,`otherOrderno`) VALUES ('0.01','1','2','2017122354100545','2017-12-23 13:47:50','4','29','2017122399535249') [ RunTime:0.0027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000272s ]
+

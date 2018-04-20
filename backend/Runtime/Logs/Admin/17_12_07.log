@@ -1,0 +1,425 @@
+[ 2017-12-07T18:47:42+08:00 ] 101.81.0.88 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000256s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_staffs` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `dataFlag` = 0 ORDER BY `stffid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Admin/a4757d518f99ac5a2cf27270b287e37a.php 第 244 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000236s ]
+
+[ 2017-12-07T18:47:43+08:00 ] 101.81.0.88 /admin.php/Admin/Roles/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_roles` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_roles` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_roles` ORDER BY `roleid` desc LIMIT 0,10   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined variable: data /home/www/hqjhc/backend/Runtime/Cache/Admin/f9c9f38e1d2cbec903108c9c0c1ea6f4.php 第 172 行.
+NOTIC: [8] Undefined variable: data /home/www/hqjhc/backend/Runtime/Cache/Admin/f9c9f38e1d2cbec903108c9c0c1ea6f4.php 第 180 行.
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Admin/f9c9f38e1d2cbec903108c9c0c1ea6f4.php 第 244 行.
+NOTIC: [8] Undefined variable: data /home/www/hqjhc/backend/Runtime/Cache/Admin/f9c9f38e1d2cbec903108c9c0c1ea6f4.php 第 246 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000254s ]
+
+[ 2017-12-07T18:47:45+08:00 ] 101.81.0.88 /admin.php/Admin/Privileges/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_privileges` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_privileges` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_privileges` WHERE `dataFlag` = 0 ORDER BY `privilegeid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 244 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000235s ]
+
+[ 2017-12-07T18:47:48+08:00 ] 101.81.0.88 /admin.php/Admin/Privileges/index/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_privileges` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_privileges` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_privileges` WHERE `dataFlag` = 0 ORDER BY `privilegeid` desc LIMIT 60,15   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 244 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000247s ]
+
+[ 2017-12-07T18:47:49+08:00 ] 101.81.0.88 /admin.php/Admin/Privileges/index/p/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_privileges` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_privileges` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_privileges` WHERE `dataFlag` = 0 ORDER BY `privilegeid` desc LIMIT 75,15   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 244 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+NOTIC: [8] Undefined index: privilegedesc /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 589 行.
+NOTIC: [8] Undefined index: createTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 590 行.
+NOTIC: [8] Undefined index: createid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 591 行.
+NOTIC: [8] Undefined index: updateTime /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 592 行.
+NOTIC: [8] Undefined index: updateid /home/www/hqjhc/backend/Runtime/Cache/Admin/f14021a25d9ca198123b9e4097bd022b.php 第 593 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000236s ]
+
+[ 2017-12-07T18:47:52+08:00 ] 101.226.33.239 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-12-07T18:47:58+08:00 ] 101.226.33.204 /admin.php/Admin/Privileges/index/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-12-07T18:50:23+08:00 ] 101.81.0.88 /admin.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_staffs` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `dataFlag` = 0 ORDER BY `stffid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Admin/a4757d518f99ac5a2cf27270b287e37a.php 第 244 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000253s ]
+

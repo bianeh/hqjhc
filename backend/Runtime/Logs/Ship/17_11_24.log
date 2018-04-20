@@ -1,0 +1,1483 @@
+[ 2017-11-24T16:25:12+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: template_name /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 13 行.
+NOTIC: [8] Undefined index: price_way /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 20 行.
+NOTIC: [8] Undefined index: start_add_time /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 28 行.
+NOTIC: [8] Undefined index: end_add_time /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 37 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods_template` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_goods_template` WHERE `status` = 1 ORDER BY price_way LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `hqjhc_area` [ RunTime:0.0003s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=54 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=532 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=91 and is_default=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=38 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=418 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=92 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=39 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=424 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=93 and is_default=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=56 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=551 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=94 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=46 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=469 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=95 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=38 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=418 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=96 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=5 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=65 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=627 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=97 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=6 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=79 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=718 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=98 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 630 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 631 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 632 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 633 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 634 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 635 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 636 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 637 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 638 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 640 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 645 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 648 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000261s ]
+
+[ 2017-11-24T16:25:18+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/98.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=98 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=98 ) ORDER BY shipping_way  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+NOTIC: [8] Use of undefined constant create_date - assumed 'create_date' /home/www/hqjhc/backend/Runtime/Cache/Ship/eba5a64224fd618cbdf5c32d56cf29fb.php 第 30 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000258s ]
+
+[ 2017-11-24T16:25:18+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__CSS__/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__CSS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__CSS__ ) LIMIT 1  
+ERR: 1054:Unknown column '__CSS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__CSS__ ) LIMIT 1  
+
+[ 2017-11-24T16:25:18+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__CSS__/WdatePicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__CSS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__CSS__ ) LIMIT 1  
+ERR: 1054:Unknown column '__CSS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__CSS__ ) LIMIT 1  
+
+[ 2017-11-24T16:25:18+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__JS__/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__JS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__JS__ ) LIMIT 1  
+ERR: 1054:Unknown column '__JS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__JS__ ) LIMIT 1  
+
+[ 2017-11-24T16:25:18+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__DATEP__/WdatePicker.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__DATEP__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__DATEP__ ) LIMIT 1  
+ERR: 1054:Unknown column '__DATEP__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__DATEP__ ) LIMIT 1  
+
+[ 2017-11-24T16:25:18+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__DATEP__/WdatePicker.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0004s ]
+ERR: 1054:Unknown column '__DATEP__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__DATEP__ ) LIMIT 1  
+ERR: 1054:Unknown column '__DATEP__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__DATEP__ ) LIMIT 1  
+
+[ 2017-11-24T16:25:22+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/98.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=98 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=98 ) ORDER BY shipping_way  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+NOTIC: [8] Use of undefined constant create_date - assumed 'create_date' /home/www/hqjhc/backend/Runtime/Cache/Ship/eba5a64224fd618cbdf5c32d56cf29fb.php 第 30 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000250s ]
+
+[ 2017-11-24T16:25:22+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__CSS__/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__CSS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__CSS__ ) LIMIT 1  
+ERR: 1054:Unknown column '__CSS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__CSS__ ) LIMIT 1  
+
+[ 2017-11-24T16:25:22+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__JS__/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__JS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__JS__ ) LIMIT 1  
+ERR: 1054:Unknown column '__JS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__JS__ ) LIMIT 1  
+
+[ 2017-11-24T16:25:22+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__CSS__/WdatePicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__CSS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__CSS__ ) LIMIT 1  
+ERR: 1054:Unknown column '__CSS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__CSS__ ) LIMIT 1  
+
+[ 2017-11-24T16:25:22+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__DATEP__/WdatePicker.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__DATEP__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__DATEP__ ) LIMIT 1  
+ERR: 1054:Unknown column '__DATEP__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__DATEP__ ) LIMIT 1  
+
+[ 2017-11-24T16:25:22+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__DATEP__/WdatePicker.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__DATEP__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__DATEP__ ) LIMIT 1  
+ERR: 1054:Unknown column '__DATEP__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__DATEP__ ) LIMIT 1  
+
+[ 2017-11-24T16:26:05+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/delete/template_id/98.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 444 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 444 行.
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 446 行.
+NOTIC: [8] Use of undefined constant update_date - assumed 'update_date' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 447 行.
+SQL: UPDATE `hqjhc_goods_template` SET `status`='0',`update_date`='1511511965' WHERE ( template_id=98 ) [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000032s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000250s ]
+
+[ 2017-11-24T16:26:06+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: template_name /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 13 行.
+NOTIC: [8] Undefined index: price_way /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 20 行.
+NOTIC: [8] Undefined index: start_add_time /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 28 行.
+NOTIC: [8] Undefined index: end_add_time /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 37 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods_template` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods_template` WHERE `status` = 1 ORDER BY price_way LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `hqjhc_area` [ RunTime:0.0003s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=54 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=532 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=91 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=38 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=418 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=92 and is_default=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=39 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=424 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=93 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=56 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=551 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=94 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=46 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=469 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=95 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=38 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=418 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=96 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=5 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=65 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=627 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=97 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 630 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 631 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 632 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 633 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 634 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 635 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 636 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 637 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 638 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 640 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 645 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 648 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000261s ]
+
+[ 2017-11-24T16:26:08+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_area` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: shop_id /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 173 行.
+SQL: SELECT * FROM `hqjhc_area` WHERE `region_type` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000269s ]
+
+[ 2017-11-24T16:26:51+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/getArea.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_larger_area` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_larger_area`  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000281s ]
+
+[ 2017-11-24T16:28:18+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000032s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+
+[ 2017-11-24T16:28:21+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_area` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: shop_id /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 173 行.
+SQL: SELECT * FROM `hqjhc_area` WHERE `region_type` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000274s ]
+
+[ 2017-11-24T16:28:22+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/getArea.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_larger_area` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_larger_area`  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000252s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000268s ]
+
+[ 2017-11-24T16:28:29+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: template_name /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 13 行.
+NOTIC: [8] Undefined index: price_way /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 20 行.
+NOTIC: [8] Undefined index: start_add_time /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 28 行.
+NOTIC: [8] Undefined index: end_add_time /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 37 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods_template` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods_template` WHERE `status` = 1 ORDER BY price_way LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `hqjhc_area` [ RunTime:0.0003s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=54 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=532 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=91 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=38 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=418 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=92 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=39 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=424 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=93 and is_default=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=56 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=551 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=94 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=46 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=469 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=95 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=38 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=418 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=96 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=5 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=65 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=627 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=97 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 630 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 631 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 632 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 633 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 634 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 635 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 636 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 637 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 638 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 640 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 645 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 648 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000260s ]
+
+[ 2017-11-24T16:28:31+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_area` [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: shop_id /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 173 行.
+SQL: SELECT * FROM `hqjhc_area` WHERE `region_type` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000255s ]
+
+[ 2017-11-24T16:28:31+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/getArea.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_larger_area` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_larger_area`  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000269s ]
+
+[ 2017-11-24T16:29:14+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+
+[ 2017-11-24T16:29:17+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_area` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: shop_id /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 173 行.
+SQL: SELECT * FROM `hqjhc_area` WHERE `region_type` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000267s ]
+
+[ 2017-11-24T16:29:18+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/getArea.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_larger_area` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_larger_area`  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000261s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000276s ]
+
+[ 2017-11-24T16:29:22+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/get_city.html?parent=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_area` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_area` WHERE ( parent_id=1 )  [ RunTime:0.0003s ]
+
+[ 2017-11-24T16:29:26+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/get_city.html?parent=25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_area` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_area` WHERE ( parent_id=25 )  [ RunTime:0.0002s ]
+
+[ 2017-11-24T16:29:27+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/get_city.html?parent=321
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_area` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_area` WHERE ( parent_id=321 )  [ RunTime:0.0002s ]
+
+[ 2017-11-24T16:30:01+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant area_name - assumed 'area_name' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 104 行.
+NOTIC: [8] Use of undefined constant area_id - assumed 'area_id' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 105 行.
+NOTIC: [8] Use of undefined constant is_default - assumed 'is_default' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 106 行.
+NOTIC: [8] Use of undefined constant create_date - assumed 'create_date' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 107 行.
+NOTIC: [8] Use of undefined constant create_by - assumed 'create_by' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 108 行.
+NOTIC: [8] Use of undefined constant area_id - assumed 'area_id' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 111 行.
+NOTIC: [8] Use of undefined constant area_id - assumed 'area_id' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 111 行.
+NOTIC: [8] Use of undefined constant first_num - assumed 'first_num' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant first_num - assumed 'first_num' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant first_num - assumed 'first_num' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant first_fee - assumed 'first_fee' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant first_fee - assumed 'first_fee' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant first_fee - assumed 'first_fee' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant continue_num - assumed 'continue_num' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 120 行.
+NOTIC: [8] Use of undefined constant continue_num - assumed 'continue_num' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 120 行.
+NOTIC: [8] Use of undefined constant continue_num - assumed 'continue_num' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 120 行.
+NOTIC: [8] Use of undefined constant continue_fee - assumed 'continue_fee' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 123 行.
+NOTIC: [8] Use of undefined constant continue_fee - assumed 'continue_fee' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 123 行.
+NOTIC: [8] Use of undefined constant continue_fee - assumed 'continue_fee' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 123 行.
+NOTIC: [8] Use of undefined constant is_default - assumed 'is_default' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 126 行.
+NOTIC: [8] Use of undefined constant create_date - assumed 'create_date' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant create_by - assumed 'create_by' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 128 行.
+NOTIC: [8] Use of undefined constant area_id - assumed 'area_id' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 111 行.
+NOTIC: [8] Use of undefined constant area_id - assumed 'area_id' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 111 行.
+NOTIC: [8] Use of undefined constant first_num - assumed 'first_num' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant first_num - assumed 'first_num' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant first_num - assumed 'first_num' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant first_fee - assumed 'first_fee' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant first_fee - assumed 'first_fee' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant first_fee - assumed 'first_fee' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 117 行.
+NOTIC: [8] Use of undefined constant continue_num - assumed 'continue_num' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 120 行.
+NOTIC: [8] Use of undefined constant continue_num - assumed 'continue_num' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 120 行.
+NOTIC: [8] Use of undefined constant continue_num - assumed 'continue_num' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 120 行.
+NOTIC: [8] Use of undefined constant continue_fee - assumed 'continue_fee' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 123 行.
+NOTIC: [8] Use of undefined constant continue_fee - assumed 'continue_fee' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 123 行.
+NOTIC: [8] Use of undefined constant continue_fee - assumed 'continue_fee' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 123 行.
+NOTIC: [8] Use of undefined constant is_default - assumed 'is_default' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 126 行.
+NOTIC: [8] Use of undefined constant create_date - assumed 'create_date' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant create_by - assumed 'create_by' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+SQL: INSERT INTO `hqjhc_goods_template` (`country`,`province`,`city`,`district`,`is_free`,`price_way`,`shipping_way`,`goods_id`,`shop_id`,`template_name`,`status`,`create_date`,`create_by`) VALUES ('1','25','321','2708','0','1','0','0','0','快递','1','1511512201',NULL) [ RunTime:0.0052s ]
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 152 行.
+SQL: INSERT INTO `hqjhc_shipping_way` (`shipping_way`,`area_id`,`is_default`,`first_num`,`first_fee`,`continue_num`,`continue_fee`,`area_name`,`create_date`,`template_id`) VALUES ('0','1','1','1','10','1','2','全国','1511512201','99') [ RunTime:0.0055s ]
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 156 行.
+SQL: INSERT INTO `hqjhc_shipping_way` (`area_name`,`area_id`,`is_default`,`shipping_way`,`first_num`,`first_fee`,`continue_num`,`continue_fee`,`create_date`,`template_id`) VALUES ('上海,江苏省,浙江省,安徽省,江西省,北京,天津,山西省,山东省,河北省,内蒙古自治区','25,16,31,3,17,2,27,23,22,10,19','0','0','1','10','1','1','1511512201','99') [ RunTime:0.0036s ]
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 156 行.
+SQL: INSERT INTO `hqjhc_shipping_way` (`area_name`,`area_id`,`is_default`,`shipping_way`,`first_num`,`first_fee`,`continue_num`,`continue_fee`,`create_date`,`template_id`) VALUES ('陕西省,新疆维吾尔自治区,甘肃省,宁夏回族自治区,青海省,重庆,云南省,贵州省,西藏自治区,四川省','24,29,5,20,21,32,30,8,28,26','0','0','1','2','1','1','1511512201','99') [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000270s ]
+
+[ 2017-11-24T16:30:03+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: template_name /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 13 行.
+NOTIC: [8] Undefined index: price_way /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 20 行.
+NOTIC: [8] Undefined index: start_add_time /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 28 行.
+NOTIC: [8] Undefined index: end_add_time /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 37 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods_template` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods_template` WHERE `status` = 1 ORDER BY price_way LIMIT 0,10   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `hqjhc_area` [ RunTime:0.0003s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=54 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=532 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=91 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=38 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=418 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=92 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=39 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=424 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=93 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=56 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=551 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=94 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=46 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=469 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=95 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=38 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=418 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=96 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=5 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=65 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=627 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=97 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=25 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=321 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=2708 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=99 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 630 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 631 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 632 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 633 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 634 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 635 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 636 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 637 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 638 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 640 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 645 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 648 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000256s ]
+
+[ 2017-11-24T16:30:07+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/99.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=99 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=99 ) ORDER BY shipping_way  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+NOTIC: [8] Use of undefined constant create_date - assumed 'create_date' /home/www/hqjhc/backend/Runtime/Cache/Ship/eba5a64224fd618cbdf5c32d56cf29fb.php 第 30 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000247s ]
+
+[ 2017-11-24T16:30:07+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__CSS__/WdatePicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__CSS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__CSS__ ) LIMIT 1  
+ERR: 1054:Unknown column '__CSS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__CSS__ ) LIMIT 1  
+
+[ 2017-11-24T16:30:07+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__JS__/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__JS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__JS__ ) LIMIT 1  
+ERR: 1054:Unknown column '__JS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__JS__ ) LIMIT 1  
+
+[ 2017-11-24T16:30:07+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__CSS__/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__CSS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__CSS__ ) LIMIT 1  
+ERR: 1054:Unknown column '__CSS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__CSS__ ) LIMIT 1  
+
+[ 2017-11-24T16:30:07+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__DATEP__/WdatePicker.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__DATEP__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__DATEP__ ) LIMIT 1  
+ERR: 1054:Unknown column '__DATEP__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__DATEP__ ) LIMIT 1  
+
+[ 2017-11-24T16:30:08+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__DATEP__/WdatePicker.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000259s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__DATEP__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__DATEP__ ) LIMIT 1  
+ERR: 1054:Unknown column '__DATEP__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__DATEP__ ) LIMIT 1  
+
+[ 2017-11-24T16:30:30+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/99.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=99 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=99 ) ORDER BY shipping_way  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+NOTIC: [8] Use of undefined constant create_date - assumed 'create_date' /home/www/hqjhc/backend/Runtime/Cache/Ship/eba5a64224fd618cbdf5c32d56cf29fb.php 第 30 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000262s ]
+
+[ 2017-11-24T16:30:30+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__CSS__/WdatePicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__CSS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__CSS__ ) LIMIT 1  
+ERR: 1054:Unknown column '__CSS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__CSS__ ) LIMIT 1  
+
+[ 2017-11-24T16:30:30+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__CSS__/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__CSS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__CSS__ ) LIMIT 1  
+ERR: 1054:Unknown column '__CSS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__CSS__ ) LIMIT 1  
+
+[ 2017-11-24T16:30:30+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__DATEP__/WdatePicker.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__DATEP__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__DATEP__ ) LIMIT 1  
+ERR: 1054:Unknown column '__DATEP__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__DATEP__ ) LIMIT 1  
+
+[ 2017-11-24T16:30:30+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__JS__/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__JS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__JS__ ) LIMIT 1  
+ERR: 1054:Unknown column '__JS__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__JS__ ) LIMIT 1  
+
+[ 2017-11-24T16:30:30+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/info/template_id/__DATEP__/WdatePicker.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+ERR: 1054:Unknown column '__DATEP__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__DATEP__ ) LIMIT 1  
+ERR: 1054:Unknown column '__DATEP__' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hqjhc_goods_template` WHERE ( template_id=__DATEP__ ) LIMIT 1  
+
+[ 2017-11-24T16:31:45+08:00 ] 101.81.120.60 /admin.php/Ship/Shipping/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: template_name /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 13 行.
+NOTIC: [8] Undefined index: price_way /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 20 行.
+NOTIC: [8] Undefined index: start_add_time /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 28 行.
+NOTIC: [8] Undefined index: end_add_time /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 37 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods_template` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods_template` WHERE `status` = 1 ORDER BY price_way LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_shipping_way` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `hqjhc_area` [ RunTime:0.0003s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=54 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=532 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=91 and is_default=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=38 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=418 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=92 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=39 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=424 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=93 and is_default=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=4 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=56 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=551 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=94 and is_default=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=46 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=469 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=95 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=38 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=418 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=96 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=5 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=65 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=627 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=97 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant country - assumed 'country' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 56 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant province - assumed 'province' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 57 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=25 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant city - assumed 'city' /home/www/hqjhc/backend/Ship/Controller/ShippingController.class.php 第 58 行.
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=321 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `region_name` FROM `hqjhc_area` WHERE ( region_id=2708 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_shipping_way` WHERE ( template_id=99 and is_default=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 624 行.
+NOTIC: [8] Use of undefined constant template_id - assumed 'template_id' /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 625 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 627 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 630 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 631 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 632 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 633 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 634 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 635 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 636 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 637 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 638 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 640 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 645 行.
+NOTIC: [8] Undefined variable: vo /home/www/hqjhc/backend/Runtime/Cache/Ship/529c4d375933c9f92131117ff931bbde.php 第 648 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000262s ]
+

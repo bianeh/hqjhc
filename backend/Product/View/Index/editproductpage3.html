@@ -1,0 +1,422 @@
+  <include file="Layout@Index:header" />
+  <include file="Layout@Index:nav" />
+  <script type="text/javascript" charset="utf-8" src="{$Think.const.ROOT_URL}/Public/common/plugins/editor/ueditor.config.js"></script>
+  <script type="text/javascript" charset="utf-8" src="{$Think.const.ROOT_URL}/Public/common/plugins/editor/ueditor.all.min.js"> </script>
+  <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+  <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+  <script type="text/javascript" charset="utf-8" src="{$Think.const.ROOT_URL}/Public/common/plugins/editor/lang/zh-cn/zh-cn.js"></script>
+  <style>
+  .form-group
+  {
+    margin-top: 1px;
+    margin-bottom:0px;
+  }
+  .br
+  {
+    height: 5px;
+  }
+  .xinhao{
+      color:red;
+  }
+  </style>
+  <div class="content-wrapper">
+    <section class="content-header">
+      <h1>
+        产品编辑
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台</a></li>
+        <li><a href="{:U('Product/Index/index')}">产品管理</a></li>
+        <li class="active">编辑产品</li>
+      </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">产品编辑</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="box box-warning">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <form role="form" id="editProduct" method="post" action="{:U('Product/Index/doEditProduct')}">
+                <!-- text input -->
+                <div class="form-group">
+                  <label>商品名称</label>
+                  <input type="text" id="name" value="{$info.name}" name="name" class="form-control" placeholder="商品名称">
+                </div>
+                 <div class="form-group">
+                  <label>供货商昵称</label>
+                  <input type="text" id="offername" value="{$offersinfo.loginname}" name="offername" class="form-control" placeholder="供货商昵称">
+                </div>
+                <div class="form-group">
+                  <label>商品编号</label>
+                  <input type="text" id="code_num" value="{$info.code_num}" name="code_num" class="form-control" placeholder="商品编号">
+                </div>
+                <div class="form-group">
+                  <label>商品一级分类</label>
+                  <select multiple="" name="goodsCatIdfirst" class="form-control">
+                  <option value=''>请选择</option>
+                  <volist name="goodscatslist" id="vo">
+                       <option <if condition="$info['goodscatidfirst'] eq $vo['catid']"> selected <else/></if>class="goodscats" value="{$vo.catid}">{$vo.catname}</option>
+                  </volist>
+                  </select>
+                </div>
+                  <div class="form-group">
+                  <label>商品二级分类</label>
+                  <select multiple="" name="goodsCatIdmiddle" class="form-control childtwo">
+                       <volist name="goodscatsmiddlelist" id="vo">
+                       <option <if condition="$info['goodscatidmiddle'] eq $vo['catid']"> selected <else/></if>class="goodscatstwo" value="{$vo.catid}">{$vo.catname}</option>
+                       </volist>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>商品三级分类</label>
+                  <select multiple="" name="goodsCatIdlast" class="form-control childthree">
+                      <volist name="goodscatslastlist" id="vo">
+                       <option <if condition="$info['goodscatidlast'] eq $vo['catid']"> selected <else/></if> value="{$vo.catid}">{$vo.catname}</option>
+                      </volist>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>
+                  商品规格
+                  </label>
+                 <input type="hidden" value='1' name="isSpec" />
+              </div>
+              <div class="formspec row">
+               <div class="form-group spec">
+                    <div class="col-xs-12">
+                           <div class="col-xs-11">
+                           </div>
+                           <div class="col-xs-1">
+                           <button type="button" class="btn bg-olive btn-flat margin addspec"><i class="fa fa-fw fa-plus"></i>继续添加</button> 
+                           </div>
+                    </div>   
+               </div>
+               <div class="col-xs-12 br"></div>
+               <div class="col-xs-12">
+                    <div class="col-xs-2 ggtitle">
+                         <span><span class="xinhao">*</span>自定义规格（尺寸/颜色）</span>
+                  </div>
+                  <div class="col-xs-2 ggtitle">
+                         <span><span class="xinhao">*</span>自定义规格（尺寸/颜色）</span>
+                  </div>
+                  <div class="col-xs-1 ggtitle">
+                         <span><span class="xinhao">*</span>会员价格</span>
+                  </div>
+                  <div class="col-xs-1 ggtitle">
+                         <span><span class="xinhao">*</span>库存</span>
+                  </div>
+                  <div class="col-xs-1 ggtitle">
+                         <span>供货商价格</span>
+                  </div>
+                   <div class="col-xs-2 ggtitle">
+                         <span>商品条形码</span>
+                  </div>
+                   <div class="col-xs-2 ggtitle">
+                         <span>商品重量(kg)</span>
+                  </div>
+                  <div class="col-xs-1 ggtitle">
+                         <span>操作</span>
+                  </div>
+                     </div>
+               <volist name="goodsspecs" id="vo">
+                 <div class="col-xs-12 form-group spec">                     
+                  <div class="col-xs-2">
+                  <input type="text" class="form-control" value="{$vo.speca}" name="speca[]" placeholder="">
+                  </div>
+                  <div class="col-xs-2">
+                  <input type="text" class="form-control" value="{$vo.specb}" name="specb[]" placeholder="">
+                  </div>
+                  <div class="col-xs-1">
+                  <input type="text" class="form-control" value="{$vo.specprice}" name="specPrice[]" placeholder="">
+                  </div>
+                  <div class="col-xs-1">
+                  <input type="text" class="form-control" value="{$vo.specnum}" name="specnum[]" placeholder="">
+                  </div>
+                  <div class="col-xs-1">
+                  <input type="text" class="form-control" value="{$vo.offerprice}" name="offerPrice[]">
+                  </div>
+                  <div class="col-xs-2">
+                  <input type="text" class="form-control" value="{$vo.code}" name="code[]">
+                  </div>
+                  <div class="col-xs-2">
+                  <input type="text" class="form-control" value="{$vo.weight}" name="weight[]">
+                  </div>
+                  <div class="col-xs-1">
+                    <button type="button" class="btn-danger">删除</button> 
+                  </div>
+                 </div> 
+                </volist>            
+              </div>
+                <br>
+                 <div class="form-group">
+                  <label>商品市场价格</label>
+                  <input type="text" id="marketPrice" value="{$info.marketprice}" name="marketPrice" class="form-control" placeholder="商品市场价格">
+                </div>
+                <div class="form-group">
+                  <label>商品价格</label>
+                  <input type="text" id="goods_price" value="{$info.goods_price}" name="goods_price" class="form-control" placeholder="商品价格">
+                </div>
+                
+                <div class="form-group">
+                  <label>供货商价格</label>
+                  <input type="text" id="weight" value="{$info.offersprice}" name="offersPrice" class="form-control" placeholder="供货商价格">
+                </div>
+                
+                
+                 
+                
+                 <div class="form-group">
+                  <label>商品主图</label>
+                  <input name="display_img"  onchange="readyup(this)" id="display_img" multiple="" type="file" class="form-control">
+                  <div style="width:100px;height:80px;background: #dddddd;margin-top:3px">
+                      <img id="show_display_img" height="80px" width="100px" src="{$Think.const.DATA_URL}/{$info.goods_display_img}" />
+                  </div>
+                  <input type="hidden" name="goods_display_img" value="{$info.goods_display_img}"/>
+                </div>
+                <div class="form-group">
+                  <label>商品附图1</label>
+                  <input name="other_img1"  onchange="readyup(this)" id="other_img1" multiple="" type="file" class="form-control">
+                  <div style="width:100px;height:80px;background: #dddddd;margin-top:3px">
+                      <img id="show_other_img1" height="80px" width="100px" src="{$Think.const.DATA_URL}/{$info.goods_other_img1}" />
+                  </div>
+                  <input type="hidden" name="goods_other_img1" value="{$info.goods_other_img1}"/>
+                </div>
+                <div class="form-group">
+                  <label>商品附图2</label>
+                  <input name="other_img2"  onchange="readyup(this)" id="other_img2" multiple="" type="file" class="form-control">
+                  <div style="width:100px;height:80px;background: #dddddd;margin-top:3px">
+                      <img id="show_other_img2" height="80px" width="100px" src="{$Think.const.DATA_URL}/{$info.goods_other_img2}" />
+                  </div>
+                  <input type="hidden" name="goods_other_img2" value="{$info.goods_other_img2}"/>
+                </div>
+                <div class="form-group">
+                  <label>商品附图3</label>
+                  <input name="other_img3"  onchange="readyup(this)" id="other_img3" multiple="" type="file" class="form-control">
+                  <div style="width:100px;height:80px;background: #dddddd;margin-top:3px">
+                      <img id="show_other_img3" height="80px" width="100px" src="{$Think.const.DATA_URL}/{$info.goods_other_img3}" />
+                  </div>
+                  <input type="hidden" name="goods_other_img3" value="{$info.goods_other_img3}"/>
+                </div>
+                <div class="form-group">
+                  <label>商品附图4</label>
+                  <input name="other_img4"  onchange="readyup(this)" id="other_img4" multiple="" type="file" class="form-control">
+                  <div style="width:100px;height:80px;background: #dddddd;margin-top:3px">
+                      <img id="show_other_img4" height="80px" width="100px" src="{$Think.const.DATA_URL}/{$info.goods_other_img4}" />
+                  </div>
+                  <input type="hidden" name="goods_other_img4" value="{$info.goods_other_img4}"/>
+                </div>
+
+                <div class="form-group">
+                  <label>商品单位</label>
+                  <input type="text" id="unit" value="{$info.unit}" name="unit" class="form-control" placeholder="商品单位">
+                </div>
+                <div class="form-group">
+                  <label>单次最多购买数量</label>
+                  <input type="text" id="once_shop_maxnum" value="{$info.once_shop_maxnum}" name="once_shop_maxnum" class="form-control" placeholder="单次最多购买数量">
+                </div>
+                <div class="form-group">
+                  <label>个人最多购买数量</label>
+                  <input type="text" id="user_shop_maxnum" value="{$info.user_shop_maxnum}" name="user_shop_maxnum" class="form-control" placeholder="个人最多购买数量">
+                </div>
+                 <div class="form-group">
+                  <label>排序</label>
+                  <input type="text" id="sort" value="{$info.sort}" name="sort" class="form-control" placeholder="排序">
+                </div>
+               <div class="form-group">
+                  <label>
+                  是否包邮
+                  </label>
+                  <input type="radio" value='0' class="freight" name="freight"  <if condition="$info['freight'] eq 0">checked<else/></if>  />是
+                  <input type="radio" value='1' class="freight" name="freight"  <if condition="$info['freight'] eq 1">checked<else/></if>  />否
+              </div>
+                <div class="form-group freightmb" style="display:none">
+                  <label>运输模板</label>
+                  <select multiple="" name="templateid" class="form-control">
+                    <volist name="goodstemplatelist" id="vo">
+                    <option <if condition="$info['templateid'] eq $vo['template_id']"> selected <else/></if>value="{$vo.template_id}">{$vo.template_name}</option>
+                    </volist>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>商品品牌</label>
+                  <select multiple="" name="brandid" class="form-control">
+                    <volist name="brandslist" id="vo">
+                        <option <if condition="$info['brandid'] eq $vo['brandid']">selected<else/></if>
+                        value="{$vo.brandid}">{$vo.brandname}</option>
+                    </volist>
+                  </select>
+                </div>           
+                <div class="form-group">
+                  <label>商品类型</label>
+                  <select multiple="" name="type" class="form-control">
+                    <option>实体商品</option>
+                    <option>虚拟商品</option>
+                    <option>虚拟物品（卡密）</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>商品描述</label>
+                  <script id="editor" name="description" type="text/plain" style="width:100%;height:500px;">
+                  {$info.description|htmlspecialchars_decode}
+                  </script>
+                </div>
+                <div class="form-group">
+                  <label>
+                  是否精品
+                  </label>
+                  <input type="radio" value='1'  <if condition="$info['isbest'] eq 1">checked<else/></if>  
+                   name="isBest"  />是
+                  <input type="radio" value='0'  <if condition="$info['isbest'] eq 0">checked<else/></if> 
+                   name="isBest" />否
+              </div>
+              <div class="form-group">
+                  <label>
+                  是否新品
+                  </label>
+                  <input type="radio" value='1'  name="isNew" <if condition="$info['isnew'] eq 1">checked<else/></if>  />是
+                  <input type="radio" value='0'  name="isNew" <if condition="$info['isnew'] eq 0">checked<else/></if> />否
+              </div>
+              <div class="form-group">
+                  <label>
+                  是否推荐
+                  </label>
+                  <input type="radio" value='1'  name="isRecom" <if condition="$info['isrecom'] eq 1">checked<else/></if> />是
+                  <input type="radio" value='0'  name="isRecom" <if condition="$info['isrecom'] eq 0">checked<else/></if> />否
+              </div>
+              <input type="hidden" name="createstaffid" value='{$data.stffid}'/>
+              <input type="hidden" id="id" name="id" value="{$info.id}" />
+              </form>
+                <div class="form-group">
+                    <button id="editProductOperate" class="btn bg-olive btn-flat margin"><i class="fa fa-fw fa-edit"></i>编辑</button>
+                </div>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <include file="Layout@Index:footer"/>
+  <!-- 全局js -->
+  <script src="{$Think.const.ROOT_URL}/Public/common/js/jquery.min.js?v=2.1.4"></script>
+  <script src="{$Think.const.ROOT_URL}/Public/common/js/bootstrap.min.js?v=3.3.6"></script>
+  <script src="{$Think.const.ROOT_URL}/Public/common/js/ajaxfileupload.js"></script>
+ <script>
+    var ue = UE.getEditor('editor');
+    var editProductOperate = document.getElementById("editProductOperate");
+    editProductOperate.onclick=function()
+    {     
+          document.getElementById("editProduct").submit();
+    }
+    $(document).ready(function(){
+       $(".goodscats").click(function(){
+            var val = $(this).val();
+            $.ajax({
+             method:"POST",
+             url:"{:U('Product/Index/getgoodscatschild')}",
+             data:{catid:val}
+           }).done(function(msg){
+               $(".childtwo option").remove(); 
+               $(".childthree option").remove();
+               $(".childtwo").append(msg);
+           });
+       });
+        $("body").on('click','.goodscatstwo',function(){
+            var val = $(this).val();
+            $.ajax({
+             method:"POST",
+             url:"{:U('Product/Index/getgoodscatschildtwo')}",
+             data:{catid:val}
+           }).done(function(msg){
+               $(".childthree option").remove();
+               $(".childthree").append(msg);
+           });
+        });
+
+        $("body").on('click','.specselect',function(){
+          var val = $(this).val();
+          if(val == 1)
+          {
+            $(".formspec").css("display","block");
+            $(".weight").css("display","none");
+            $(".googds_erama").css("display","none");
+          }
+          if(val == 0)
+          {
+            $(".formspec").css("display","none");
+            $(".weight").css("display","block");
+            $(".googds_erama").css("display","block");
+          }
+        });
+        var  specselect_val = $("input[name='isSpec']:checked").val();
+        if(specselect_val == 1)
+        {
+           $(".formspec").css("display","block");
+        }
+        $("body").on('click','.addspec',function(){
+           $(".formspec").append("<div class=col-xs-12 form-group spec><div class=col-xs-2 ><input type=text name=speca[] class=form-control placeholder=></div><div class=col-xs-2><input type=text name=specb[] class=form-control placeholder=></div><div class=col-xs-1><input type=text class=form-control name=specPrice[] placeholder=></div><div class=col-xs-1><input type=text class=form-control name=specnum[] placeholder=></div><div class=col-xs-1><input type=text name=offerPrice[] class=form-control placeholder=></div><div class=col-xs-2><input type=text name=code[] class=form-control placeholder=></div><div class=col-xs-2><input type=text name=offerPrice[] class=form-control placeholder=></div><div class=col-xs-1><button type=button class='btn-danger'>删除</button></div></div><div class=col-xs-12 br></div>");
+        });
+
+        $(".freight").click(function(){
+            var freight_val = $(this).val();
+            if(freight_val == 1)
+            {
+              $(".freightmb").css("display","block");
+            }
+            if(freight_val == 0)
+            {
+              $(".freightmb").css("display","none");
+            }
+        });
+        var freight_val = $("input[name='freight']:checked").val();
+        if(freight_val == 1)
+        {
+           $(".freightmb").css("display","block");
+        }
+        $("body").on('click','.btn-danger',function(){
+            $(this).parent().parent('div').remove();
+        });
+    });
+  </script>
+  <script>
+      function readyup(obj)
+    {       
+            var id = obj.id;
+            ajaxFileUpload(id);
+    }
+    function ajaxFileUpload(id) 
+    {
+            var Img_show = "show_"+id;
+            $.ajaxFileUpload
+            (
+                    {
+                        url: "{:U('Upload/Index/upload_product')}?id="+id,
+                        secureuri: false,
+                        fileElementId: id,
+                        dataType: 'json',
+                        success: function (data, status)
+                        {
+                           var code = data['code'];
+                           if(code == '000002')
+                           {
+                               $("#"+Img_show).attr("src", data.showimgurl);
+                               $(":input[name=goods_"+id+"]").val(data.imgurl);
+                           }
+                        },
+                        error: function (data, status, e)
+                        {
+                          alert(data.msg);
+                        }
+                    }
+            )
+            return false;
+        }
+  </script>

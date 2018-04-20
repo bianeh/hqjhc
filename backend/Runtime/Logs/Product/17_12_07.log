@@ -1,0 +1,898 @@
+[ 2017-12-07T10:50:42+08:00 ] 116.226.130.39 /admin.php/Product/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 0 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 0 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/704c2fabc170fcbe2f81534a8a83106f.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000252s ]
+
+[ 2017-12-07T10:50:47+08:00 ] 116.226.130.39 /admin.php/Product/Index/upproductpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 3 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/1a44bb7e032edef322c7697db9b31796.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000244s ]
+
+[ 2017-12-07T10:50:50+08:00 ] 116.226.130.39 /admin.php/Product/Index/editproductpage/id/49.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_brands` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_cats` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_brands` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_brands` WHERE `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_cats` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_goods_cats` WHERE `dataFlag` = 0 AND `parentid` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_goods_template`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_goods` WHERE `id` = 49 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_offers` WHERE `offerid` = 14 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_goods_specs` WHERE `goodsid` = 49 AND `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods_cats` WHERE `dataFlag` = 0 AND `parentid` = 26  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_goods_cats` WHERE `dataFlag` = 0 AND `parentid` = 29  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 243 行.
+NOTIC: [8] Undefined index: code /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 686 行.
+NOTIC: [8] Undefined index: weight /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 689 行.
+NOTIC: [8] Undefined index: code /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 686 行.
+NOTIC: [8] Undefined index: weight /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 689 行.
+NOTIC: [8] Undefined index: code /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 686 行.
+NOTIC: [8] Undefined index: weight /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 689 行.
+NOTIC: [8] Undefined index: code /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 686 行.
+NOTIC: [8] Undefined index: weight /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 689 行.
+NOTIC: [8] Undefined index: code /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 686 行.
+NOTIC: [8] Undefined index: weight /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 689 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000272s ]
+
+[ 2017-12-07T10:51:09+08:00 ] 116.226.130.39 /admin.php/Product/Index/doEditProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_offers` WHERE `loginName` = 'doll' AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /home/www/hqjhc/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /home/www/hqjhc/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `hqjhc_goods` SET `name`='女童羊呢大衣',`code_num`='H3410',`goodsCatIdfirst`='26',`goodsCatIdmiddle`='29',`isSpec`='1',`marketPrice`='798.00',`goods_price`='239',`offersPrice`='166.00',`goods_display_img`='',`goods_other_img1`='2017-12-06/5a27a6611062a.JPG',`goods_other_img2`='2017-12-06/5a27a666d1a37.JPG',`goods_other_img3`='2017-12-06/5a27a66d1067f.JPG',`goods_other_img4`='2017-12-06/5a27a67759620.JPG',`unit`='件',`once_shop_maxnum`='10',`user_shop_maxnum`='100',`sort`='0',`freight`='0',`brandid`='16',`isBest`='1',`isNew`='1',`isRecom`='1',`createstaffid`='6',`description`='&lt;p&gt;女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶&lt;/p&gt;',`offerid`='14' WHERE `id` = 49 [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0004s ]
+SQL: DELETE FROM `hqjhc_goods_specs` WHERE `goodsid` = 49 [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0097s ]
+SQL: INSERT INTO `hqjhc_goods_specs` (`speca`,`specb`,`specPrice`,`offerPrice`,`specnum`,`speccode`,`specweight`,`goodsid`) VALUES ('柠檬黄','110','239.00','0.00','23','','','49') [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0003s ]
+SQL: INSERT INTO `hqjhc_goods_specs` (`speca`,`specb`,`specPrice`,`offerPrice`,`specnum`,`speccode`,`specweight`,`goodsid`) VALUES ('柠檬黄','120','239.00','0.00','70','','','49') [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0004s ]
+SQL: INSERT INTO `hqjhc_goods_specs` (`speca`,`specb`,`specPrice`,`offerPrice`,`specnum`,`speccode`,`specweight`,`goodsid`) VALUES ('柠檬黄','130','239.00','0.00','93','','','49') [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0003s ]
+SQL: INSERT INTO `hqjhc_goods_specs` (`speca`,`specb`,`specPrice`,`offerPrice`,`specnum`,`speccode`,`specweight`,`goodsid`) VALUES ('柠檬黄','140','239.00','0.00','54','','','49') [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0003s ]
+SQL: INSERT INTO `hqjhc_goods_specs` (`speca`,`specb`,`specPrice`,`offerPrice`,`specnum`,`speccode`,`specweight`,`goodsid`) VALUES ('柠檬黄','150','239.00','0.00','33','','','49') [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000287s ]
+
+[ 2017-12-07T10:51:10+08:00 ] 116.226.130.39 /admin.php/Product/Index/editproductpage/id/49.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_brands` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_cats` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_brands` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_brands` WHERE `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_cats` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_goods_cats` WHERE `dataFlag` = 0 AND `parentid` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_goods_template`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_goods` WHERE `id` = 49 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_offers` WHERE `offerid` = 14 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_goods_specs` WHERE `goodsid` = 49 AND `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods_cats` WHERE `dataFlag` = 0 AND `parentid` = 26  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods_cats` WHERE `dataFlag` = 0 AND `parentid` = 29  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 243 行.
+NOTIC: [8] Undefined index: code /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 686 行.
+NOTIC: [8] Undefined index: weight /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 689 行.
+NOTIC: [8] Undefined index: code /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 686 行.
+NOTIC: [8] Undefined index: weight /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 689 行.
+NOTIC: [8] Undefined index: code /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 686 行.
+NOTIC: [8] Undefined index: weight /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 689 行.
+NOTIC: [8] Undefined index: code /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 686 行.
+NOTIC: [8] Undefined index: weight /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 689 行.
+NOTIC: [8] Undefined index: code /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 686 行.
+NOTIC: [8] Undefined index: weight /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 689 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009842s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000239s ]
+
+[ 2017-12-07T10:51:44+08:00 ] 116.226.130.39 /admin.php/Product/Index/doEditProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_offers` WHERE `loginName` = 'doll' AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /home/www/hqjhc/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /home/www/hqjhc/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `hqjhc_goods` SET `name`='女童羊呢大衣',`code_num`='H3410',`goodsCatIdfirst`='26',`goodsCatIdmiddle`='29',`isSpec`='1',`marketPrice`='798.00',`goods_price`='239',`offersPrice`='166.00',`goods_display_img`='',`goods_other_img1`='2017-12-06/5a27a6611062a.JPG',`goods_other_img2`='2017-12-06/5a27a666d1a37.JPG',`goods_other_img3`='2017-12-06/5a27a66d1067f.JPG',`goods_other_img4`='2017-12-06/5a27a67759620.JPG',`unit`='件',`once_shop_maxnum`='10',`user_shop_maxnum`='100',`sort`='0',`freight`='0',`brandid`='16',`isBest`='1',`isNew`='1',`isRecom`='1',`createstaffid`='6',`description`='&lt;p&gt;女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶&amp;nbsp;女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶女童羊呢大衣&amp;nbsp;75%羊毛 25%涤纶&lt;/p&gt;',`offerid`='14' WHERE `id` = 49 [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0003s ]
+SQL: DELETE FROM `hqjhc_goods_specs` WHERE `goodsid` = 49 [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0099s ]
+SQL: INSERT INTO `hqjhc_goods_specs` (`speca`,`specb`,`specPrice`,`offerPrice`,`specnum`,`speccode`,`specweight`,`goodsid`) VALUES ('柠檬黄','110','239.00','0.00','23','','','49') [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0003s ]
+SQL: INSERT INTO `hqjhc_goods_specs` (`speca`,`specb`,`specPrice`,`offerPrice`,`specnum`,`speccode`,`specweight`,`goodsid`) VALUES ('柠檬黄','120','239.00','0.00','70','','','49') [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0003s ]
+SQL: INSERT INTO `hqjhc_goods_specs` (`speca`,`specb`,`specPrice`,`offerPrice`,`specnum`,`speccode`,`specweight`,`goodsid`) VALUES ('柠檬黄','130','239.00','0.00','93','','','49') [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0004s ]
+SQL: INSERT INTO `hqjhc_goods_specs` (`speca`,`specb`,`specPrice`,`offerPrice`,`specnum`,`speccode`,`specweight`,`goodsid`) VALUES ('柠檬黄','140','239.00','0.00','54','','','49') [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0003s ]
+SQL: INSERT INTO `hqjhc_goods_specs` (`speca`,`specb`,`specPrice`,`offerPrice`,`specnum`,`speccode`,`specweight`,`goodsid`) VALUES ('柠檬黄','150','239.00','0.00','33','','','49') [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000263s ]
+
+[ 2017-12-07T10:51:46+08:00 ] 116.226.130.39 /admin.php/Product/Index/editproductpage/id/49.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_brands` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_cats` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_brands` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_brands` WHERE `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_cats` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_goods_cats` WHERE `dataFlag` = 0 AND `parentid` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_template` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_goods_template`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_goods` WHERE `id` = 49 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_offers` WHERE `offerid` = 14 AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_specs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_goods_specs` WHERE `goodsid` = 49 AND `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods_cats` WHERE `dataFlag` = 0 AND `parentid` = 26  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods_cats` WHERE `dataFlag` = 0 AND `parentid` = 29  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 243 行.
+NOTIC: [8] Undefined index: code /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 686 行.
+NOTIC: [8] Undefined index: weight /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 689 行.
+NOTIC: [8] Undefined index: code /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 686 行.
+NOTIC: [8] Undefined index: weight /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 689 行.
+NOTIC: [8] Undefined index: code /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 686 行.
+NOTIC: [8] Undefined index: weight /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 689 行.
+NOTIC: [8] Undefined index: code /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 686 行.
+NOTIC: [8] Undefined index: weight /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 689 行.
+NOTIC: [8] Undefined index: code /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 686 行.
+NOTIC: [8] Undefined index: weight /home/www/hqjhc/backend/Runtime/Cache/Product/7eec10a70a80fe689c2b9c886f44d05d.php 第 689 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000268s ]
+
+[ 2017-12-07T11:39:23+08:00 ] 116.226.89.81 /admin.php/Product/Index/checkacross.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: UPDATE `hqjhc_goods` SET `status`='1' WHERE `id` = 0 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000032s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+
+[ 2017-12-07T11:55:44+08:00 ] 116.226.89.81 /admin.php/Product/Index/checkreturnfail/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+ERR: 非法操作:checkreturnfail
+
+[ 2017-12-07T11:56:26+08:00 ] 116.226.89.81 /admin.php/Product/Index/checkreturnfail/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+ERR: 非法操作:checkreturnfail
+
+[ 2017-12-07T11:57:10+08:00 ] 116.226.89.81 /admin.php/Product/Index/checkreturnfail/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+ERR: 非法操作:checkreturnfail
+
+[ 2017-12-07T11:57:16+08:00 ] 116.226.89.81 /admin.php/Product/Index/checkreturnfail/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+ERR: 非法操作:checkreturnfail
+
+[ 2017-12-07T13:31:46+08:00 ] 116.226.89.81 /admin.php/Product/Brands/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_brands` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_brands` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_brands` WHERE `dataFlag` = 0 ORDER BY `brandid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/dc166e5ed3e6c02076516e7cb07bdb33.php 第 244 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000255s ]
+
+[ 2017-12-07T13:31:53+08:00 ] 116.226.89.81 /admin.php/Product/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 0 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 0 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/704c2fabc170fcbe2f81534a8a83106f.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000240s ]
+
+[ 2017-12-07T14:19:45+08:00 ] 116.226.89.81 /admin.php/Product/Index/checkreturnfail/id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+ERR: 非法操作:checkreturnfail
+
+[ 2017-12-07T17:16:50+08:00 ] 101.81.0.88 /admin.php/Product/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 0 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 0 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/704c2fabc170fcbe2f81534a8a83106f.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000236s ]
+
+[ 2017-12-07T17:16:55+08:00 ] 101.81.0.88 /admin.php/Product/Index/upproductpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 3 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/1a44bb7e032edef322c7697db9b31796.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000255s ]
+
+[ 2017-12-07T17:16:57+08:00 ] 101.81.0.88 /admin.php/Product/Index/downproductpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 4 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/50a8c9f315e0a703893620addb971e33.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000251s ]
+
+[ 2017-12-07T17:16:58+08:00 ] 101.81.0.88 /admin.php/Product/Index/failpage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 2 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/ab0c2a33284737dd9493506c96a39751.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000260s ]
+
+[ 2017-12-07T17:17:00+08:00 ] 101.81.0.88 /admin.php/Product/Index/acrosspage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 1 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/a400cb47fd820adcf5a74c5959263d3d.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000242s ]
+
+[ 2017-12-07T17:17:01+08:00 ] 101.81.0.88 /admin.php/Product/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 0 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 0 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/704c2fabc170fcbe2f81534a8a83106f.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000264s ]
+
+[ 2017-12-07T17:17:58+08:00 ] 101.81.0.88 /admin.php/Product/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 0 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 0 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/704c2fabc170fcbe2f81534a8a83106f.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000239s ]
+
+[ 2017-12-07T18:31:34+08:00 ] 101.81.0.88 /admin.php/Product/Brands/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_brands` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_brands` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_brands` WHERE `dataFlag` = 0 ORDER BY `brandid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/dc166e5ed3e6c02076516e7cb07bdb33.php 第 244 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000255s ]
+
+[ 2017-12-07T18:31:37+08:00 ] 101.81.0.88 /admin.php/Product/Goodscats/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_cats` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_cats` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_goods_cats` WHERE `dataFlag` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/8ca892e2fd3414678028c4c06051ffc9.php 第 244 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000245s ]
+
+[ 2017-12-07T18:31:44+08:00 ] 101.226.33.218 /admin.php/Product/Brands/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+
+[ 2017-12-07T18:31:47+08:00 ] 101.226.33.216 /admin.php/Product/Goodscats/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+
+[ 2017-12-07T18:47:36+08:00 ] 101.81.0.88 /admin.php/Product/Brands/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_brands` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_brands` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_brands` WHERE `dataFlag` = 0 ORDER BY `brandid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/dc166e5ed3e6c02076516e7cb07bdb33.php 第 244 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000258s ]
+
+[ 2017-12-07T18:47:37+08:00 ] 101.81.0.88 /admin.php/Product/Goodscats/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_cats` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods_cats` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_goods_cats` WHERE `dataFlag` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/8ca892e2fd3414678028c4c06051ffc9.php 第 244 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000243s ]
+
+[ 2017-12-07T18:47:38+08:00 ] 101.81.0.88 /admin.php/Product/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_goods` WHERE `dataFlag` = 0 AND `status` = 0 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 0 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Product/704c2fabc170fcbe2f81534a8a83106f.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000238s ]
+

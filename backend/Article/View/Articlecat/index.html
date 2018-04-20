@@ -1,0 +1,106 @@
+<link rel="stylesheet" href="../../../Public/backend/css/index.css">
+<include file="Layout@Index:header" />
+  <include file="Layout@Index:nav" />
+  <!-- Left side column. contains the logo and sidebar -->
+  <!-- Content Wrapper. Contains page content -->
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        文章分类列表
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台</a></li>
+        <li><a href="#">文章分类管理</a></li>
+        <li class="active">文章分类管理列表</li>
+      </ol>
+    </section>
+    <div class="col-xs-12">
+    <div class="callout callout-info ">
+        管理员可以在此管理所添加的文章分类信息包括编辑、删除操作
+      </div>
+    </div>
+    <div class="col-xs-12">
+        <div class="search1">
+           <a href="{:U('Article/Articlecat/addarticlecatpage')}"><button type="button" class="btn bg-olive btn-flat margin"><i class="fa fa-fw fa-plus"></i>添加文章分类</button></a>
+           <a href=""><button type="button" class="btn bg-purple margin"><i class="fa fa-fw fa-refresh"></i>刷新页面</button></a>
+        </div>
+    </div>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>分类名称</th>
+                  <th>是否显示</th>
+                  <th>创立者</th>
+                  <th>创立时间</th>
+                  <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist name="articlecatslist" id="vo" empty="暂时没有数据" >
+                    <tr>
+                  <td>{$vo.html}{$vo.catname}</td>
+                  <td>{$vo.isshow}</td>
+                  <td>{$vo.createstaffid}</td>
+                  <td>{$vo.createtime}</td>
+                  <td>
+                      <a href="{:U('Article/Articlecat/editarticlecatpage',['catid'=>$vo['catid']])}">
+                      <button class="">
+                          <i class="fa fa-fw fa-edit"></i>编辑
+                      </button>
+                      </a>
+                      <button value="{$vo.catid}" class="delete">
+                          <i class="fa fa-fw fa-trash-o"></i>删除
+                      </button>
+                  </td>
+                </tr>
+                </volist>
+                </tfoot>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+ <include file="Layout@Index:footer" />
+<!-- page script -->
+<script>
+  $(function () {
+    $('#example2').DataTable({
+      'paging'      : false,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : false,
+      'info'        : false,
+      'autoWidth'   : false
+    });
+  })
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".delete").click(function(){
+            var catid = $(this).val();
+            var r = confirm("确定要删除该条记录吗！");
+            if(r)
+            {
+               window.location.href="{:U('Article/Articlecat/delete/catid/"+catid+"')}";
+            }
+        })
+    })
+</script>

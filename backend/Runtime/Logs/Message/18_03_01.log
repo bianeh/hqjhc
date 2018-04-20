@@ -1,0 +1,184 @@
+[ 2018-03-01T14:02:28+08:00 ] 101.44.12.72 /admin.php/Message/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000256s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_messages` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0 ORDER BY `messageid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/78dd56287d98170f041e1afca847b8d8.php 第 244 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000261s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000277s ]
+
+[ 2018-03-01T14:02:31+08:00 ] 101.44.12.72 /admin.php/Message/Webnotify/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000256s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 244 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000287s ]
+
+[ 2018-03-01T14:18:18+08:00 ] 101.44.12.72 /admin.php/Message/Webnotify/index.html?title=&createTime=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 244 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000288s ]
+

@@ -1,0 +1,123 @@
+  <include file="Layout@Index:header" />
+  <include file="Layout@Index:nav" />
+  <!-- Left side column. contains the logo and sidebar -->
+  <!-- Left side column. contains the logo and sidebar -->
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        品牌添加
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台</a></li>
+        <li><a href="{:U('Product/Brands/index')}">品牌管理</a></li>
+        <li class="active">添加品牌</li>
+      </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">品牌添加</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="box box-warning">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <form role="form" id="addBrands" method="post" action="{:U('Product/Brands/doAddBrands')}">
+                <!-- text input -->
+                <div class="form-group">
+                  <label>品牌名称</label>
+                  <input type="text"  name="brandName" class="form-control" placeholder="品牌名称">
+                </div>
+                <div class="form-group">
+                  <label>品牌描述</label>
+                  <input type="text"  name="brandDesc" class="form-control" placeholder="品牌描述">
+                </div>
+                <div class="form-group">
+                  <label>品牌排序</label>
+                  <input type="text"  name="sort" class="form-control" placeholder="品牌排序">
+                </div>
+                <div class="form-group">
+                  <label>品牌logo</label>
+                  <input name="uploadfile" onchange="readyup()" id="file" multiple="" type="file" class="form-control">
+                  <div style="width:100px;height:80px;background: #dddddd;margin-top:3px">
+                      <img id="img1" height="80px" width="100px" src="{$Think.const.ROOT_URL}/Public/backend/dist/img/boxed-bg.jpg" />
+                  </div>
+                  <input type="hidden" name="brandLogo" value=""/>
+                </div>
+                
+              <div class="form-group">
+                  <label>
+                  是否显示
+                  </label>
+                  <input type="radio" value='0'  name="isShow" checked />是
+                  <input type="radio" value='1'  name="isShow" />否
+              </div>
+              <input type="hidden" name="createstaffid" value='{$data.stffid}'/>
+              </form>
+                <div class="form-group">
+                    <button id="addBrandsOperate" class="btn bg-olive btn-flat margin"><i class="fa fa-fw fa-plus"></i>添加</button>
+                </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <include file="Layout@Index:footer"/>
+  <!-- 全局js -->
+  <script src="{$Think.const.ROOT_URL}/Public/common/js/jquery.min.js?v=2.1.4"></script>
+  <script src="{$Think.const.ROOT_URL}/Public/common/js/bootstrap.min.js?v=3.3.6"></script>
+  <script src="{$Think.const.ROOT_URL}/Public/common/js/ajaxfileupload.js"></script>
+ <script>
+    var addBrandsOperate = document.getElementById("addBrandsOperate");
+    addBrandsOperate.onclick=function()
+    {     
+          document.getElementById("addBrands").submit();
+    }
+  </script>
+  <script>
+      function readyup()
+    {
+            ajaxFileUpload();
+    }
+    function ajaxFileUpload() {
+            $.ajaxFileUpload
+            (
+                    {
+                        url: "{:U('Upload/Index/upload')}", //用于文件上传的服务器端请求地址
+                        secureuri: false, //是否需要安全协议，一般设置为false
+                        fileElementId: 'file', //文件上传域的ID
+                        dataType: 'json', //返回值类型 一般设置为json
+                        success: function (data, status)  //服务器成功响应处理函数
+                        {
+                           var code = data['code'];
+                           if(code == '000002')
+                           {
+                               $("#img1").attr("src", data.showimgurl);
+                               $(":input[name=brandLogo]").val(data.imgurl);
+                           }
+                        },
+                        error: function (data, status, e)//服务器响应失败处理函数
+                        {
+                          alert(data.msg);
+                        }
+                    }
+            )
+            return false;
+        }
+  </script>

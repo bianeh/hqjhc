@@ -1,0 +1,104 @@
+.searchbutton
+{
+	background:#2e6da4;
+	border: 0;
+	color:#FFFFFF;
+	height: 25px;
+}
+.search
+{
+    height:130px;
+    width:100%;
+    background:#FFFFFF;
+    border-radius:3px;
+    border:2px solid #dddddd;
+    width:100%px;
+    margin: 0 auto;
+    padding:10px;
+}
+.search1
+{
+    height:70px;
+    width:100%;
+    background:#FFFFFF;
+    border-radius:3px;
+    border:2px solid #dddddd;
+    width:100%px;
+    margin: 0 auto;
+    padding:20px;
+}
+.articleimg
+{
+	height:50px;
+	width:50px;
+}
+.normalimg{
+    height:50px;
+    width:50px;
+}
+.normalImg{
+    height: 50px;
+    width:50px;
+}
+.page > div > .num{
+    float:left;
+    text-align: center;
+    display: block;
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    background: #fafafa;
+    color:#666;
+    border:1px solid #ddd;
+}
+.page > div > .next{
+    text-align: center;
+    display: block;
+    float: left;
+    width:60px;
+    height: 30px;
+    line-height: 30px;
+    background: #fafafa;
+    color:#666;
+    border:1px solid #ddd;
+}
+.page > div .current{
+    text-align: center;
+    display: block;
+    float: left;
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    background: #337ab7;
+    color:#FFFFFF;
+    border:1px solid #ddd;
+}
+.page > div > .prev{
+    text-align: center;
+    display: block;
+    float: left;
+    width:60px;
+    height: 30px;
+    line-height: 30px;
+    background: #fafafa;
+    color:#666;
+    border:1px solid #ddd;
+}
+.page > div > .rows{
+    list-style: none;
+    display: block;
+    float: left;
+}
+.page > div{
+    float:right;
+}
+.bg-default
+{
+    background: #fff;
+    border: 1px solid;
+}
+.adfile
+{
+    height:50px;
+    width:50px;
+}

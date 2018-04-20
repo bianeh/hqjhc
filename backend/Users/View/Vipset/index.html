@@ -1,0 +1,138 @@
+<include file="Layout@Index:header" />
+<include file="Layout@Index:nav" />
+<link rel="stylesheet" href="{$Think.const.ROOT_URL}/Public/backend/css/index.css">
+<!-- Left side column. contains the logo and sidebar -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+          会员购买设置
+        <small>微商会员购买设置</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台</a></li>
+        <li><a href="#">微商会员购买设置</a></li>
+        <li class="active">微商购买设置列表</li>
+      </ol>
+    </section>
+    <div class="col-xs-12">
+        <div class="search1">
+           <a href="{:U('Users/Vipset/vipsetpage')}"><button type="button" class="btn bg-olive btn-flat margin"><i class="fa fa-fw fa-plus"></i>添加vip购买信息</button></a>
+           <a href=""><button type="button" class="btn bg-purple btn-flat margin"><i class="fa fa-fw fa-refresh"></i>刷新页面</button></a>
+        </div>
+    </div>
+    <!-- Search content end -->
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>编号</th>
+                  <th>名称标题</th>
+                  <th>vip等级</th>
+                  <th>收费</th>
+                  <th>描述</th>
+                  <th>创立时间</th>
+                  <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist name="list" id="vo" empty="暂时没有数据" >
+                    <tr>
+                  <td><input type="checkbox"/>{$vo.id}</td>
+                  <td>{$vo.name}</td>
+                  <td>{$vo.level}</td>
+                  <td>{$vo.price}</td>
+                  <td>{$vo.desc}</td>
+                  <td>{$vo.createtime}</td>
+                  <td>
+                      <a href="{:U('Users/Vipset/editvipsetpage')}?id={$vo.id}">
+                      <button class="btn bg-olive btn-flat margin">
+                          <i class="fa fa-fw fa-edit"></i>编辑
+                      </button>
+                      </a>
+                 </td>
+                </tr>
+                </volist>
+                </tfoot>
+              </table>
+                <div style="text_align:right" class="result page">{$page}</div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+ <include file="Layout@Index:footer" />
+<!-- page script -->
+<script>
+  $(function (){
+    $('#example2').DataTable({
+      'paging'      : false,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : false,
+      'autoWidth'   : false
+    })
+  })
+</script>
+<script>
+  $(function () {
+    $('#datepickerstart').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+    $('#datepickerend').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+    $(".searchbutton").click(function(){
+      $("#search").submit();
+    });
+    $(".delete").click(function(){
+      var r = confirm("确定要删除该条数据吗！");
+      if(r)
+      {
+         var userid = $(this).val();
+         window.location.href="{:U('Users/Index/delete/userid/"+userid+"')}";
+      }
+    });
+     $(".setvip").click(function(){
+      var r = confirm("该用户是否已经购买过VIP,确定要设置VIP吗！");
+      if(r)
+      {
+         var userid = $(this).val();
+         window.location.href="{:U('Users/Index/setvip/userid/"+userid+"')}";
+      }
+    });
+    $(".dozen").click(function(){
+      var r = confirm("确定要冻结该用户吗！");
+      if(r)
+      {
+         var userid = $(this).val();
+         window.location.href="{:U('Users/Index/dozen/userid/"+userid+"')}";
+      }
+    });
+     $(".undozen").click(function(){
+      var r = confirm("确定要启用该用户吗！");
+      if(r)
+      {
+         var userid = $(this).val();
+         window.location.href="{:U('Users/Index/undozen/userid/"+userid+"')}";
+      }
+    });
+  })
+</script>

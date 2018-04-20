@@ -1,0 +1,137 @@
+<link rel="stylesheet" href="{$Think.const.ROOT_URL}/Public/backend/css/index.css">
+<include file="Layout@Index:header" />
+  <include file="Layout@Index:nav" />
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        公告消息列表
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台</a></li>
+        <li><a href="#">公告消息管理</a></li>
+        <li class="active">公告消息管理列表</li>
+      </ol>
+    </section>
+    <div class="col-xs-12">
+    <div class="callout callout-info ">
+        管理员可以在此管理公告预告消息包括编辑、修改、添加、删除操作
+      </div>
+    </div>
+    <div class="col-xs-12">
+        <div class="search1">
+           <a href="{:U('Message/Index/addMessagePage')}"><button type="button" class="btn bg-olive btn-flat margin"><i class="fa fa-fw fa-plus"></i>添加公告消息</button></a>
+           <a href="{:U('Message/Index/index')}"><button type="button" class="btn bg-purple btn-flat margin"><i class="fa fa-fw fa-refresh"></i>刷新页面</button></a>
+        </div>
+    </div>
+    <!-- Search content end -->
+    <div class="col-xs-12">
+        <div class="search">
+            <form id="search" action="{:U('Message/Index/index')}" method="get" >
+            <label>消息标题:</label><input name="messageTitle" type="text" />
+            <label>创建时间:</label><input type="text" id="datepickerstart" name="createTime"  readonly="readonly">
+            <button class="searchbutton"><i class="fa fa-fw fa-search"></i>搜索</button>
+            </form>
+        </div>
+    </div>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>编号</th>
+                  <th>消息标题</th>
+                  <th>消息类型</th>
+                  <th>消息内容</th>
+                  <th>创立时间</th>
+                  <th>创建者</th>
+                  <th>更新时间</th>
+                  <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <volist name="list" id="vo" empty="暂时没有数据" >
+                    <tr>
+                  <td><input type="checkbox"/>{$vo.messageid}</td>
+                  <td>{$vo.messagetitle|mb_substr=###,0,10,'utf-8'}...</td>
+                  <td>
+                  <if condition="$vo.messagetype eq 1 ">{:C("MESSAGETYPE.1")}</if>
+                  <if condition="$vo.messagetype eq 2 ">{:C("MESSAGETYPE.2")}</if>
+                  <if condition="$vo.messagetype eq 3 ">{:C("MESSAGETYPE.3")}</if>
+                  </td>
+                  <td>{$vo.messagecontent}</td>
+                   <td>{$vo.updatetime}</td>
+                  <td>{$vo.createstaffname}</td>
+                  <td>{$vo.updatetime}</td>
+                  <td>
+                      <a href="{:U('Message/Index/editMessagepage',array('messageid'=>$vo['messageid']))}">
+                      <button class="btn bg-olive btn-flat margin">
+                          <i class="fa fa-fw fa-edit"></i>编辑
+                      </button>
+                      </a>
+                      <button value="{$vo.messageid}" class="btn bg-maroon btn-flat margin delete">
+                          <i class="fa fa-fw fa-trash-o"></i>删除 
+                      </button>
+                  </td>
+                </tr>
+                </volist>
+                </tfoot>
+              </table>
+                <div style="text_align:right" class="result page">{$page}</div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+ <include file="Layout@Index:footer" />
+<!-- page script -->
+<script>
+  $(function () {
+    $('#example2').DataTable({
+      'paging'      : false,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : false,
+      'autoWidth'   : false
+    })
+  })
+</script>
+<script>
+  $(function () {
+    $('#datepickerstart').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+    $('#datepickerend').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+    $(".searchbutton").click(function(){
+      $("#search").submit();
+    });
+    $(".delete").click(function(){
+      var r = confirm("确定要删除该条数据吗！");
+      if(r)
+      {
+         var messageid = $(this).val();
+         window.location.href="{:U('Message/Index/delete/messageid/"+messageid+"')}";
+      }
+    });
+  })
+</script>

@@ -1,0 +1,152 @@
+[ 2018-01-26T14:16:46+08:00 ] 116.226.130.39 /admin.php/Order/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE hqjhc_orders.dataFlag = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.goods_display_img as goods_display_img,hqjhc_goods.name as name,hqjhc_goods.goods_price as goods_price,hqjhc_goods.marketPrice as marketprice,hqjhc_orders.orderNo as orderno,hqjhc_orders.createTime as createtime,hqjhc_orders.orderid as orderid,hqjhc_orders.num as num,hqjhc_orders.userid as userid,hqjhc_orders.spec1 as spec1,hqjhc_orders.spec2 as spec2,hqjhc_orders.orderStatus as orderstatus,hqjhc_orders.remarks as remarks,hqjhc_user_address.userAdress as useraddress FROM `hqjhc_orders` LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_orders.goodsid LEFT JOIN hqjhc_brands ON hqjhc_orders.brandsid = hqjhc_brands.brandid LEFT JOIN hqjhc_order_address ON hqjhc_order_address.orderno = hqjhc_orders.orderno LEFT JOIN hqjhc_user_address ON hqjhc_user_address.addressid = hqjhc_order_address.addressid  WHERE hqjhc_orders.dataFlag = 0 ORDER BY hqjhc_orders.orderid desc LIMIT 0,15   [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 32 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 32 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 243 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 656 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 662 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 663 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 656 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 662 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 663 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 656 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 662 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 663 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 656 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 662 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 663 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 656 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 662 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 663 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 656 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 662 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 663 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 656 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 662 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 663 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 656 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 662 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 663 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 656 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 662 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 663 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 656 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 662 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 663 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 656 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 662 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 663 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 656 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 662 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 663 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 656 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 662 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 663 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 656 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 662 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 663 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 656 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 662 行.
+NOTIC: [8] Undefined index: id /home/www/hqjhc/backend/Runtime/Cache/Order/d56dfcc0f322f6aedaa1d922c0f64d5c.php 第 663 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2018-01-26T14:16:51+08:00 ] 116.226.130.39 /admin.php/Order/Index/expressedorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` WHERE hqjhc_orders.dataFlag = 0 AND hqjhc_orders.orderStatus = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.goods_display_img as goods_display_img,hqjhc_goods.name as name,hqjhc_orders.userid as userid,hqjhc_goods.goods_price as goods_price,hqjhc_goods.marketPrice as marketprice,hqjhc_orders.orderNo as orderno,hqjhc_orders.createTime as createtime,hqjhc_orders.expressName as expressname,hqjhc_orders.expressNo as expressno,hqjhc_orders.orderid as orderid,hqjhc_orders.num as num,hqjhc_orders.spec1 as spec1,hqjhc_orders.spec2 as spec2,hqjhc_orders.remarks as remarks,hqjhc_user_address.userAdress as useraddress FROM `hqjhc_orders` LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_orders.goodsid LEFT JOIN hqjhc_brands ON hqjhc_orders.brandsid = hqjhc_brands.brandid LEFT JOIN hqjhc_order_address ON hqjhc_order_address.orderno = hqjhc_orders.orderno LEFT JOIN hqjhc_user_address ON hqjhc_user_address.addressid = hqjhc_order_address.addressid  WHERE hqjhc_orders.dataFlag = 0 AND hqjhc_orders.orderStatus = 3 ORDER BY hqjhc_orders.orderid desc LIMIT 0,15   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 29 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Order/b1c5198a8fce35873623b49576069017.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2018-01-26T14:17:46+08:00 ] 120.204.17.67 /admin.php/Order/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2018-01-26T14:17:51+08:00 ] 120.204.17.73 /admin.php/Order/Index/expressedorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+
+[ 2018-01-26T14:18:45+08:00 ] 121.51.32.144 /admin.php/order/index/expressedorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+

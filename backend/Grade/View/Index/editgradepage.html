@@ -1,0 +1,112 @@
+  <include file="Layout@Index:header" />
+  <include file="Layout@Index:nav" />
+  <script type="text/javascript" src="{$Think.const.ROOT_URL}/Public/backend/plugins/datetimer/js/calendar.js"></script>
+  <link rel="stylesheet" type="text/css" href="{$Think.const.ROOT_URL}/Public/backend/plugins/datetimer/css/calendar.css" media="all" />
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        档期编辑
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台</a></li>
+        <li><a href="{:U('Grade/Index/index')}">档期管理</a></li>
+        <li class="active">编辑档期</li>
+      </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">档期编辑</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="box box-warning">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <form role="form" id="editGrade" method="post" action="{:U('Grade/Index/doEditgrade')}">
+                <!-- text input -->
+                <div class="form-group">
+                  <label>档期名称</label>
+                  <input type="text"  name="gradeName" value="{$info.gradename}" class="form-control" placeholder="档期名称">
+                </div>
+                <div class="form-group">
+                  <label>品牌名称</label>
+                  <select multiple="" name="brandid" class="form-control">
+                  <volist name="brandslist" id="vo">
+                    <option  value="{$vo.brandid}" <if condition="$info['brandid'] eq $vo['brandid']"> selected <else/> </if>>{$vo.brandname}</option>
+                  </volist>
+                  </select>
+                </div>
+                <div class="form-group">
+                <label>开始时间:</label>
+                <div class="input-group date">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                   <input readonly="readonly" name="startdate" id="test" value="{$info.startdate}" class="txt" style="width:400px;border-color:1px solid #d2d6de" type="text">
+      <br />
+      <input class="button" style="opacity: 0;position: absolute;top:0px;width: 400px"  type="button" id="selbtn" name="selbtn" value="时间" onclick="showCalendar('test', '%Y-%m-%d %H:%M', '24', false, 'selbtn');" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>结束时间:</label>
+                <div class="input-group date">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input readonly="readonly" name="enddate" id="test1" value="{$info.enddate}" class="txt" style="width:400px;border-color:1px solid #d2d6de" type="text">
+      <br />
+      <input style="opacity: 0;position: absolute;top:0px;width: 400px" class="button" type="button" id="selbtn1" name="selbtn1" value="时间" onclick="showCalendar('test1', '%Y-%m-%d %H:%M', '24', false, 'selbtn1');" />
+              
+                </div>
+              </div>
+              <input type="hidden" name="createstaffid" value='{$data.stffid}'/>
+              <input type="hidden" name="id" value="{$info.id}" />
+              </form>
+                <div class="form-group">
+                    <button id="editGradeOperate" class="btn bg-olive btn-flat margin"><i class="fa fa-fw fa-edit"></i>编辑</button>
+                </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <include file="Layout@Index:footer"/>
+  <!-- 全局js -->
+  <!-- <script src="{$Think.const.PUBLIC_URL}/common/js/jquery.min.js?v=2.1.4"></script> -->
+  <script src="{$Think.const.PUBLIC_URL}/common/js/bootstrap.min.js?v=3.3.6"></script>
+  <script src="{$Think.const.PUBLIC_URL}/common/js/ajaxfileupload.js"></script>
+ <script>
+    var editGradeOperate = document.getElementById("editGradeOperate");
+    editGradeOperate.onclick=function()
+    {     
+          document.getElementById("editGrade").submit();
+    }
+  </script>
+<script>
+  $(function () {
+    $('#datepickerstart').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+    $('#datepickerend').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+  })
+</script>

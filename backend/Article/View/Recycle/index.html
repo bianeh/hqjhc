@@ -1,0 +1,147 @@
+<link rel="stylesheet" href="../../../Public/backend/css/index.css">
+<include file="Layout@Index:header" />
+  <include file="Layout@Index:nav" />
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        文章回收列表
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台</a></li>
+        <li><a href="#">文章管理</a></li>
+        <li class="active">回收文章管理列表</li>
+      </ol>
+    </section>
+     <div class="col-xs-12">
+    <div class="callout callout-info ">
+        管理员可以在此管理所回收的文章信息包括恢复、删除操作
+      </div>
+    </div>
+    <div class="col-xs-12">
+        <div class="search1">
+           <a href="{:U('Article/Recycle/index')}"><button type="button" class="btn bg-purple btn-flat margin"><i class="fa fa-fw fa-refresh"></i>刷新页面</button></a>
+        </div>
+    </div>
+    <div class="col-xs-12">
+        <div class="search">
+            <form id="search" action="" method="get" >
+            <label>文章标题:</label><input name="articleTitle" type="text" />
+            <label>关键字:</label><input name="articleKey" type="text" />
+            <label>是否显示:</label>
+            <select name="isShow" class="isShowselect" >
+            <option>请选择</option>
+            <option value='0'>是</option>
+            <option value='1'>否</option>
+            </select>
+            <label>创建时间:</label><input id="datepickerstart" type="text" name="createTime" onclick="fPopCalendar(event,this,this)" readonly="readonly">
+            <button class="searchbutton"><i class="fa fa-fw fa-search"></i>搜索</button>
+            </form>
+        </div>
+    </div>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>编号</th>
+                  <th>文章标题</th>
+                  <th>关键字</th>
+                  <th>缩略图</th>
+                  <th>创立时间</th>
+                  <th>创建者</th>
+                  <th>更新时间</th>
+                  <th>更新者</th>
+                  <th>来源</th>
+                  <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist name="list" id="vo" empty="暂时没有数据" >
+                  <tr>
+                  <td><input type="checkbox"/>{$vo.articleid}</td>
+                  <td>{$vo.articletitle|mb_substr=###,0,10,'utf-8'}...</td>
+                  <td>{$vo.articlekey|mb_substr=###,0,10,'utf-8'}...</td>
+                  <td><img class="articleimg" src="{$Think.const.DATA_URL}/{$vo.articleimg}" /></td>
+                  <td>{$vo.createtime}</td>
+                  <td>{$vo.createstaffname}</td>
+                  <td>{$vo.updatetime}</td>
+                  <td>{$vo.updatestaffname}</td>
+                  <td>{$vo.articlesource}</td>
+                  <td>
+                      <button value="{$vo.articleid}" class="btn bg-olive btn-flat margin unrecycle">
+                          <i class="fa fa-fw fa-refresh"></i>恢复
+                      </button>
+                      <button value="{$vo.articleid}" class="btn bg-maroon btn-flat margin delete">
+                          <i class="fa fa-fw fa-trash-o"></i>删除
+                      </button>
+                  </td>
+                </tr>
+                </volist>
+                </tfoot>
+              </table>
+                <div style="text_align:right" class="result page">{$page}</div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+ <include file="Layout@Index:footer" />
+<!-- page script -->
+<script>
+  $(function () {
+    $('#example2').DataTable({
+      'paging'      : false,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : false,
+      'autoWidth'   : false
+    })
+  })
+</script>
+<script>
+  $(function () {
+    $('#datepickerstart').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+    $('#datepickerend').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+    $(".searchbutton").click(function(){
+      $("#search").submit();
+    });
+    $(".delete").click(function(){
+      var r = confirm("确定要删除该条数据吗！");
+      if(r)
+      {
+         var articleid = $(this).val();
+         window.location.href="{:U('Article/Index/delete/articleid/"+articleid+"')}";
+      }
+    });
+    $(".unrecycle").click(function(){
+      var r = confirm("确定要恢复该条数据吗！");
+      if(r)
+      {
+         var articleid = $(this).val();
+         window.location.href="{:U('Article/Recycle/unrecycle/articleid/"+articleid+"')}";
+      }
+    });
+  
+  })
+</script>

@@ -1,0 +1,2 @@
+2017-11-23 08:13:12  {"productCode":"QUICK_WAP_PAY","body":"购买测试商品0.01元","subject":"测试","out_trade_no":"2017112316137456","total_amount":"0.01","timeout_express":"1m"}
+2017-11-23 08:15:07  {"productCode":"QUICK_WAP_PAY","body":"购买测试商品0.01元","subject":"测试","out_trade_no":"2017112316155116","total_amount":"0.01","timeout_express":"1m"}

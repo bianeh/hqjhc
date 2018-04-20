@@ -1,0 +1,37 @@
+[ 2017-12-22T18:19:17+08:00 ] 101.81.0.88 /offer.php/Orderaf/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_offers` WHERE `offerid` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` LEFT JOIN hqjhc_orders ON hqjhc_orders_af.orderNo = hqjhc_orders.orderNo LEFT JOIN hqjhc_goods ON hqjhc_orders.goodsid = hqjhc_goods.id  WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_goods.offerid = '9' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT hqjhc_orders_af.returngoods_status as returngoods_status,hqjhc_orders_af.lack_status as lack_status,hqjhc_orders_af.leakage_status as leakage_status,hqjhc_orders_af.type as type,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.goods_display_img as goods_display_img,hqjhc_goods.name as name,hqjhc_goods.goods_price as goods_price,hqjhc_goods.marketPrice as marketprice,hqjhc_orders.orderNo as orderno,hqjhc_orders.createTime as createtime,hqjhc_orders.orderid as orderid,hqjhc_orders.num as num,hqjhc_orders.userid as userid,hqjhc_orders.spec1 as spec1,hqjhc_orders.spec2 as spec2,hqjhc_orders.orderStatus as orderstatus,hqjhc_orders.remarks as remarks,hqjhc_user_address.userAdress as useraddress FROM `hqjhc_orders_af` LEFT JOIN hqjhc_orders ON hqjhc_orders.orderNo = hqjhc_orders_af.orderNo LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_orders.goodsid LEFT JOIN hqjhc_brands ON hqjhc_orders.brandsid = hqjhc_brands.brandid LEFT JOIN hqjhc_order_address ON hqjhc_order_address.orderno = hqjhc_orders.orderno LEFT JOIN hqjhc_user_address ON hqjhc_user_address.addressid = hqjhc_order_address.addressid  WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_goods.offerid = '9' ORDER BY hqjhc_orders.orderid desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000258s ]
+
+[ 2017-12-22T18:20:17+08:00 ] 61.151.178.164 /offer.php/Orderaf/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0005s ]
+

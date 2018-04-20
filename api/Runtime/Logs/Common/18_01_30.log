@@ -1,0 +1,24 @@
+[ 2018-01-30T15:26:49+08:00 ] 116.231.35.142 /api.php/index/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+ERR: 无法加载模块:Index
+
+[ 2018-01-30T15:26:56+08:00 ] 116.231.35.142 /api.php/api/index/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+ERR: 无法加载模块:Api
+
+[ 2018-01-30T15:27:49+08:00 ] 101.226.33.206 /api.php/index/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+ERR: 无法加载模块:Index
+
+[ 2018-01-30T15:27:56+08:00 ] 61.129.8.179 /api.php/api/index/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+ERR: 无法加载模块:Api
+

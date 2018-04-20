@@ -1,0 +1,147 @@
+<link rel="stylesheet" href="{$Think.const.ROOT_URL}/Public/backend/css/index.css">
+<include file="Layout@Index:header" />
+  <include file="Layout@Index:nav" />
+  <!-- Left side column. contains the logo and sidebar -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        微商账户支出明细列表
+        <small>微商支出信息列表</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台</a></li>
+        <li><a href="#"> 财务管理</a></li>
+        <li class="active">微商账户支出明细管理列表</li>
+      </ol>
+    </section>
+    <div class="col-xs-12">
+    <div class="callout callout-info ">
+        管理员可以在此管理微商账户支出明细
+      </div>
+    </div>
+    <div class="col-xs-12">
+        <div class="search1">
+<!--           <a href="{:U('Admin/Index/addUserPage')}"><button type="button" class="btn bg-olive btn-flat margin"><i class="fa fa-fw fa-plus"></i>添加管理员</button></a>-->
+           <a href="{:U('Funds/Userslogsmoneys/getpay')}"><button type="button" class="btn bg-purple margin"><i class="fa fa-fw fa-refresh"></i>刷新页面</button></a>
+        </div>
+    </div>
+    <!-- Search content end -->
+    <div class="col-xs-12">
+        <div class="search">
+            <form action="" method="get" >
+            <label>账号:</label><input name="loginName" type="text" />
+            <label>创建时间:</label><input id="datepickerstart" readonly="readonly" name="createTime" type="text" />
+            <button class="searchbutton"><i class="fa fa-fw fa-search"></i>搜索</button>
+            </form>
+        </div>
+    </div>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>编号</th>
+                  <th>订单号</th>
+                  <th>用户名</th>
+                  
+                  <th>金额(元)</th>
+                  <th>来源</th>
+                  <th>创建时间</th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist name="list" id="vo" empty="暂时没有数据" >
+                    <tr>
+                  <td><input type="checkbox"/>{$vo.moneyid}</td>
+                  <td>{$vo.orderno}</td>
+                  <td>{$vo.username}</td>
+                  <td>{$vo.amount}</td>
+                  <td>
+                    <if condition="$vo['datasource'] eq 4">
+                        支付宝交易
+                    </if>
+                    <if condition="$vo['datasource'] eq 5">
+                        钱包交易
+                    </if>
+                    <if condition="$vo['datasource'] eq 6">
+                        微信交易
+                    </if>
+                    <if condition="$vo['datasource'] eq 8">
+                        微信购买vip
+                    </if>
+                    <if condition="$vo['datasource'] eq 9">
+                        支付宝购买vip
+                    </if>
+                    <if condition="$vo['datasource'] eq 10">
+                        钱包购买vip
+                    </if> 
+                     <if condition="$vo['datasource'] eq 11">
+                        支付宝批处理交易
+                    </if> 
+                    <if condition="$vo['datasource'] eq 12">
+                        钱包批处理交易
+                    </if>
+                    <if condition="$vo['datasource'] eq 13">
+                        微信批处理交易
+                    </if>
+                  <td>{$vo.createtime}</td>
+                </tr>
+                </volist>
+                </tfoot>
+              </table>
+                <div style="text_align:right" class="result page">{$page}</div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+ <include file="Layout@Index:footer" />
+<!-- page script -->
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : false,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : false,
+      'autoWidth'   : false
+    })
+  })
+</script>
+<script>
+  $(function () {
+    $('#datepickerstart').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+    $('#datepickerend').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+    $(".searchbutton").click(function(){
+      $("#search").submit();
+    });
+    $(".delete").click(function(){
+      var r = confirm("确定要删除该条数据吗！");
+      if(r)
+      {
+         var stffid = $(this).val();
+         window.location.href="{:U('Admin/Index/delete/stffid/"+stffid+"')}";
+      }
+    });
+  })
+</script>

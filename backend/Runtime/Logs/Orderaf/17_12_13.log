@@ -1,0 +1,370 @@
+[ 2017-12-13T19:37:10+08:00 ] 101.81.0.88 /admin.php/Orderaf/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE hqjhc_orders_af.dataFlag = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT hqjhc_orders_af.returngoods_status as returngoods_status,hqjhc_orders_af.lack_status as lack_status,hqjhc_orders_af.leakage_status as leakage_status,hqjhc_orders_af.type as type,hqjhc_orders_af.id as id,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.goods_display_img as goods_display_img,hqjhc_goods.name as name,hqjhc_goods.goods_price as goods_price,hqjhc_goods.marketPrice as marketprice,hqjhc_orders.orderNo as orderno,hqjhc_orders.createTime as createtime,hqjhc_orders.orderid as orderid,hqjhc_orders.num as num,hqjhc_orders.userid as userid,hqjhc_orders.spec1 as spec1,hqjhc_orders.spec2 as spec2,hqjhc_orders.orderStatus as orderstatus,hqjhc_orders.remarks as remarks,hqjhc_user_address.userAdress as useraddress FROM `hqjhc_orders_af` LEFT JOIN hqjhc_orders ON hqjhc_orders.orderNo = hqjhc_orders_af.orderNo LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_orders.goodsid LEFT JOIN hqjhc_brands ON hqjhc_orders.brandsid = hqjhc_brands.brandid LEFT JOIN hqjhc_order_address ON hqjhc_order_address.orderno = hqjhc_orders.orderno LEFT JOIN hqjhc_user_address ON hqjhc_user_address.addressid = hqjhc_order_address.addressid  WHERE hqjhc_orders_af.dataFlag = 0 ORDER BY hqjhc_orders.orderid desc LIMIT 0,15   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 29 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 30 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 29 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Orderaf/1ec68e2a636314c6da0ad87cd362427f.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000238s ]
+
+[ 2017-12-13T19:37:12+08:00 ] 101.81.0.88 /admin.php/Orderaf/Index/leakgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT hqjhc_orders_af.returngoods_status as returngoods_status,hqjhc_orders_af.lack_status as lack_status,hqjhc_orders_af.leakage_status as leakage_status,hqjhc_orders_af.type as type,hqjhc_orders_af.id as id,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.goods_display_img as goods_display_img,hqjhc_goods.name as name,hqjhc_goods.goods_price as goods_price,hqjhc_goods.marketPrice as marketprice,hqjhc_orders.orderNo as orderno,hqjhc_orders.createTime as createtime,hqjhc_orders.orderid as orderid,hqjhc_orders.num as num,hqjhc_orders.userid as userid,hqjhc_orders.spec1 as spec1,hqjhc_orders.spec2 as spec2,hqjhc_orders.orderStatus as orderstatus,hqjhc_orders.remarks as remarks,hqjhc_user_address.userAdress as useraddress FROM `hqjhc_orders_af` LEFT JOIN hqjhc_orders ON hqjhc_orders.orderNo = hqjhc_orders_af.orderNo LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_orders.goodsid LEFT JOIN hqjhc_brands ON hqjhc_orders.brandsid = hqjhc_brands.brandid LEFT JOIN hqjhc_order_address ON hqjhc_order_address.orderno = hqjhc_orders.orderno LEFT JOIN hqjhc_user_address ON hqjhc_user_address.addressid = hqjhc_order_address.addressid  WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 1 ORDER BY hqjhc_orders.orderid desc LIMIT 0,15   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 29 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Orderaf/b8201e666f22577f058c47cd1441d966.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000235s ]
+
+[ 2017-12-13T19:37:13+08:00 ] 101.81.0.88 /admin.php/Orderaf/Index/lackgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT hqjhc_orders_af.returngoods_status as returngoods_status,hqjhc_orders_af.lack_status as lack_status,hqjhc_orders_af.leakage_status as leakage_status,hqjhc_orders_af.type as type,hqjhc_orders_af.id as id,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.goods_display_img as goods_display_img,hqjhc_goods.name as name,hqjhc_goods.goods_price as goods_price,hqjhc_goods.marketPrice as marketprice,hqjhc_orders.orderNo as orderno,hqjhc_orders.createTime as createtime,hqjhc_orders.orderid as orderid,hqjhc_orders.num as num,hqjhc_orders.userid as userid,hqjhc_orders.spec1 as spec1,hqjhc_orders.spec2 as spec2,hqjhc_orders.orderStatus as orderstatus,hqjhc_orders.remarks as remarks,hqjhc_user_address.userAdress as useraddress FROM `hqjhc_orders_af` LEFT JOIN hqjhc_orders ON hqjhc_orders.orderNo = hqjhc_orders_af.orderNo LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_orders.goodsid LEFT JOIN hqjhc_brands ON hqjhc_orders.brandsid = hqjhc_brands.brandid LEFT JOIN hqjhc_order_address ON hqjhc_order_address.orderno = hqjhc_orders.orderno LEFT JOIN hqjhc_user_address ON hqjhc_user_address.addressid = hqjhc_order_address.addressid  WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 2 ORDER BY hqjhc_orders.orderid desc LIMIT 0,15   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 30 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Orderaf/9dbbefdeaba5992ca647ea944f44b791.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000241s ]
+
+[ 2017-12-13T19:37:14+08:00 ] 101.81.0.88 /admin.php/Orderaf/Index/returngoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT hqjhc_orders_af.returngoods_status as returngoods_status,hqjhc_orders_af.lack_status as lack_status,hqjhc_orders_af.leakage_status as leakage_status,hqjhc_orders_af.type as type,hqjhc_orders_af.id as id,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.goods_display_img as goods_display_img,hqjhc_goods.name as name,hqjhc_goods.goods_price as goods_price,hqjhc_goods.marketPrice as marketprice,hqjhc_orders.orderNo as orderno,hqjhc_orders.createTime as createtime,hqjhc_orders.orderid as orderid,hqjhc_orders.num as num,hqjhc_orders.userid as userid,hqjhc_orders.spec1 as spec1,hqjhc_orders.spec2 as spec2,hqjhc_orders.orderStatus as orderstatus,hqjhc_orders.remarks as remarks,hqjhc_user_address.userAdress as useraddress FROM `hqjhc_orders_af` LEFT JOIN hqjhc_orders ON hqjhc_orders.orderNo = hqjhc_orders_af.orderNo LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_orders.goodsid LEFT JOIN hqjhc_brands ON hqjhc_orders.brandsid = hqjhc_brands.brandid LEFT JOIN hqjhc_order_address ON hqjhc_order_address.orderno = hqjhc_orders.orderno LEFT JOIN hqjhc_user_address ON hqjhc_user_address.addressid = hqjhc_order_address.addressid  WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 3 ORDER BY hqjhc_orders.orderid desc LIMIT 0,15   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 29 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 30 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Orderaf/62bbe0c77ec8048d7a175a9d3e5c7aa6.php 第 243 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Orderaf/62bbe0c77ec8048d7a175a9d3e5c7aa6.php 第 632 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Orderaf/62bbe0c77ec8048d7a175a9d3e5c7aa6.php 第 632 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000250s ]
+
+[ 2017-12-13T19:37:15+08:00 ] 101.81.0.88 /admin.php/Orderaf/Index/lackgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT hqjhc_orders_af.returngoods_status as returngoods_status,hqjhc_orders_af.lack_status as lack_status,hqjhc_orders_af.leakage_status as leakage_status,hqjhc_orders_af.type as type,hqjhc_orders_af.id as id,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.goods_display_img as goods_display_img,hqjhc_goods.name as name,hqjhc_goods.goods_price as goods_price,hqjhc_goods.marketPrice as marketprice,hqjhc_orders.orderNo as orderno,hqjhc_orders.createTime as createtime,hqjhc_orders.orderid as orderid,hqjhc_orders.num as num,hqjhc_orders.userid as userid,hqjhc_orders.spec1 as spec1,hqjhc_orders.spec2 as spec2,hqjhc_orders.orderStatus as orderstatus,hqjhc_orders.remarks as remarks,hqjhc_user_address.userAdress as useraddress FROM `hqjhc_orders_af` LEFT JOIN hqjhc_orders ON hqjhc_orders.orderNo = hqjhc_orders_af.orderNo LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_orders.goodsid LEFT JOIN hqjhc_brands ON hqjhc_orders.brandsid = hqjhc_brands.brandid LEFT JOIN hqjhc_order_address ON hqjhc_order_address.orderno = hqjhc_orders.orderno LEFT JOIN hqjhc_user_address ON hqjhc_user_address.addressid = hqjhc_order_address.addressid  WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 2 ORDER BY hqjhc_orders.orderid desc LIMIT 0,15   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 30 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Orderaf/9dbbefdeaba5992ca647ea944f44b791.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000255s ]
+
+[ 2017-12-13T19:37:16+08:00 ] 101.81.0.88 /admin.php/Orderaf/Index/leakgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT hqjhc_orders_af.returngoods_status as returngoods_status,hqjhc_orders_af.lack_status as lack_status,hqjhc_orders_af.leakage_status as leakage_status,hqjhc_orders_af.type as type,hqjhc_orders_af.id as id,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.goods_display_img as goods_display_img,hqjhc_goods.name as name,hqjhc_goods.goods_price as goods_price,hqjhc_goods.marketPrice as marketprice,hqjhc_orders.orderNo as orderno,hqjhc_orders.createTime as createtime,hqjhc_orders.orderid as orderid,hqjhc_orders.num as num,hqjhc_orders.userid as userid,hqjhc_orders.spec1 as spec1,hqjhc_orders.spec2 as spec2,hqjhc_orders.orderStatus as orderstatus,hqjhc_orders.remarks as remarks,hqjhc_user_address.userAdress as useraddress FROM `hqjhc_orders_af` LEFT JOIN hqjhc_orders ON hqjhc_orders.orderNo = hqjhc_orders_af.orderNo LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_orders.goodsid LEFT JOIN hqjhc_brands ON hqjhc_orders.brandsid = hqjhc_brands.brandid LEFT JOIN hqjhc_order_address ON hqjhc_order_address.orderno = hqjhc_orders.orderno LEFT JOIN hqjhc_user_address ON hqjhc_user_address.addressid = hqjhc_order_address.addressid  WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 1 ORDER BY hqjhc_orders.orderid desc LIMIT 0,15   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 29 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Orderaf/b8201e666f22577f058c47cd1441d966.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000251s ]
+
+[ 2017-12-13T19:37:16+08:00 ] 101.81.0.88 /admin.php/Orderaf/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE hqjhc_orders_af.dataFlag = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT hqjhc_orders_af.returngoods_status as returngoods_status,hqjhc_orders_af.lack_status as lack_status,hqjhc_orders_af.leakage_status as leakage_status,hqjhc_orders_af.type as type,hqjhc_orders_af.id as id,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.goods_display_img as goods_display_img,hqjhc_goods.name as name,hqjhc_goods.goods_price as goods_price,hqjhc_goods.marketPrice as marketprice,hqjhc_orders.orderNo as orderno,hqjhc_orders.createTime as createtime,hqjhc_orders.orderid as orderid,hqjhc_orders.num as num,hqjhc_orders.userid as userid,hqjhc_orders.spec1 as spec1,hqjhc_orders.spec2 as spec2,hqjhc_orders.orderStatus as orderstatus,hqjhc_orders.remarks as remarks,hqjhc_user_address.userAdress as useraddress FROM `hqjhc_orders_af` LEFT JOIN hqjhc_orders ON hqjhc_orders.orderNo = hqjhc_orders_af.orderNo LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_orders.goodsid LEFT JOIN hqjhc_brands ON hqjhc_orders.brandsid = hqjhc_brands.brandid LEFT JOIN hqjhc_order_address ON hqjhc_order_address.orderno = hqjhc_orders.orderno LEFT JOIN hqjhc_user_address ON hqjhc_user_address.addressid = hqjhc_order_address.addressid  WHERE hqjhc_orders_af.dataFlag = 0 ORDER BY hqjhc_orders.orderid desc LIMIT 0,15   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 29 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 29 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Orderaf/1ec68e2a636314c6da0ad87cd362427f.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000262s ]
+
+[ 2017-12-13T19:37:17+08:00 ] 101.81.0.88 /admin.php/Orderaf/Index/leakgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT hqjhc_orders_af.returngoods_status as returngoods_status,hqjhc_orders_af.lack_status as lack_status,hqjhc_orders_af.leakage_status as leakage_status,hqjhc_orders_af.type as type,hqjhc_orders_af.id as id,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.goods_display_img as goods_display_img,hqjhc_goods.name as name,hqjhc_goods.goods_price as goods_price,hqjhc_goods.marketPrice as marketprice,hqjhc_orders.orderNo as orderno,hqjhc_orders.createTime as createtime,hqjhc_orders.orderid as orderid,hqjhc_orders.num as num,hqjhc_orders.userid as userid,hqjhc_orders.spec1 as spec1,hqjhc_orders.spec2 as spec2,hqjhc_orders.orderStatus as orderstatus,hqjhc_orders.remarks as remarks,hqjhc_user_address.userAdress as useraddress FROM `hqjhc_orders_af` LEFT JOIN hqjhc_orders ON hqjhc_orders.orderNo = hqjhc_orders_af.orderNo LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_orders.goodsid LEFT JOIN hqjhc_brands ON hqjhc_orders.brandsid = hqjhc_brands.brandid LEFT JOIN hqjhc_order_address ON hqjhc_order_address.orderno = hqjhc_orders.orderno LEFT JOIN hqjhc_user_address ON hqjhc_user_address.addressid = hqjhc_order_address.addressid  WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 1 ORDER BY hqjhc_orders.orderid desc LIMIT 0,15   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 29 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Orderaf/b8201e666f22577f058c47cd1441d966.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000248s ]
+
+[ 2017-12-13T19:37:18+08:00 ] 101.81.0.88 /admin.php/Orderaf/Index/lackgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT hqjhc_orders_af.returngoods_status as returngoods_status,hqjhc_orders_af.lack_status as lack_status,hqjhc_orders_af.leakage_status as leakage_status,hqjhc_orders_af.type as type,hqjhc_orders_af.id as id,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.goods_display_img as goods_display_img,hqjhc_goods.name as name,hqjhc_goods.goods_price as goods_price,hqjhc_goods.marketPrice as marketprice,hqjhc_orders.orderNo as orderno,hqjhc_orders.createTime as createtime,hqjhc_orders.orderid as orderid,hqjhc_orders.num as num,hqjhc_orders.userid as userid,hqjhc_orders.spec1 as spec1,hqjhc_orders.spec2 as spec2,hqjhc_orders.orderStatus as orderstatus,hqjhc_orders.remarks as remarks,hqjhc_user_address.userAdress as useraddress FROM `hqjhc_orders_af` LEFT JOIN hqjhc_orders ON hqjhc_orders.orderNo = hqjhc_orders_af.orderNo LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_orders.goodsid LEFT JOIN hqjhc_brands ON hqjhc_orders.brandsid = hqjhc_brands.brandid LEFT JOIN hqjhc_order_address ON hqjhc_order_address.orderno = hqjhc_orders.orderno LEFT JOIN hqjhc_user_address ON hqjhc_user_address.addressid = hqjhc_order_address.addressid  WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 2 ORDER BY hqjhc_orders.orderid desc LIMIT 0,15   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 30 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Orderaf/9dbbefdeaba5992ca647ea944f44b791.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000278s ]
+
+[ 2017-12-13T19:37:19+08:00 ] 101.81.0.88 /admin.php/Orderaf/Index/returngoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT hqjhc_orders_af.returngoods_status as returngoods_status,hqjhc_orders_af.lack_status as lack_status,hqjhc_orders_af.leakage_status as leakage_status,hqjhc_orders_af.type as type,hqjhc_orders_af.id as id,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.goods_display_img as goods_display_img,hqjhc_goods.name as name,hqjhc_goods.goods_price as goods_price,hqjhc_goods.marketPrice as marketprice,hqjhc_orders.orderNo as orderno,hqjhc_orders.createTime as createtime,hqjhc_orders.orderid as orderid,hqjhc_orders.num as num,hqjhc_orders.userid as userid,hqjhc_orders.spec1 as spec1,hqjhc_orders.spec2 as spec2,hqjhc_orders.orderStatus as orderstatus,hqjhc_orders.remarks as remarks,hqjhc_user_address.userAdress as useraddress FROM `hqjhc_orders_af` LEFT JOIN hqjhc_orders ON hqjhc_orders.orderNo = hqjhc_orders_af.orderNo LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_orders.goodsid LEFT JOIN hqjhc_brands ON hqjhc_orders.brandsid = hqjhc_brands.brandid LEFT JOIN hqjhc_order_address ON hqjhc_order_address.orderno = hqjhc_orders.orderno LEFT JOIN hqjhc_user_address ON hqjhc_user_address.addressid = hqjhc_order_address.addressid  WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 3 ORDER BY hqjhc_orders.orderid desc LIMIT 0,15   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 29 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 30 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Orderaf/62bbe0c77ec8048d7a175a9d3e5c7aa6.php 第 243 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Orderaf/62bbe0c77ec8048d7a175a9d3e5c7aa6.php 第 632 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Orderaf/62bbe0c77ec8048d7a175a9d3e5c7aa6.php 第 632 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000236s ]
+
+[ 2017-12-13T19:37:23+08:00 ] 101.226.33.227 /admin.php/Orderaf/Index/lackgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-12-13T19:37:24+08:00 ] 61.129.6.112 /admin.php/Orderaf/Index/returngoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-12-13T19:37:39+08:00 ] 101.81.0.88 /admin.php/Orderaf/Index/returngoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders_af` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders_af` WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT hqjhc_orders_af.returngoods_status as returngoods_status,hqjhc_orders_af.lack_status as lack_status,hqjhc_orders_af.leakage_status as leakage_status,hqjhc_orders_af.type as type,hqjhc_orders_af.id as id,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.goods_display_img as goods_display_img,hqjhc_goods.name as name,hqjhc_goods.goods_price as goods_price,hqjhc_goods.marketPrice as marketprice,hqjhc_orders.orderNo as orderno,hqjhc_orders.createTime as createtime,hqjhc_orders.orderid as orderid,hqjhc_orders.num as num,hqjhc_orders.userid as userid,hqjhc_orders.spec1 as spec1,hqjhc_orders.spec2 as spec2,hqjhc_orders.orderStatus as orderstatus,hqjhc_orders.remarks as remarks,hqjhc_user_address.userAdress as useraddress FROM `hqjhc_orders_af` LEFT JOIN hqjhc_orders ON hqjhc_orders.orderNo = hqjhc_orders_af.orderNo LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_orders.goodsid LEFT JOIN hqjhc_brands ON hqjhc_orders.brandsid = hqjhc_brands.brandid LEFT JOIN hqjhc_order_address ON hqjhc_order_address.orderno = hqjhc_orders.orderno LEFT JOIN hqjhc_user_address ON hqjhc_user_address.addressid = hqjhc_order_address.addressid  WHERE hqjhc_orders_af.dataFlag = 0 AND hqjhc_orders_af.type = 3 ORDER BY hqjhc_orders.orderid desc LIMIT 0,15   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 29 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 30 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Orderaf/62bbe0c77ec8048d7a175a9d3e5c7aa6.php 第 243 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Orderaf/62bbe0c77ec8048d7a175a9d3e5c7aa6.php 第 632 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Orderaf/62bbe0c77ec8048d7a175a9d3e5c7aa6.php 第 632 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000234s ]
+

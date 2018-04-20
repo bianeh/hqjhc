@@ -1,0 +1,190 @@
+[ 2017-12-20T17:20:09+08:00 ] 101.226.68.215 /offer.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0005s ]
+
+[ 2017-12-20T17:21:09+08:00 ] 101.226.33.223 /offer.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0005s ]
+
+[ 2017-12-20T17:24:43+08:00 ] 116.226.130.39 /offer.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0005s ]
+
+[ 2017-12-20T17:24:55+08:00 ] 116.226.130.39 /offer.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_offers` WHERE `offerid` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` LEFT JOIN hqjhc_goods ON hqjhc_orders.goodsid = hqjhc_goods.id  WHERE hqjhc_goods.offerid = '9' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_order_settlement` [ RunTime:0.0003s ]
+SQL: SELECT SUM(hqjhc_order_settlement.actualpayMoney) AS tp_sum FROM `hqjhc_order_settlement` LEFT JOIN hqjhc_orders ON hqjhc_order_settlement.orderNo = hqjhc_orders.orderNo LEFT JOIN hqjhc_goods ON hqjhc_orders.goodsid = hqjhc_goods.id  WHERE hqjhc_goods.offerid = '9' AND hqjhc_order_settlement.status = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hqjhc_favorites` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_favorites` LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_favorites.targetid  WHERE hqjhc_goods.offerid = '9' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods` WHERE hqjhc_goods.offerid = '9' LIMIT 1   [ RunTime:0.0002s ]
+SQL: select DATE_FORMAT(hqjhc_orders.createTime,'%Y/%m') months,count(hqjhc_orders.orderid) count from hqjhc_orders left join hqjhc_goods ON hqjhc_orders.goodsid = hqjhc_goods.id where hqjhc_goods.offerid = 9 group by months [ RunTime:0.0005s ]
+SQL: select DATE_FORMAT(a.createTime,'%Y/%m') months,sum(a.actualpayMoney) money from hqjhc_order_settlement a left join hqjhc_orders b ON a.orderNo = b.orderNo left join hqjhc_goods c ON b.goodsid = c.id where c.offerid = 9 group by months [ RunTime:0.0044s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined variable: list /home/www/hqjhc/bussiness/Runtime/Cache/Home/0611dd615fef92d7f6867b23c362de41.php 第 586 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000262s ]
+
+[ 2017-12-20T17:25:55+08:00 ] 116.226.130.39 /offer.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_offers` WHERE `offerid` = 14 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` LEFT JOIN hqjhc_goods ON hqjhc_orders.goodsid = hqjhc_goods.id  WHERE hqjhc_goods.offerid = '14' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hqjhc_order_settlement` [ RunTime:0.0003s ]
+SQL: SELECT SUM(hqjhc_order_settlement.actualpayMoney) AS tp_sum FROM `hqjhc_order_settlement` LEFT JOIN hqjhc_orders ON hqjhc_order_settlement.orderNo = hqjhc_orders.orderNo LEFT JOIN hqjhc_goods ON hqjhc_orders.goodsid = hqjhc_goods.id  WHERE hqjhc_goods.offerid = '14' AND hqjhc_order_settlement.status = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hqjhc_favorites` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_favorites` LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_favorites.targetid  WHERE hqjhc_goods.offerid = '14' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods` WHERE hqjhc_goods.offerid = '14' LIMIT 1   [ RunTime:0.0002s ]
+SQL: select DATE_FORMAT(hqjhc_orders.createTime,'%Y/%m') months,count(hqjhc_orders.orderid) count from hqjhc_orders left join hqjhc_goods ON hqjhc_orders.goodsid = hqjhc_goods.id where hqjhc_goods.offerid = 14 group by months [ RunTime:0.0017s ]
+SQL: select DATE_FORMAT(a.createTime,'%Y/%m') months,sum(a.actualpayMoney) money from hqjhc_order_settlement a left join hqjhc_orders b ON a.orderNo = b.orderNo left join hqjhc_goods c ON b.goodsid = c.id where c.offerid = 14 group by months [ RunTime:0.0046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined variable: list /home/www/hqjhc/bussiness/Runtime/Cache/Home/0611dd615fef92d7f6867b23c362de41.php 第 586 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000244s ]
+
+[ 2017-12-20T17:39:19+08:00 ] 116.226.130.39 /offer.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0005s ]
+
+[ 2017-12-20T17:39:20+08:00 ] 116.226.130.39 /offer.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0005s ]
+
+[ 2017-12-20T17:39:26+08:00 ] 116.226.130.39 /offer.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_offers` WHERE `offerid` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` LEFT JOIN hqjhc_goods ON hqjhc_orders.goodsid = hqjhc_goods.id  WHERE hqjhc_goods.offerid = '9' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_order_settlement` [ RunTime:0.0003s ]
+SQL: SELECT SUM(hqjhc_order_settlement.actualpayMoney) AS tp_sum FROM `hqjhc_order_settlement` LEFT JOIN hqjhc_orders ON hqjhc_order_settlement.orderNo = hqjhc_orders.orderNo LEFT JOIN hqjhc_goods ON hqjhc_orders.goodsid = hqjhc_goods.id  WHERE hqjhc_goods.offerid = '9' AND hqjhc_order_settlement.status = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hqjhc_favorites` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_favorites` LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_favorites.targetid  WHERE hqjhc_goods.offerid = '9' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods` WHERE hqjhc_goods.offerid = '9' LIMIT 1   [ RunTime:0.0002s ]
+SQL: select DATE_FORMAT(hqjhc_orders.createTime,'%Y/%m') months,count(hqjhc_orders.orderid) count from hqjhc_orders left join hqjhc_goods ON hqjhc_orders.goodsid = hqjhc_goods.id where hqjhc_goods.offerid = 9 group by months [ RunTime:0.0005s ]
+SQL: select DATE_FORMAT(a.createTime,'%Y/%m') months,sum(a.actualpayMoney) money from hqjhc_order_settlement a left join hqjhc_orders b ON a.orderNo = b.orderNo left join hqjhc_goods c ON b.goodsid = c.id where c.offerid = 9 group by months [ RunTime:0.0046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: list /home/www/hqjhc/bussiness/Runtime/Cache/Home/0611dd615fef92d7f6867b23c362de41.php 第 586 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000246s ]
+
+[ 2017-12-20T17:39:40+08:00 ] 116.226.130.39 /offer.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_offers` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_offers` WHERE `offerid` = 14 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_orders` LEFT JOIN hqjhc_goods ON hqjhc_orders.goodsid = hqjhc_goods.id  WHERE hqjhc_goods.offerid = '14' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `hqjhc_order_settlement` [ RunTime:0.0003s ]
+SQL: SELECT SUM(hqjhc_order_settlement.actualpayMoney) AS tp_sum FROM `hqjhc_order_settlement` LEFT JOIN hqjhc_orders ON hqjhc_order_settlement.orderNo = hqjhc_orders.orderNo LEFT JOIN hqjhc_goods ON hqjhc_orders.goodsid = hqjhc_goods.id  WHERE hqjhc_goods.offerid = '14' AND hqjhc_order_settlement.status = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hqjhc_favorites` [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_favorites` LEFT JOIN hqjhc_goods ON hqjhc_goods.id = hqjhc_favorites.targetid  WHERE hqjhc_goods.offerid = '14' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_goods` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_goods` WHERE hqjhc_goods.offerid = '14' LIMIT 1   [ RunTime:0.0002s ]
+SQL: select DATE_FORMAT(hqjhc_orders.createTime,'%Y/%m') months,count(hqjhc_orders.orderid) count from hqjhc_orders left join hqjhc_goods ON hqjhc_orders.goodsid = hqjhc_goods.id where hqjhc_goods.offerid = 14 group by months [ RunTime:0.0017s ]
+SQL: select DATE_FORMAT(a.createTime,'%Y/%m') months,sum(a.actualpayMoney) money from hqjhc_order_settlement a left join hqjhc_orders b ON a.orderNo = b.orderNo left join hqjhc_goods c ON b.goodsid = c.id where c.offerid = 14 group by months [ RunTime:0.0046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: list /home/www/hqjhc/bussiness/Runtime/Cache/Home/0611dd615fef92d7f6867b23c362de41.php 第 586 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000286s ]
+

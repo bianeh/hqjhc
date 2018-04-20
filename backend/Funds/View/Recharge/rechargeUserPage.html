@@ -1,0 +1,108 @@
+  <include file="Layout@Index:header" />
+  <include file="Layout@Index:nav" />
+  <!-- Left side column. contains the logo and sidebar -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        手动充值
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台</a></li>
+        <li><a href="{:U('Admin/Index/index')}">手动充值</a></li>
+        <li class="active">手动充值</li>
+      </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">手动充值</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="box box-warning">
+
+            <!-- /.box-header -->
+            <div class="box-body">
+              <form role="form" id="doRecharge" method="post"action="{:U('Funds/Recharge/doRechargeUser')}">
+                <!-- text input -->
+                <div class="form-group">
+                  <label>微商账号</label>
+                  <input type="text" id="loginName" name="loginName" class="form-control" placeholder="账号">
+                </div>
+                <div class="form-group">
+                  <label>充值金额</label>
+                  <input type="text" id="staffNo" name="amount" class="form-control" placeholder="充值金额">
+                </div>
+                 <div class="form-group">
+                  <label>备注</label>
+                  <textarea class="form-control" name="remarks" placeholder="备注"></textarea>
+                </div>
+                <input type="hidden" name="note" value="{$data.stffid}"/>
+              </form>
+                <div class="form-group">
+                    <button id="doRechargeOperate" class="btn bg-olive btn-flat margin"><i class="fa fa-fw fa-plus"></i>充值</button>
+                </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <include file="Layout@Index:footer"/>
+  <!-- 全局js -->
+  <script src="{$Think.const.PUBLIC_URL}/common/js/jquery.min.js?v=2.1.4"></script>
+  <script src="{$Think.const.PUBLIC_URL}/common/js/bootstrap.min.js?v=3.3.6"></script>
+  <script src="{$Think.const.PUBLIC_URL}/common/js/ajaxfileupload.js"></script>
+ <script>
+    var doRechargeOperate = document.getElementById("doRechargeOperate");
+    doRechargeOperate.onclick=function()
+    {     
+          
+                       document.getElementById("doRecharge").submit();
+             
+      }
+  </script>
+  <script>
+      function readyup()
+    {
+            ajaxFileUpload();
+    }
+    function ajaxFileUpload() {
+            $.ajaxFileUpload
+            (
+                    {
+                        url: "{:U('Upload/Index/upload')}",
+                        secureuri: false,
+                        fileElementId: 'file',
+                        dataType: 'json',
+                        success: function (data, status)
+                        {
+                           var code = data['code'];
+                           if(code == '000002')
+                           {
+                               $("#img1").attr("src", data.showimgurl);
+                               $(":input[name=staffPhoto]").val(data.imgurl);
+                           }
+                        },
+                        error: function (data, status, e)
+                        {
+                          alert(data.msg);
+                        }
+                    }
+            )
+            return false;
+        }
+  </script>

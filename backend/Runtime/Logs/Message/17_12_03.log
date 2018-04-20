@@ -1,0 +1,184 @@
+[ 2017-12-03T16:55:52+08:00 ] 101.81.120.60 /admin.php/Message/Messageinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_mobile_message` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_mobile_message` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_mobile_message` ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 244 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000263s ]
+
+[ 2017-12-03T16:56:02+08:00 ] 101.226.33.239 /admin.php/Message/Messageinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-12-03T16:57:01+08:00 ] 101.81.120.60 /admin.php/Message/Messageinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_mobile_message` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_mobile_message` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_mobile_message` ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 244 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000257s ]
+
+[ 2017-12-03T16:59:24+08:00 ] 101.81.120.60 /admin.php/Message/Messageinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_mobile_message` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_mobile_message` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_mobile_message` ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 244 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 607 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000249s ]
+

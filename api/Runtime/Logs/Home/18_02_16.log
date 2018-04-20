@@ -1,0 +1,48 @@
+[ 2018-02-16T05:44:38+08:00 ] 183.61.51.59 /api.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_grade` [ RunTime:0.3066s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` LEFT JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid LEFT JOIN hqjhc_goods ON hqjhc_brands.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.enddate > '2018-02-16 05:44:38'  [ RunTime:0.0004s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` INNER JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid INNER JOIN hqjhc_goods ON hqjhc_grade.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.enddate > '2018-02-16 05:44:38' AND hqjhc_grade.startdate < '2018-02-16 05:44:38'  [ RunTime:0.0003s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` INNER JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid INNER JOIN hqjhc_goods ON hqjhc_grade.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.startdate > '2018-02-16 05:44:38'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: userid /home/www/hqjhc/api/Home/Controller/IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `hqjhc_favorites` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_favorites` WHERE `userid` = null  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_ads` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_ads` WHERE `adpositionid` = 1 AND `dataFlag` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: userid /home/www/hqjhc/api/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = null AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2018-02-16T05:44:47+08:00 ] 183.61.51.59 /api.php/Home/Messages/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0  [ RunTime:0.0002s ]
+
+[ 2018-02-16T05:44:54+08:00 ] 183.61.51.59 /api.php/Home/Messages/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0  [ RunTime:0.0002s ]
+

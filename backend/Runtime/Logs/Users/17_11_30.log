@@ -1,0 +1,163 @@
+[ 2017-11-30T09:27:11+08:00 ] 101.81.120.60 /admin.php/Users/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000248s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_users` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `dataFlag` = 0 ORDER BY `userid` desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 0 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Users/6bd77a6c58b77564a8b6ba3e7f78cc6a.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000255s ]
+
+[ 2017-11-30T09:27:15+08:00 ] 101.81.120.60 /admin.php/Users/Address/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_user_address` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_user_address` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_user_address` WHERE `dataFlag` = 0 ORDER BY `addressid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 10 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 22 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 19 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 14 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 14 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 13 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 243 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 605 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 606 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 610 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 625 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 628 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 605 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 606 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 610 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 625 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 628 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 605 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 606 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 610 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 625 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 628 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 605 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 606 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 610 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 625 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 628 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 605 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 606 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 610 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 625 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 628 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 605 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 606 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 610 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 625 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 628 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 605 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 606 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 610 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 625 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 628 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 605 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 606 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 610 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 625 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 628 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 605 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 606 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 610 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 625 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 628 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 605 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 606 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 610 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 625 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 628 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 605 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 606 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 610 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 625 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 628 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 605 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 606 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 610 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 625 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 628 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 605 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 606 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 610 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 625 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 628 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 605 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 606 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 610 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 625 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 628 行.
+NOTIC: [8] Undefined index: area /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 605 行.
+NOTIC: [8] Undefined index: useraddress /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 606 行.
+NOTIC: [8] Undefined index: lastip /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 610 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 625 行.
+NOTIC: [8] Undefined index: userstatus /home/www/hqjhc/backend/Runtime/Cache/Users/5529ca622aa0e5ca9c0f3a3dbe86046f.php 第 628 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000249s ]
+
+[ 2017-11-30T09:27:25+08:00 ] 101.226.65.104 /admin.php/Users/Address/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+

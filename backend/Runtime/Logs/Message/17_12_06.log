@@ -1,0 +1,932 @@
+[ 2017-12-06T15:20:45+08:00 ] 116.226.130.39 /admin.php/Message/Webnotify/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 244 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007215s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000249s ]
+
+[ 2017-12-06T15:20:50+08:00 ] 116.226.130.39 /admin.php/Message/Messageinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_mobile_message` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_mobile_message` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_mobile_message` ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 244 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007238s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000252s ]
+
+[ 2017-12-06T15:20:54+08:00 ] 116.226.130.39 /admin.php/Message/Webnotify/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 244 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000250s ]
+
+[ 2017-12-06T15:20:55+08:00 ] 120.204.17.68 /admin.php/message/webnotify/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-12-06T15:20:58+08:00 ] 116.226.130.39 /admin.php/Message/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_messages` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0 ORDER BY `messageid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/78dd56287d98170f041e1afca847b8d8.php 第 244 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007395s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000257s ]
+
+[ 2017-12-06T15:21:00+08:00 ] 120.204.17.69 /admin.php/message/messageinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000259s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-12-06T15:21:03+08:00 ] 116.226.130.39 /admin.php/Message/Webnotify/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 244 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000254s ]
+
+[ 2017-12-06T15:21:06+08:00 ] 116.226.130.39 /admin.php/Message/Webnotify/addWebnotifyPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/e1c256294225564f8d243487d36d437f.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000240s ]
+
+[ 2017-12-06T15:21:16+08:00 ] 183.192.201.97 /admin.php/message/webnotify/addwebnotifypage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-12-06T15:21:18+08:00 ] 116.226.130.39 /admin.php/Message/Webnotify/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 244 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000251s ]
+
+[ 2017-12-06T15:21:37+08:00 ] 116.226.130.39 /admin.php/Message/Webnotify/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 244 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000250s ]
+
+[ 2017-12-06T15:21:41+08:00 ] 116.226.130.39 /admin.php/Message/Messageinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_mobile_message` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_mobile_message` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_mobile_message` ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 244 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000248s ]
+
+[ 2017-12-06T15:21:45+08:00 ] 116.226.130.39 /admin.php/Message/Webnotify/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 244 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000253s ]
+
+[ 2017-12-06T15:21:46+08:00 ] 116.226.130.39 /admin.php/Message/Webnotify/addWebnotifyPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/e1c256294225564f8d243487d36d437f.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000253s ]
+
+[ 2017-12-06T15:24:26+08:00 ] 116.226.130.39 /admin.php/Message/Webnotify/doAddWebnotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate /home/www/hqjhc/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /home/www/hqjhc/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `hqjhc_web_notify` (`title`,`info`,`createstaffid`,`createTime`) VALUES ('欢迎语！','成才从此起步，成功由此开始！（微商团队）','6','2017-12-06 15:24:26') [ RunTime:0.0054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000237s ]
+
+[ 2017-12-06T15:24:27+08:00 ] 116.226.130.39 /admin.php/Message/Webnotify/addWebnotifyPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/e1c256294225564f8d243487d36d437f.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000252s ]
+
+[ 2017-12-06T15:24:36+08:00 ] 120.204.17.73 /admin.php/message/webnotify/doaddwebnotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-12-06T15:24:51+08:00 ] 116.226.130.39 /admin.php/Message/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_messages` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0 ORDER BY `messageid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/78dd56287d98170f041e1afca847b8d8.php 第 244 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000250s ]
+
+[ 2017-12-06T15:24:56+08:00 ] 116.226.130.39 /admin.php/Message/Index/addMessagePage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/117137b4098c6106987b3aef2deee7e7.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000251s ]
+
+[ 2017-12-06T15:25:06+08:00 ] 120.204.17.68 /admin.php/message/index/addmessagepage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-12-06T15:28:43+08:00 ] 116.226.130.39 /admin.php/Message/Index/doAddMessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate /home/www/hqjhc/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /home/www/hqjhc/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `hqjhc_messages` (`messageTitle`,`messageType`,`messageContent`,`createstaffid`,`createTime`) VALUES ('12月10日寿全斋下午3点开播。小S推荐，257年老字号','2','寿全斋药店，创建于1760年，由慈溪黄山王立鳌和宁波孙将壳共同创建。寿全斋成功地自制各种膏、丹、丸、散，精制饮片参茸、药酒补膏等，至1873年计有 11门类405个品种，是宁波目前现存最早药铺之一。宁波寿全斋以货真价实为宗旨，遵古炮制为典律，素有自制各种膏、丹、丸、散精致饮片、参茸药酒补酒之传统，突出高档参茸补品，道地药材经营特色，寿全斋滋补品店主要经营蛤士蟆、燕窝、雪蛤、参茸、冬虫夏草等滋补品。','6','2017-12-06 15:28:43') [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000032s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000243s ]
+
+[ 2017-12-06T15:28:44+08:00 ] 116.226.130.39 /admin.php/Message/Index/addMessagePage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/117137b4098c6106987b3aef2deee7e7.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000256s ]
+
+[ 2017-12-06T15:28:53+08:00 ] 121.51.32.144 /admin.php/message/index/doaddmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-12-06T15:29:25+08:00 ] 116.226.130.39 /admin.php/Message/Webnotify/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_web_notify` WHERE `dataFlag` = 0 ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 244 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 610 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 611 行.
+NOTIC: [8] Undefined index: messagetype /home/www/hqjhc/backend/Runtime/Cache/Message/212bedb0a5c0587d55917f5e0aab4a3f.php 第 612 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000244s ]
+
+[ 2017-12-06T15:29:31+08:00 ] 116.226.130.39 /admin.php/Message/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_messages` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0 ORDER BY `messageid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/78dd56287d98170f041e1afca847b8d8.php 第 244 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000240s ]
+
+[ 2017-12-06T15:31:00+08:00 ] 116.226.130.39 /admin.php/Message/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_messages` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0 ORDER BY `messageid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/78dd56287d98170f041e1afca847b8d8.php 第 244 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000258s ]
+
+[ 2017-12-06T15:31:02+08:00 ] 116.226.130.39 /admin.php/Message/Index/editMessagepage/messageid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `messageid` = 5 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/c49e29c87250bf41869dd5c2807edef5.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000260s ]
+
+[ 2017-12-06T15:31:13+08:00 ] 120.204.17.70 /admin.php/message/index/editmessagepage/messageid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-12-06T15:36:19+08:00 ] 116.226.130.39 /admin.php/Message/Index/doEditMessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate /home/www/hqjhc/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /home/www/hqjhc/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `hqjhc_messages` SET `messageTitle`='12月10日寿全斋下午3点开播。小S推荐，257年老字号',`messageType`='2',`messageContent`='12月10日寿全斋下午3点开播。小S推荐，257年老字号。寿全斋药店，创建于1760年，由慈溪黄山王立鳌和宁波孙将壳共同创建。寿全斋成功地自制各种膏、丹、丸、散，精制饮片参茸、药酒补膏等，至1873年计有 11门类405个品种，是宁波目前现存最早药铺之一。宁波寿全斋以货真价实为宗旨，遵古炮制为典律，素有自制各种膏、丹、丸、散精致饮片、参茸药酒补酒之传统，突出高档参茸补品，道地药材经营特色，寿全斋滋补品店主要经营蛤士蟆、燕窝、雪蛤、参茸、冬虫夏草等滋补品。',`updatestaffid`='6' WHERE `messageid` = 5 [ RunTime:0.0043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000239s ]
+
+[ 2017-12-06T15:36:20+08:00 ] 116.226.130.39 /admin.php/Message/Index/editMessagepage/messageid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `messageid` = 5 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/c49e29c87250bf41869dd5c2807edef5.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000257s ]
+
+[ 2017-12-06T15:36:29+08:00 ] 121.51.32.144 /admin.php/message/index/doeditmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+
+[ 2017-12-06T16:13:07+08:00 ] 116.226.130.39 /admin.php/Message/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_messages` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0 ORDER BY `messageid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/78dd56287d98170f041e1afca847b8d8.php 第 244 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000240s ]
+
+[ 2017-12-06T18:56:59+08:00 ] 101.81.120.60 /admin.php/Message/Messageinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_mobile_message` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_mobile_message` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `hqjhc_mobile_message` ORDER BY `id` desc LIMIT 0,15   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+NOTIC: [8] Undefined index: createstaffid /home/www/hqjhc/backend/Message/Controller/MessageinfoController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 244 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+NOTIC: [8] Undefined index: info /home/www/hqjhc/backend/Runtime/Cache/Message/7462d80b413aadf64582692ae150739c.php 第 608 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000238s ]
+
+[ 2017-12-06T18:57:09+08:00 ] 101.226.33.237 /admin.php/Message/Messageinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+

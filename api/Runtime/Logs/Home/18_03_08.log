@@ -1,0 +1,24 @@
+[ 2018-03-08T16:09:11+08:00 ] 110.75.242.249 /api.php/Home/Recharge/zfb_vip_notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_recharge` [ RunTime:0.0005s ]
+SQL: UPDATE `hqjhc_recharge` SET `status`='1' WHERE `orderNo` = '2017120548515310' [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_viprecharge` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_viprecharge` WHERE `orderNo` = '2017120548515310' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: UPDATE `hqjhc_users` SET `vip`='1' WHERE `userid` = 36 [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `hqjhc_logs_viprecharge` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hqjhc_logs_moneys` [ RunTime:0.0003s ]
+SQL: INSERT INTO `hqjhc_logs_viprecharge` (`examount`,`userid`,`amount`,`datasrc`,`createTime`,`orderNo`) VALUES ('0.00','36','0.01','1','2018-03-08 16:09:10','2017120548515310') [ RunTime:0.1927s ]
+SQL: INSERT INTO `hqjhc_logs_moneys` (`amount`,`moneyType`,`accessType`,`orderNo`,`datasource`,`createTime`,`userid`) VALUES ('0.01','1','2','2017120548515310','9','2018-03-08 16:09:10','36') [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000684s ]
+

@@ -1,0 +1,68 @@
+[ 2018-03-02T09:18:06+08:00 ] 101.44.12.72 /admin.php/Funds/Ordersettlement/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_staffs` WHERE `stffid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_order_settlement` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_order_settlement` WHERE `dataFlag` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hqjhc_order_settlement` WHERE `dataFlag` = 0 ORDER BY `ordersettleid` desc LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$_data /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 244 行.
+NOTIC: [8] Undefined index: username /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 610 行.
+NOTIC: [8] Undefined index: examount /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 612 行.
+NOTIC: [8] Undefined index: username /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 610 行.
+NOTIC: [8] Undefined index: examount /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 612 行.
+NOTIC: [8] Undefined index: username /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 610 行.
+NOTIC: [8] Undefined index: examount /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 612 行.
+NOTIC: [8] Undefined index: username /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 610 行.
+NOTIC: [8] Undefined index: examount /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 612 行.
+NOTIC: [8] Undefined index: username /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 610 行.
+NOTIC: [8] Undefined index: examount /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 612 行.
+NOTIC: [8] Undefined index: username /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 610 行.
+NOTIC: [8] Undefined index: examount /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 612 行.
+NOTIC: [8] Undefined index: username /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 610 行.
+NOTIC: [8] Undefined index: examount /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 612 行.
+NOTIC: [8] Undefined index: username /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 610 行.
+NOTIC: [8] Undefined index: examount /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 612 行.
+NOTIC: [8] Undefined index: username /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 610 行.
+NOTIC: [8] Undefined index: examount /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 612 行.
+NOTIC: [8] Undefined index: username /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 610 行.
+NOTIC: [8] Undefined index: examount /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 612 行.
+NOTIC: [8] Undefined index: username /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 610 行.
+NOTIC: [8] Undefined index: examount /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 612 行.
+NOTIC: [8] Undefined index: username /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 610 行.
+NOTIC: [8] Undefined index: examount /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 612 行.
+NOTIC: [8] Undefined index: username /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 610 行.
+NOTIC: [8] Undefined index: examount /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 612 行.
+NOTIC: [8] Undefined index: username /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 610 行.
+NOTIC: [8] Undefined index: examount /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 612 行.
+NOTIC: [8] Undefined index: username /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 610 行.
+NOTIC: [8] Undefined index: examount /home/www/hqjhc/backend/Runtime/Cache/Funds/2327a953fb7e79643a3a06745e876629.php 第 612 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2018-03-02T09:19:06+08:00 ] 101.226.33.240 /admin.php/Funds/Ordersettlement/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_staffs` [ RunTime:0.0006s ]
+

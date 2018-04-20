@@ -1,0 +1,82 @@
+  <include file="Layout@Index:header" />
+  <include file="Layout@Index:nav" />
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+          产品分类添加
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台</a></li>
+        <li><a href="{:U('Product/goodscats/index')}">产品分类管理</a></li>
+        <li class="active">添加产品分类</li>
+      </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">产品分类添加</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="box box-warning">
+
+            <!-- /.box-header -->
+            <div class="box-body">
+              <form role="form" id="addgoodscats" method="post" action="{:U('Product/Goodscats/doAddGoodscats')}">
+                <!-- text input -->
+                <div class="form-group">
+                  <label>分类名称</label>
+                  <input type="text" id="catName" name="catName" class="form-control" placeholder="分类名称">
+                </div>
+
+                <div class="form-group">
+                  <label>父级分类</label>
+                  <select multiple="" id="parentid" name="parentid" class="form-control">
+                    <option selected value='0'>请选择分类</option>
+                    <?php foreach ($goodscatslist as $val){?>
+                    <option value="<?= $val['catid']?>"><?= $val['html'] ?><?=  $val['catname']?></option>
+                    <?php }?>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>分类描述</label>
+                  <textarea name="catDesc" class="form-control"></textarea>
+                </div>
+                <input type="hidden" name="createstaffid" value='{$data.stffid}' />
+              </form>
+                <div class="form-group">
+                    <button id="addGoodscatsOperate" class="btn bg-olive btn-flat margin"><i class="fa fa-fw fa-plus"></i>添加</button>
+                </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <include file="Layout@Index:footer"/>
+  <!-- 全局js -->
+  <script src="{$Think.const.PUBLIC_URL}/common/js/jquery.min.js?v=2.1.4"></script>
+  <script src="{$Think.const.PUBLIC_URL}/common/js/bootstrap.min.js?v=3.3.6"></script>
+  <script src="{$Think.const.PUBLIC_URL}/common/js/ajaxfileupload.js"></script>
+ <script>
+
+    var addGoodscatsOperate = document.getElementById("addGoodscatsOperate");
+    addGoodscatsOperate.onclick=function()
+    {    
+          document.getElementById("addgoodscats").submit();
+    }
+  </script>

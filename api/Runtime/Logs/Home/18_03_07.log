@@ -1,0 +1,144 @@
+[ 2018-03-07T09:07:57+08:00 ] 203.209.234.132 /api.php/Home/Deals/zfbnotify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_order_settlement` [ RunTime:0.0034s ]
+SQL: UPDATE `hqjhc_order_settlement` SET `status`='1' WHERE `orderno` = '2017120456501001' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_order_settlement` WHERE `orderno` = '2017120456501001' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0005s ]
+SQL: UPDATE `hqjhc_orders` SET `orderStatus`='1',`applystatus`='1',`payTime`='2018-03-07 09:07:57' WHERE `orderNo` = '1512349560' [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hqjhc_orders` WHERE `sameorderNo` = '1512349560'  [ RunTime:0.0010s ]
+SQL: UPDATE `hqjhc_orders` SET `orderStatus`='1',`applystatus`='1',`payTime`='2018-03-07 09:07:57' WHERE `orderNo` = '2017120456519799' [ RunTime:0.0914s ]
+NOTIC: [8] Undefined index: addressid /home/www/hqjhc/api/Home/Controller/DealsController.class.php 第 240 行.
+NOTIC: [8] Undefined index: userid /home/www/hqjhc/api/Home/Controller/DealsController.class.php 第 241 行.
+SQL: SHOW COLUMNS FROM `hqjhc_logs_moneys` [ RunTime:0.0005s ]
+SQL: INSERT INTO `hqjhc_logs_moneys` (`amount`,`moneyType`,`accessType`,`orderNo`,`createTime`,`datasource`,`userid`,`otherOrderno`) VALUES ('0.01','1','2','2018030710051525','2018-03-07 09:07:57','11',NULL,'2017120456519799') [ RunTime:0.0037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2018-03-07T09:14:56+08:00 ] 203.209.234.165 /api.php/Home/Deal/zfbnotify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_order_settlement` [ RunTime:0.0005s ]
+SQL: UPDATE `hqjhc_order_settlement` SET `status`='1' WHERE `orderno` = '2017120410048564' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_order_settlement` WHERE `orderno` = '2017120410048564' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: UPDATE `hqjhc_orders` SET `orderStatus`='1',`applystatus`='1',`payTime`='2018-03-07 09:14:56' WHERE `orderNo` = '2017120448100514' [ RunTime:0.0034s ]
+SQL: SELECT * FROM `hqjhc_orders` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_logs_moneys` [ RunTime:0.0004s ]
+SQL: INSERT INTO `hqjhc_logs_moneys` (`amount`,`moneyType`,`accessType`,`orderNo`,`createTime`,`datasource`,`userid`,`otherOrderno`) VALUES ('0.01','1','2','2018030748100102','2018-03-07 09:14:56','4','29','2017120448100514') [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2018-03-07T11:01:58+08:00 ] 110.75.242.213 /api.php/Home/Recharge/zfb_vip_notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_recharge` [ RunTime:0.1127s ]
+SQL: UPDATE `hqjhc_recharge` SET `status`='1' WHERE `orderNo` = '2017120448571014' [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_viprecharge` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_viprecharge` WHERE `orderNo` = '2017120448571014' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 32 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0004s ]
+SQL: UPDATE `hqjhc_users` SET `vip`='1' WHERE `userid` = 32 [ RunTime:0.0398s ]
+SQL: SHOW COLUMNS FROM `hqjhc_logs_viprecharge` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_logs_moneys` [ RunTime:0.0003s ]
+SQL: INSERT INTO `hqjhc_logs_viprecharge` (`examount`,`userid`,`amount`,`datasrc`,`createTime`,`orderNo`) VALUES ('0.00','32','0.01','1','2018-03-07 11:01:58','2017120448571014') [ RunTime:0.0103s ]
+SQL: INSERT INTO `hqjhc_logs_moneys` (`amount`,`moneyType`,`accessType`,`orderNo`,`datasource`,`createTime`,`userid`) VALUES ('0.01','1','2','2017120448571014','9','2018-03-07 11:01:58','32') [ RunTime:0.0042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011386s ]
+
+[ 2018-03-07T16:01:56+08:00 ] 101.44.12.72 /api.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_grade` [ RunTime:0.1982s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` LEFT JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid LEFT JOIN hqjhc_goods ON hqjhc_brands.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.enddate > '2018-03-07 16:01:56'  [ RunTime:0.0005s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` INNER JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid INNER JOIN hqjhc_goods ON hqjhc_grade.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.enddate > '2018-03-07 16:01:56' AND hqjhc_grade.startdate < '2018-03-07 16:01:56'  [ RunTime:0.0003s ]
+SQL: SELECT hqjhc_brands.brandName as brandName,hqjhc_brands.brandLogo as brandLogo,hqjhc_goods.brandid as brandid,hqjhc_goods.name as goodname,hqjhc_goods.goods_price as goods_price,hqjhc_goods.description as description,hqjhc_goods.marketPrice as marketPrice,hqjhc_goods.goods_other_img1 as goods_other_img1,hqjhc_goods.goods_other_img2 as goods_other_img2,hqjhc_goods.goods_other_img3 as goods_other_img3,hqjhc_goods.goods_other_img4 as goods_other_img4,hqjhc_grade.enddate as enddate,hqjhc_goods.id as id,hqjhc_grade.startdate as startdate FROM `hqjhc_grade` INNER JOIN hqjhc_brands ON hqjhc_grade.brandid = hqjhc_brands.brandid INNER JOIN hqjhc_goods ON hqjhc_grade.brandid = hqjhc_goods.brandid  WHERE hqjhc_goods.dataFlag = 0 AND hqjhc_grade.dataFlag = 0 AND hqjhc_goods.status = 3 AND hqjhc_grade.startdate > '2018-03-07 16:01:56'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: userid /home/www/hqjhc/api/Home/Controller/IndexController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `hqjhc_favorites` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_favorites` WHERE `userid` = null  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_messages` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_messages` WHERE `dataFlag` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_ads` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_ads` WHERE `adpositionid` = 1 AND `dataFlag` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: userid /home/www/hqjhc/api/Home/Controller/IndexController.class.php 第 115 行.
+SQL: SHOW COLUMNS FROM `hqjhc_web_notify` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hqjhc_web_notify` WHERE `type` IN ('0','1') AND `userid` = null AND `dataFlag` = 0 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2018-03-07T17:50:57+08:00 ] 203.209.234.97 /api.php/Home/Recharge/zfb_vip_notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_recharge` [ RunTime:0.1931s ]
+SQL: UPDATE `hqjhc_recharge` SET `status`='1' WHERE `orderNo` = '2017120453509749' [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_viprecharge` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hqjhc_viprecharge` WHERE `orderNo` = '2017120453509749' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hqjhc_users` WHERE `userid` = 29 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_users` [ RunTime:0.0005s ]
+SQL: UPDATE `hqjhc_users` SET `vip`='1' WHERE `userid` = 29 [ RunTime:0.0998s ]
+SQL: SHOW COLUMNS FROM `hqjhc_logs_viprecharge` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hqjhc_logs_moneys` [ RunTime:0.0003s ]
+SQL: INSERT INTO `hqjhc_logs_viprecharge` (`examount`,`userid`,`amount`,`datasrc`,`createTime`,`orderNo`) VALUES ('0.01','29','0.01','1','2018-03-07 17:50:57','2017120453509749') [ RunTime:0.0030s ]
+SQL: INSERT INTO `hqjhc_logs_moneys` (`amount`,`moneyType`,`accessType`,`orderNo`,`datasource`,`createTime`,`userid`) VALUES ('0.01','1','2','2017120453509749','9','2018-03-07 17:50:57','29') [ RunTime:0.0041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2018-03-07T18:00:57+08:00 ] 203.209.234.32 /api.php/Home/Deals/zfbnotify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /home/www/hqjhc/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `hqjhc_order_settlement` [ RunTime:0.0006s ]
+SQL: UPDATE `hqjhc_order_settlement` SET `status`='1' WHERE `orderno` = '2017120454545255' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hqjhc_order_settlement` WHERE `orderno` = '2017120454545255' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hqjhc_orders` [ RunTime:0.0004s ]
+SQL: UPDATE `hqjhc_orders` SET `orderStatus`='1',`applystatus`='1',`payTime`='2018-03-07 18:00:57' WHERE `orderNo` = '1512381325' [ RunTime:0.0009s ]
+SQL: SELECT * FROM `hqjhc_orders` WHERE `sameorderNo` = '1512381325'  [ RunTime:0.0010s ]
+SQL: UPDATE `hqjhc_orders` SET `orderStatus`='1',`applystatus`='1',`payTime`='2018-03-07 18:00:57' WHERE `orderNo` = '2017120410097101' [ RunTime:0.0926s ]
+SQL: UPDATE `hqjhc_orders` SET `orderStatus`='1',`applystatus`='1',`payTime`='2018-03-07 18:00:57' WHERE `orderNo` = '2017120410098504' [ RunTime:0.0046s ]
+SQL: UPDATE `hqjhc_orders` SET `orderStatus`='1',`applystatus`='1',`payTime`='2018-03-07 18:00:57' WHERE `orderNo` = '2017120410098535' [ RunTime:0.0034s ]
+SQL: UPDATE `hqjhc_orders` SET `orderStatus`='1',`applystatus`='1',`payTime`='2018-03-07 18:00:57' WHERE `orderNo` = '2017120410098579' [ RunTime:0.0030s ]
+SQL: UPDATE `hqjhc_orders` SET `orderStatus`='1',`applystatus`='1',`payTime`='2018-03-07 18:00:57' WHERE `orderNo` = '2017120410098991' [ RunTime:0.0034s ]
+NOTIC: [8] Undefined index: addressid /home/www/hqjhc/api/Home/Controller/DealsController.class.php 第 240 行.
+NOTIC: [8] Undefined index: userid /home/www/hqjhc/api/Home/Controller/DealsController.class.php 第 241 行.
+SQL: SHOW COLUMNS FROM `hqjhc_logs_moneys` [ RunTime:0.0005s ]
+SQL: INSERT INTO `hqjhc_logs_moneys` (`amount`,`moneyType`,`accessType`,`orderNo`,`createTime`,`datasource`,`userid`,`otherOrderno`) VALUES ('0.01','1','2','2018030757515210','2018-03-07 18:00:57','11',NULL,'2017120410098991') [ RunTime:0.0033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
